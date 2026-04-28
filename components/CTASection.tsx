@@ -1,47 +1,18 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-
-const services = [
-  'Digital Growth & Brand Management',
-  'Merchandise Production & Fulfillment',
-  'Print & Promotional Production',
-  'Dye Sublimation & Fabric Printing',
-  'Branding & Experience Design',
-  "Not sure yet — let's talk",
-]
-
-const budgets = [
-  "Still figuring it out (Under $500/mo)",
-  "Getting serious ($500 – $1,500/mo)",
-  "Ready to build ($1,500 – $3,000/mo)",
-  "Full send ($3,000 – $5,000/mo)",
-  "Just send the invoice ($5,000+/mo)",
-  "Blank check energy — let's talk",
-]
-
-const inputClass =
-  "bg-[#090909]/[0.06] border border-[#090909]/15 text-[#090909] placeholder:text-[#090909]/35 font-sans text-sm px-4 py-3.5 outline-none focus:border-[#090909]/50 transition-colors duration-200 rounded-sm w-full"
-
-const selectClass =
-  "bg-[#090909]/[0.06] border border-[#090909]/15 text-[#090909] font-sans text-sm px-4 py-3.5 outline-none focus:border-[#090909]/50 transition-colors duration-200 rounded-sm w-full appearance-none cursor-pointer"
+import Script from 'next/script'
 
 export default function CTASection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-60px' })
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 4000)
-  }
 
   return (
     <section id="contact" className="bg-[#F0EDE4] py-24 md:py-36 relative overflow-hidden">
+      <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
 
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden="true">
         <span
           className="font-display font-black text-[#090909]/[0.04] whitespace-nowrap uppercase"
           style={{ fontSize: 'clamp(100px, 20vw, 280px)' }}
@@ -87,90 +58,22 @@ export default function CTASection() {
             Tell us what you need. We'll tell you exactly what we'd build.
           </motion.p>
 
-          <motion.form
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-4"
           >
-            {/* Row 1: Name + Phone */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="Your name"
-                required
-                className={inputClass}
-              />
-              <input
-                type="tel"
-                placeholder="Phone number"
-                className={inputClass}
-              />
-            </div>
-
-            {/* Row 2: Email */}
-            <input
-              type="email"
-              placeholder="Email address"
-              required
-              className={inputClass}
+            <iframe
+              src="https://tally.so/embed/441l1d?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="467"
+              frameBorder="0"
+              marginHeight={0}
+              marginWidth={0}
+              title="Curated Department contact form"
             />
-
-            {/* Row 3: Service + Budget */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="relative">
-                <select required className={selectClass} defaultValue="">
-                  <option value="" disabled>Service requested</option>
-                  {services.map((s) => (
-                    <option key={s} value={s}>{s}</option>
-                  ))}
-                </select>
-                <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#090909]/40">
-                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                    <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-
-              <div className="relative">
-                <select className={selectClass} defaultValue="">
-                  <option value="" disabled>Monthly budget</option>
-                  {budgets.map((b) => (
-                    <option key={b} value={b}>{b}</option>
-                  ))}
-                </select>
-                <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#090909]/40">
-                  <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
-                    <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            {/* Row 4: Message */}
-            <textarea
-              placeholder="Tell us about your brand, goals, or any context that helps..."
-              rows={3}
-              className={`${inputClass} resize-none`}
-            />
-
-            <div className="flex items-center gap-4 flex-wrap pt-1">
-              <button
-                type="submit"
-                className={`inline-flex items-center gap-3 font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200 ${
-                  submitted
-                    ? 'bg-brand-green text-cream'
-                    : 'bg-[#090909] text-cream hover:bg-brand-green hover:-translate-y-0.5'
-                }`}
-              >
-                {submitted ? 'Quote Received ✓' : 'Build My Quote →'}
-              </button>
-              <span className="font-sans text-[10px] tracking-[0.15em] text-[#090909]/40">
-                We respond within 24 hours
-              </span>
-            </div>
-          </motion.form>
+          </motion.div>
         </div>
       </div>
     </section>
