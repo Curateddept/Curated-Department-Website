@@ -65,7 +65,7 @@ export default function HeroSlider() {
         className="absolute inset-0 w-full h-full object-cover opacity-40"
         style={{ zIndex: 0 }}
       >
-        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dd6li0e1c/video/upload/v1777403353/webteas_lulxtl.mp4" type="video/mp4" />
       </video>
       {/* Dark overlay to ensure text legibility */}
       <div className="absolute inset-0 bg-[#090909]/55" style={{ zIndex: 1 }} />
