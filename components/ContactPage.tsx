@@ -1,31 +1,8 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-
-const services = [
-  'Digital Growth & Brand Management',
-  'Merchandise Production & Fulfillment',
-  'Print & Promotional Production',
-  'Dye Sublimation & Fabric Printing',
-  'Branding & Experience Design',
-  "Not sure yet — let's talk",
-]
-
-const budgets = [
-  "Still figuring it out (Under $500/mo)",
-  "Getting serious ($500 – $1,500/mo)",
-  "Ready to build ($1,500 – $3,000/mo)",
-  "Full send ($3,000 – $5,000/mo)",
-  "Just send the invoice ($5,000+/mo)",
-  "Blank check energy — let's talk",
-]
-
-const inputClass =
-  "bg-white/[0.05] border border-white/10 text-cream placeholder:text-cream/30 font-sans text-sm px-4 py-3.5 outline-none focus:border-brand-green/60 transition-colors duration-200 rounded-sm w-full"
-
-const selectClass =
-  "bg-white/[0.05] border border-white/10 text-cream font-sans text-sm px-4 py-3.5 outline-none focus:border-brand-green/60 transition-colors duration-200 rounded-sm w-full appearance-none cursor-pointer"
+import Script from 'next/script'
 
 function FadeIn({ children, delay = 0, className = '' }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef(null)
@@ -44,16 +21,9 @@ function FadeIn({ children, delay = 0, className = '' }: { children: React.React
 }
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 4000)
-  }
-
   return (
     <div className="bg-[#090909] min-h-screen pt-16">
+      <Script src="https://tally.so/widgets/embed.js" strategy="lazyOnload" />
 
       {/* Hero */}
       <section className="py-20 md:py-28 border-b border-white/[0.06]">
@@ -101,53 +71,16 @@ export default function ContactPage() {
               </FadeIn>
 
               <FadeIn delay={0.1}>
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <input type="text" placeholder="Your name" required className={inputClass} />
-                    <input type="tel" placeholder="Phone number" className={inputClass} />
-                  </div>
-                  <input type="email" placeholder="Email address" required className={inputClass} />
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div className="relative">
-                      <select required className={selectClass} defaultValue="">
-                        <option value="" disabled>Service requested</option>
-                        {services.map((s) => <option key={s} value={s}>{s}</option>)}
-                      </select>
-                      <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-cream/30">
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                      </div>
-                    </div>
-                    <div className="relative">
-                      <select className={selectClass} defaultValue="">
-                        <option value="" disabled>Monthly budget</option>
-                        {budgets.map((b) => <option key={b} value={b}>{b}</option>)}
-                      </select>
-                      <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-cream/30">
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <textarea
-                    placeholder="Tell us about your brand, goals, or any context that helps..."
-                    rows={4}
-                    className={`${inputClass} resize-none`}
-                  />
-                  <div className="flex items-center gap-4 pt-1 flex-wrap">
-                    <button
-                      type="submit"
-                      className={`inline-flex items-center gap-3 font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200 ${
-                        submitted
-                          ? 'bg-brand-green text-cream'
-                          : 'bg-cream text-[#090909] hover:bg-brand-green hover:text-cream hover:-translate-y-0.5'
-                      }`}
-                    >
-                      {submitted ? 'Sent — We\'ll Be In Touch ✓' : 'Build My Quote →'}
-                    </button>
-                    <span className="font-sans text-[10px] tracking-[0.15em] text-cream/30">
-                      We respond within 24 hours
-                    </span>
-                  </div>
-                </form>
+                <iframe
+                  src="https://tally.so/embed/441l1d?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                  loading="lazy"
+                  width="100%"
+                  height="467"
+                  frameBorder="0"
+                  marginHeight={0}
+                  marginWidth={0}
+                  title="Curated Department contact form"
+                />
               </FadeIn>
             </div>
 
