@@ -1,7 +1,7 @@
 'use client'
 
-import { useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { useRef, useState, useEffect } from 'react'
+import { motion, useInView, AnimatePresence } from 'framer-motion'
 
 const steps = [
   {
@@ -88,6 +88,14 @@ function StepCard({ step, index }: { step: (typeof steps)[0]; index: number }) {
 export default function IntroSection() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
+  const [wordIdx, setWordIdx] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setWordIdx((i) => (i + 1) % steps.length)
+    }, 2400)
+    return () => clearInterval(timer)
+  }, [])
 
   return (
     <section id="about" className="bg-cream py-24 md:py-36 relative overflow-hidden">
@@ -123,16 +131,20 @@ export default function IntroSection() {
             From concept to
           </motion.h2>
         </div>
-        <div className="overflow-hidden mb-14">
-          <motion.h2
-            initial={{ y: '100%', opacity: 0 }}
-            animate={inView ? { y: '0%', opacity: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.08, ease: [0.76, 0, 0.24, 1] }}
-            className="font-display font-black italic leading-[0.92]"
-            style={{ fontSize: 'clamp(40px, 6.5vw, 88px)', color: '#1E7A38' }}
-          >
-            recognition.
-          </motion.h2>
+        <div className="overflow-hidden mb-14" style={{ minHeight: 'clamp(40px, 6.5vw, 88px)' }}>
+          <AnimatePresence mode="wait">
+            <motion.h2
+              key={steps[wordIdx].label}
+              initial={{ y: '100%', opacity: 0, skewY: 2 }}
+              animate={{ y: '0%', opacity: 1, skewY: 0 }}
+              exit={{ y: '-100%', opacity: 0, skewY: -2 }}
+              transition={{ duration: 0.7, ease: [0.76, 0, 0.24, 1] }}
+              className="font-display font-black italic leading-[0.92]"
+              style={{ fontSize: 'clamp(40px, 6.5vw, 88px)', color: steps[wordIdx].color }}
+            >
+              {steps[wordIdx].label.toLowerCase()}.
+            </motion.h2>
+          </AnimatePresence>
         </div>
 
         {/* Journey steps */}
