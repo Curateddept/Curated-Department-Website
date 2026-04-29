@@ -1,16 +1,34 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
+import { useEffect, useState, useRef } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
-const navLinks = [
-  { label: 'About', href: '/about', external: false },
-  { label: 'Services', href: '/services', external: false },
-  // { label: 'Clients', href: '/clients', external: false },  // hidden — revisit when ready
-  { label: 'Our Lanes', href: '/our-lanes', external: false },
-  // { label: 'Blog', href: '/blog', external: false },   // hidden — revisit when ready
-  // { label: 'Team', href: '/team', external: false },   // hidden — revisit when ready
-  { label: 'Contact', href: '/contact', external: false },
+type NavLink = {
+  label: string
+  href: string
+  external?: boolean
+  children?: { label: string; href: string }[]
+}
+
+const services: { label: string; href: string }[] = [
+  { label: 'Digital Growth & Brand Management', href: '/services/digital-growth' },
+  { label: 'Merchandise Production & Fulfillment', href: '/services/merchandise-production' },
+  { label: 'Print & Promotional Production', href: '/services/print-production' },
+  { label: 'Dye Sublimation & Fabric Printing', href: '/services/dye-sublimation' },
+  { label: 'Branding & Experience Design', href: '/services/branding-experience' },
+  { label: 'Content Creation', href: '/services/content-creation' },
+  { label: 'Social Media Management', href: '/services/social-media-management' },
+  { label: 'Email & SMS Marketing', href: '/services/email-sms-marketing' },
+]
+
+const navLinks: NavLink[] = [
+  { label: 'About', href: '/about' },
+  { label: 'Services', href: '/services', children: services },
+  // { label: 'Clients', href: '/clients' },  // hidden — revisit when ready
+  { label: 'Our Lanes', href: '/our-lanes' },
+  // { label: 'Blog', href: '/blog' },   // hidden — revisit when ready
+  // { label: 'Team', href: '/team' },   // hidden — revisit when ready
+  { label: 'Contact', href: '/contact' },
   { label: 'Motorsports Curated', href: 'https://www.motorsportscurated.com', external: true },
 ]
 
@@ -20,15 +38,80 @@ const InstagramIcon = () => (
   </svg>
 )
 
-const FacebookIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-  </svg>
-)
+function ServicesDropdown() {
+  const [open, setOpen] = useState(false)
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+
+  const handleEnter = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setOpen(true)
+  }
+
+  const handleLeave = () => {
+    closeTimer.current = setTimeout(() => setOpen(false), 120)
+  }
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      <a
+        href="/services"
+        className="font-sans text-[10px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap text-cream/55 hover:text-cream flex items-center gap-1.5"
+      >
+        Services
+        <svg
+          className={`transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
+          width="8"
+          height="6"
+          viewBox="0 0 10 6"
+          fill="none"
+        >
+          <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </a>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.18, ease: [0.33, 1, 0.68, 1] }}
+            className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50"
+          >
+            <div className="bg-[#0a0a0a]/98 backdrop-blur-md border border-white/[0.08] min-w-[320px] py-2 shadow-2xl">
+              {services.map((s) => (
+                <a
+                  key={s.href}
+                  href={s.href}
+                  className="block px-5 py-3 font-sans text-[11px] tracking-[0.12em] uppercase text-cream/60 hover:text-cream hover:bg-white/[0.04] hover:pl-6 transition-all duration-200"
+                >
+                  {s.label}
+                </a>
+              ))}
+              <div className="border-t border-white/[0.08] mt-1 pt-1">
+                <a
+                  href="/services"
+                  className="block px-5 py-3 font-sans text-[10px] tracking-[0.16em] uppercase text-brand-green hover:bg-white/[0.04] transition-colors duration-200"
+                >
+                  View All Services →
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  )
+}
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -53,26 +136,30 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden lg:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.external ? '_blank' : undefined}
-              rel={link.external ? 'noopener noreferrer' : undefined}
-              className={`font-sans text-[10px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap ${
-                link.label === 'Motorsports Curated'
-                  ? 'text-brand-green hover:text-cream'
-                  : 'text-cream/55 hover:text-cream'
-              }`}
-            >
-              {link.label}
-              {link.external && (
-                <svg className="inline ml-1 mb-0.5" width="8" height="8" viewBox="0 0 10 10" fill="none">
-                  <path d="M2 8L8 2M8 2H4M8 2v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-              )}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.children ? (
+              <ServicesDropdown key={link.label} />
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
+                className={`font-sans text-[10px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap ${
+                  link.label === 'Motorsports Curated'
+                    ? 'text-brand-green hover:text-cream'
+                    : 'text-cream/55 hover:text-cream'
+                }`}
+              >
+                {link.label}
+                {link.external && (
+                  <svg className="inline ml-1 mb-0.5" width="8" height="8" viewBox="0 0 10 10" fill="none">
+                    <path d="M2 8L8 2M8 2H4M8 2v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                  </svg>
+                )}
+              </a>
+            )
+          )}
         </nav>
 
         {/* Right: social icons + CTA + mark + mobile toggle */}
@@ -137,22 +224,73 @@ export default function Header() {
         className="lg:hidden overflow-hidden bg-[#0a0a0a] border-t border-white/[0.08]"
       >
         <div className="px-6 py-6 flex flex-col gap-4">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target={link.external ? '_blank' : undefined}
-              rel={link.external ? 'noopener noreferrer' : undefined}
-              onClick={() => !link.external && setMenuOpen(false)}
-              className={`font-display text-2xl font-black uppercase transition-colors duration-200 ${
-                link.label === 'Motorsports Curated'
-                  ? 'text-brand-green'
-                  : 'text-cream hover:text-brand-green'
-              }`}
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.children ? (
+              <div key={link.label} className="flex flex-col">
+                <button
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className="flex items-center justify-between text-left font-display text-2xl font-black uppercase text-cream hover:text-brand-green transition-colors duration-200"
+                >
+                  <span>{link.label}</span>
+                  <svg
+                    className={`transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                    width="14"
+                    height="9"
+                    viewBox="0 0 14 9"
+                    fill="none"
+                  >
+                    <path d="M1 1l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+                <AnimatePresence initial={false}>
+                  {mobileServicesOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3, ease: [0.76, 0, 0.24, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="pl-4 pt-3 pb-1 flex flex-col gap-3 border-l border-brand-green/30 ml-1">
+                        {link.children.map((child) => (
+                          <a
+                            key={child.href}
+                            href={child.href}
+                            onClick={() => setMenuOpen(false)}
+                            className="font-sans text-[11px] tracking-[0.14em] uppercase text-cream/60 hover:text-brand-green transition-colors duration-200"
+                          >
+                            {child.label}
+                          </a>
+                        ))}
+                        <a
+                          href="/services"
+                          onClick={() => setMenuOpen(false)}
+                          className="font-sans text-[10px] tracking-[0.16em] uppercase text-brand-green pt-1"
+                        >
+                          View All Services →
+                        </a>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ) : (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.external ? '_blank' : undefined}
+                rel={link.external ? 'noopener noreferrer' : undefined}
+                onClick={() => !link.external && setMenuOpen(false)}
+                className={`font-display text-2xl font-black uppercase transition-colors duration-200 ${
+                  link.label === 'Motorsports Curated'
+                    ? 'text-brand-green'
+                    : 'text-cream hover:text-brand-green'
+                }`}
+              >
+                {link.label}
+              </a>
+            )
+          )}
           <div className="flex items-center gap-4 mt-2 pt-4 border-t border-white/[0.08]">
             <a href="https://www.instagram.com/curate.dept/" target="_blank" rel="noopener noreferrer" className="text-cream/50 hover:text-cream transition-colors duration-200">
               <InstagramIcon />
