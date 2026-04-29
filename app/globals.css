@@ -54,3 +54,17 @@ body {
 .partner-track:hover .partner-logo:hover {
   opacity: 1;
 }
+
+/* Custom cursor — hide native cursor on devices with mouse */
+@media (hover: hover) and (pointer: fine) {
+  body.cursor-hidden,
+  body.cursor-hidden * {
+    cursor: none !important;
+  }
+  /* Keep text-input cursors visible so users can see where they're typing */
+  body.cursor-hidden input,
+  body.cursor-hidden textarea,
+  body.cursor-hidden select {
+    cursor: text !important;
+  }
+}
