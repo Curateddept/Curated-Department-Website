@@ -3,8 +3,11 @@ const partners = [
   { name: 'FiberwerX',           src: '/logos/fiberwerx.png',           width: 150 },
   { name: 'Thor MX',             src: '/logos/thor.avif',               width: 88  },
   { name: 'Kia',                 src: '/logos/kia.png',                 width: 78  },
+  { name: 'Amazon',              src: '/logos/amazon.svg',              width: 110 },
   { name: 'Baja Kits',           src: '/logos/bajakits.png',            width: 125 },
   { name: 'Trophy Truck School', src: '/logos/trophy-truck-school.png', width: 148 },
+  { name: 'JRR',                 src: '/logos/jrr.png',                 width: 60  },
+  { name: 'BDS',                 src: '/logos/bds.png',                 width: 60  },
   { name: 'FTA',                 src: '/logos/fta.svg',                 width: 68  },
 ]
 
