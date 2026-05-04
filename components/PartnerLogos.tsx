@@ -1,11 +1,21 @@
-const partners = [
+type Partner = {
+  name: string
+  src: string
+  width: number
+  /** True for badge/full-color logos that shouldn't be forced to white. */
+  noFilter?: boolean
+}
+
+const partners: Partner[] = [
   { name: 'No Fear',             src: '/logos/no-fear.png',             width: 120 },
   { name: 'FiberwerX',           src: '/logos/fiberwerx.png',           width: 150 },
   { name: 'Thor MX',             src: '/logos/thor.avif',               width: 88  },
   { name: 'Kia',                 src: '/logos/kia.png',                 width: 78  },
   { name: 'Amazon',              src: '/logos/amazon.svg',              width: 110 },
-  { name: 'Baja Kits',           src: '/logos/bajakits.png',            width: 125 },
+  { name: 'Baja Kits',           src: '/logos/bajakits.png',            width: 130, noFilter: true },
   { name: 'Trophy Truck School', src: '/logos/trophy-truck-school.png', width: 148 },
+  { name: 'JRR',                 src: '/logos/jrr.png',                 width: 70,  noFilter: true },
+  { name: 'BDS',                 src: '/logos/bds.png',                 width: 70,  noFilter: true },
   { name: 'FTA',                 src: '/logos/fta.svg',                 width: 68  },
 ]
 
@@ -31,13 +41,13 @@ export default function PartnerLogos() {
           {track.map((partner, i) => (
             <div
               key={`${partner.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center h-8"
+              className="flex-shrink-0 flex items-center justify-center h-10"
               style={{ width: partner.width }}
             >
               <img
                 src={partner.src}
                 alt={partner.name}
-                className="h-full w-auto object-contain partner-logo"
+                className={`h-full w-auto object-contain ${partner.noFilter ? 'partner-logo-color' : 'partner-logo'}`}
                 loading="lazy"
               />
             </div>

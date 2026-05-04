@@ -55,6 +55,17 @@ body {
   opacity: 1;
 }
 
+/* Color logos (badges) — keep original colors, just match opacity feel */
+.partner-logo-color {
+  opacity: 0.85;
+  filter: brightness(1.05);
+  transition: opacity 0.3s ease;
+}
+
+.partner-track:hover .partner-logo-color:hover {
+  opacity: 1;
+}
+
 /* Custom cursor — hide native cursor on devices with mouse */
 @media (hover: hover) and (pointer: fine) {
   body.cursor-hidden,
