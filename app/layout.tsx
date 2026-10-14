@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Barlow, DM_Sans } from 'next/font/google'
+import { Barlow, DM_Sans, Fraunces } from 'next/font/google'
 import './globals.css'
 import CustomCursor from '@/components/CustomCursor'
 import Preloader from '@/components/Preloader'
@@ -19,6 +19,14 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
+})
+
 export const metadata: Metadata = {
   title: 'Curated Department — Creative, Digital, Print, Merchandise',
   description:
@@ -31,8 +39,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${barlow.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${barlow.variable} ${dmSans.variable} ${fraunces.variable}`}>
       <body>
+        <div className="grain-overlay" aria-hidden="true" />
         <Preloader />
         <CustomCursor />
         {children}

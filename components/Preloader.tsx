@@ -8,15 +8,13 @@ export default function Preloader() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    // Only show once per browser session
-    const seen = sessionStorage.getItem('cd_intro_shown')
-    if (seen) return
+    if (sessionStorage.getItem('cd_intro_shown')) return
 
     setVisible(true)
-    sessionStorage.setItem('cd_intro_shown', '1')
-
-    // Total cover time before fade starts
-    const hideTimer = setTimeout(() => setVisible(false), 1600)
+    const hideTimer = setTimeout(() => {
+      setVisible(false)
+      sessionStorage.setItem('cd_intro_shown', '1')
+    }, 1600)
     return () => clearTimeout(hideTimer)
   }, [])
 

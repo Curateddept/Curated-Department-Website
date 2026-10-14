@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: #090909;
+  background: #0a0908;
   color: #F0EDE4;
   font-family: var(--font-sans), system-ui, sans-serif;
   overflow-x: hidden;
@@ -64,6 +64,65 @@ body {
 
 .partner-track:hover .partner-logo-color:hover {
   opacity: 1;
+}
+
+/* Film-grain texture over the whole site */
+.grain-overlay {
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 9000;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 8s steps(10) infinite;
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  30% { transform: translate(3%, -15%); }
+  50% { transform: translate(12%, 9%); }
+  70% { transform: translate(9%, 4%); }
+  90% { transform: translate(-1%, 7%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain-overlay { animation: none; }
+  .ticker-track { animation: none; }
+}
+
+/* Ticker bar */
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-track {
+  animation: ticker 40s linear infinite;
+  width: max-content;
+}
+
+/* Fill-wipe button hover */
+.btn-wipe {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-wipe::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--wipe, #1E7A38);
+  transform: translateY(101%);
+  transition: transform 0.45s cubic-bezier(0.76, 0, 0.24, 1);
+  z-index: -1;
+}
+
+.btn-wipe:hover::before {
+  transform: translateY(0);
 }
 
 /* Custom cursor — hide native cursor on devices with mouse */

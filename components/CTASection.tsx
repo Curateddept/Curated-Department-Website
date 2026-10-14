@@ -32,7 +32,7 @@ export default function CTASection() {
             transition={{ duration: 0.5 }}
             className="flex items-center gap-3 mb-8"
           >
-            <span className="font-sans text-[10px] tracking-[0.28em] uppercase text-[#090909]/50">
+            <span className="font-serif italic text-lg text-[#090909]/60">
               — Build a Quote
             </span>
           </motion.div>

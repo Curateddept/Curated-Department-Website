@@ -71,7 +71,7 @@ export default function ServicesList() {
               transition={{ duration: 0.5 }}
               className="flex items-center gap-3 mb-4"
             >
-              <span className="font-sans text-[10px] tracking-[0.28em] uppercase text-brand-green">
+              <span className="font-serif italic text-lg text-brand-green">
                 — What We Do
               </span>
             </motion.div>

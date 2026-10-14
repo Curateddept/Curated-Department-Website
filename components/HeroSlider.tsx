@@ -69,10 +69,15 @@ export default function HeroSlider() {
       </video>
       {/* Dark overlay to ensure text legibility */}
       <div className="absolute inset-0 bg-[#090909]/55" style={{ zIndex: 1 }} />
+      {/* Vignette for depth */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ zIndex: 1, background: 'radial-gradient(ellipse at 30% 50%, transparent 30%, rgba(5,5,4,0.75) 100%)' }}
+      />
 
       {/* Decorative background marks */}
       <div className="absolute top-32 right-16 font-sans text-[10px] tracking-[0.3em] uppercase text-cream/20 select-none rotate-90" style={{ zIndex: 2 }}>
-        Est. 2024
+        Est. 2018
       </div>
       <div className="absolute bottom-24 right-12 w-[1px] h-24 bg-brand-green/40" style={{ zIndex: 2 }} />
       <div className="absolute top-1/2 left-8 -translate-y-1/2 w-[1px] h-32 bg-cream/10" style={{ zIndex: 2 }} />
@@ -141,7 +146,7 @@ export default function HeroSlider() {
           className="font-sans font-light text-cream/60 max-w-xl text-base md:text-lg leading-relaxed mb-10"
         >
           A creative department for brands that need content, design, digital,
-          print, merchandise, and strategy under one roof.
+          print, merchandise, and strategy — <span className="font-serif italic text-cream/90">all under one roof.</span>
         </motion.p>
 
         {/* CTAs */}
@@ -152,17 +157,17 @@ export default function HeroSlider() {
           className="flex items-center gap-4 flex-wrap"
         >
           <a
-            href="#work"
-            className="inline-flex items-center gap-3 bg-cream text-[#090909] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-brand-green hover:text-cream transition-colors duration-200"
+            href="/services"
+            className="btn-wipe group inline-flex items-center gap-3 bg-cream text-[#090909] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:text-cream transition-colors duration-300"
           >
-            View Work
-            <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+            Our Services
+            <svg className="transition-transform duration-300 group-hover:translate-x-1" width="14" height="10" viewBox="0 0 14 10" fill="none">
               <path d="M1 5h12M8 1l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-3 border border-cream/30 text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:border-brand-green hover:text-brand-green transition-all duration-200"
+            className="btn-wipe inline-flex items-center gap-3 border border-cream/30 text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:border-brand-green transition-colors duration-300"
           >
             Start a Project
           </a>

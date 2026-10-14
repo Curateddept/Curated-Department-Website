@@ -114,7 +114,7 @@ export default function IntroSection() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-3 mb-12"
         >
-          <span className="font-sans text-[10px] tracking-[0.28em] uppercase text-dark-green/60">
+          <span className="font-serif italic text-lg text-dark-green/70">
             — How We Work
           </span>
         </motion.div>
