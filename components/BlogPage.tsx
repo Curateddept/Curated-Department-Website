@@ -24,7 +24,7 @@ const posts = [
     date: 'Apr 2026',
     readTime: '5 min read',
     featured: true,
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     slug: 'behind-the-merch-no-fear-2024',
@@ -34,7 +34,7 @@ const posts = [
     date: 'Mar 2026',
     readTime: '7 min read',
     featured: false,
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
   {
     slug: 'brenthel-race-content-system',
@@ -44,7 +44,7 @@ const posts = [
     date: 'Mar 2026',
     readTime: '4 min read',
     featured: false,
-    accent: '#C9A84C',
+    accent: '#A3A3A3',
   },
   {
     slug: 'dye-sublimation-101',
@@ -54,7 +54,7 @@ const posts = [
     date: 'Feb 2026',
     readTime: '6 min read',
     featured: false,
-    accent: '#D94530',
+    accent: '#8A8A8A',
   },
   {
     slug: 'fiberwerx-tundra-build-story',
@@ -64,7 +64,7 @@ const posts = [
     date: 'Feb 2026',
     readTime: '5 min read',
     featured: false,
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     slug: 'parker-500-on-the-ground',
@@ -74,7 +74,7 @@ const posts = [
     date: 'Jan 2026',
     readTime: '4 min read',
     featured: false,
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
 ]
 
@@ -187,7 +187,7 @@ export default function BlogPage() {
                   style={{ fontSize: 'clamp(48px, 9vw, 130px)' }}
                 >
                   The<br />
-                  <span className="text-brand-green">Brief.</span>
+                  <span className="text-outline">Brief.</span>
                 </motion.h1>
               </div>
               <motion.p
@@ -221,7 +221,7 @@ export default function BlogPage() {
                 onClick={() => setActiveCategory(cat)}
                 className={`flex-shrink-0 font-sans text-[10px] tracking-[0.16em] uppercase px-4 py-2 rounded-sm transition-all duration-200 ${
                   activeCategory === cat
-                    ? 'bg-brand-green text-cream'
+                    ? 'bg-white text-[#0a0908]'
                     : 'text-cream/40 hover:text-cream hover:bg-white/[0.06]'
                 }`}
               >
@@ -264,7 +264,7 @@ export default function BlogPage() {
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+                className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
               >
                 Start a Project →
               </a>

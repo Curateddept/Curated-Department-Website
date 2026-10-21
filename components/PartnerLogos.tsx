@@ -1,22 +1,22 @@
 type Partner = {
   name: string
   src: string
-  width: number
-  /** True for badge/full-color logos that shouldn't be forced to white. */
-  noFilter?: boolean
+  /** Rendered height in px — tuned per logo so wordmarks and badges look the same visual weight. */
+  height: number
 }
 
+// Every logo is a white mark on transparent (public/logos/mono) or an SVG whitened by .partner-logo.
 const partners: Partner[] = [
-  { name: 'No Fear',             src: '/logos/no-fear.png',             width: 120 },
-  { name: 'FiberwerX',           src: '/logos/fiberwerx.png',           width: 150 },
-  { name: 'Thor MX',             src: '/logos/thor.avif',               width: 88  },
-  { name: 'Kia',                 src: '/logos/kia.png',                 width: 78  },
-  { name: 'Amazon',              src: '/logos/amazon.svg',              width: 110 },
-  { name: 'Baja Kits',           src: '/logos/bajakits.png',            width: 130, noFilter: true },
-  { name: 'Trophy Truck School', src: '/logos/trophy-truck-school.png', width: 148 },
-  { name: 'JRR',                 src: '/logos/jrr.png',                 width: 70,  noFilter: true },
-  { name: 'BDS',                 src: '/logos/bds.png',                 width: 70,  noFilter: true },
-  { name: 'FTA',                 src: '/logos/fta.svg',                 width: 68  },
+  { name: 'No Fear',             src: '/logos/mono/no-fear.png',             height: 46 },
+  { name: 'FiberwerX',           src: '/logos/mono/fiberwerx.png',           height: 34 },
+  { name: 'Thor MX',             src: '/logos/mono/thor.png',                height: 44 },
+  { name: 'Canvas',              src: '/logos/mono/canvas.png',              height: 30 },
+  { name: 'Amazon',              src: '/logos/amazon.svg',                   height: 44 },
+  { name: 'Baja Kits',           src: '/logos/mono/bajakits.png',            height: 42 },
+  { name: 'Trophy Truck School', src: '/logos/mono/trophy-truck-school.png', height: 46 },
+  { name: 'JRR',                 src: '/logos/mono/jrr.png',                 height: 34 },
+  { name: 'BDS',                 src: '/logos/mono/bds.png',                 height: 62 },
+  { name: 'FTA',                 src: '/logos/fta.svg',                      height: 44 },
 ]
 
 // Triple for seamless infinite loop
@@ -24,33 +24,30 @@ const track = [...partners, ...partners, ...partners]
 
 export default function PartnerLogos() {
   return (
-    <section className="bg-[#090909] border-t border-b border-white/[0.06] py-10 overflow-hidden">
+    <section className="bg-[#0a0908] border-y border-white/[0.08] py-14 overflow-hidden">
 
-      {/* Label */}
-      <p className="text-center font-sans text-[9px] tracking-[0.3em] uppercase text-cream/20 mb-8">
-        Brands We've Worked With
-      </p>
+      <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 mb-10 flex items-center gap-4">
+        <span className="font-display font-black uppercase text-cream text-sm tracking-[0.18em]">
+          Brands We&apos;ve Worked With
+        </span>
+        <span className="flex-1 h-px bg-white/15" />
+        <span className="font-sans text-[10px] tracking-[0.28em] uppercase text-cream/40">300+</span>
+      </div>
 
       <div className="relative">
-        {/* Fade edges */}
-        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-[#090909] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-[#090909] to-transparent z-10 pointer-events-none" />
+        <div className="absolute left-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-r from-[#0a0908] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-20 md:w-40 bg-gradient-to-l from-[#0a0908] to-transparent z-10 pointer-events-none" />
 
-        {/* Scrolling track */}
-        <div className="flex items-center gap-16 partner-track">
+        <div className="flex items-center gap-20 partner-track">
           {track.map((partner, i) => (
-            <div
+            <img
               key={`${partner.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center h-10"
-              style={{ width: partner.width }}
-            >
-              <img
-                src={partner.src}
-                alt={partner.name}
-                className={`h-full w-auto object-contain ${partner.noFilter ? 'partner-logo-color' : 'partner-logo'}`}
-                loading="lazy"
-              />
-            </div>
+              src={partner.src}
+              alt={partner.name}
+              className="flex-shrink-0 w-auto object-contain partner-logo"
+              style={{ height: partner.height }}
+              loading="lazy"
+            />
           ))}
         </div>
       </div>

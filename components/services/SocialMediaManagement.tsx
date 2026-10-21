@@ -7,7 +7,7 @@ const platforms = [
   {
     name: 'Instagram',
     handle: 'IG',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Feed posts, Reels, Stories, and Highlights — all built around a cohesive grid aesthetic that makes your profile the first thing a new follower trusts. We manage cadence, captions, hashtag strategy, and engagement.',
     deliverables: [
@@ -21,7 +21,7 @@ const platforms = [
   {
     name: 'TikTok',
     handle: 'TT',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Short-form content built for how TikTok actually works — trending sounds, native formats, and hooks that stop the scroll. We handle concept, production direction, editing, posting, and trend monitoring so you stay current without chasing.',
     deliverables: [
@@ -35,7 +35,7 @@ const platforms = [
   {
     name: 'YouTube',
     handle: 'YT',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'Long-form content that builds authority and searchability. From brand documentaries to product walkthroughs and behind-the-scenes series — we develop your channel strategy, manage uploads, optimize for SEO, and build a subscriber base that compounds.',
     deliverables: [
@@ -49,7 +49,7 @@ const platforms = [
   {
     name: 'Facebook',
     handle: 'FB',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
     description:
       'Facebook remains a powerful channel for community building, paid retargeting, and reaching audiences that index older. We manage your Page, build community in Groups, and integrate organic activity with your paid ad strategy.',
     deliverables: [
@@ -179,7 +179,7 @@ export default function SocialMediaManagement() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(52px, 8vw, 120px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Your brand's<br />voice,<br />everywhere<br />it matters.
               </motion.h1>
@@ -237,7 +237,7 @@ export default function SocialMediaManagement() {
           </div>
           <h2
             className="font-display font-black italic text-cream leading-[0.92]"
-            style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+            style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
           >
             Everything covered.<br />Nothing missed.
           </h2>
@@ -273,7 +273,7 @@ export default function SocialMediaManagement() {
             </div>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               Built for each<br />platform's language.
             </h2>
@@ -347,7 +347,7 @@ export default function SocialMediaManagement() {
             </div>
             <h2
               className="font-display font-black text-cream leading-[0.92] mb-6"
-              style={{ fontSize: 'clamp(38px, 5.5vw, 76px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               We extract your<br />vision.<br />
               <span className="italic">Then we curate it.</span>
@@ -374,7 +374,7 @@ export default function SocialMediaManagement() {
                 >
                   <div
                     className="font-display font-black text-cream mb-2"
-                    style={{ fontSize: 'clamp(32px, 4vw, 52px)' }}
+                    style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
                   >
                     {stat.value}
                   </div>
@@ -399,7 +399,7 @@ export default function SocialMediaManagement() {
             </div>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               From first call<br />to live feed.
             </h2>
@@ -441,9 +441,9 @@ export default function SocialMediaManagement() {
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {[
-            { name: 'Content Creation', href: '/services/content-creation', accent: '#EDD96A' },
-            { name: 'Paid Ads', href: '/services/paid-ads', accent: '#FF5A3D' },
-            { name: 'Brand Direction', href: '/services/brand-direction', accent: '#C5D8F2' },
+            { name: 'Content Creation', href: '/services/content-creation', accent: '#BFBFBF' },
+            { name: 'Paid Ads', href: '/services/paid-ads', accent: '#8A8A8A' },
+            { name: 'Brand Direction', href: '/services/brand-direction', accent: '#E5E5E5' },
           ].map((s) => (
             <FadeIn key={s.name}>
               <a
@@ -469,7 +469,7 @@ export default function SocialMediaManagement() {
             </p>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}
+              style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
             >
               Let's build your<br />social presence.
             </h2>
@@ -477,7 +477,7 @@ export default function SocialMediaManagement() {
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
             <a
               href="/#contact"
-              className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200"
+              className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200"
             >
               Start a Project →
             </a>

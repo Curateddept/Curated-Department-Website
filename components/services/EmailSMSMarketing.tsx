@@ -7,7 +7,7 @@ const flows = [
   {
     num: '01',
     name: 'Welcome Sequence',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'The first impression after someone joins your list. We build a multi-email sequence that introduces your brand, tells your story, sets expectations, and moves a new subscriber toward their first purchase.',
     emails: '3–5 emails',
@@ -16,7 +16,7 @@ const flows = [
   {
     num: '02',
     name: 'Abandoned Cart',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'The highest-ROI flow in e-commerce. Someone added to cart and didn\'t buy — we bring them back with the right copy, the right timing, and the right incentive. Straight revenue recovery.',
     emails: '2–3 emails',
@@ -25,7 +25,7 @@ const flows = [
   {
     num: '03',
     name: 'Post-Purchase',
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
     description:
       'The sale isn\'t the end — it\'s the beginning. We build flows that thank customers, set expectations on delivery, request reviews, and introduce related products to drive the second purchase.',
     emails: '3–4 emails',
@@ -34,7 +34,7 @@ const flows = [
   {
     num: '04',
     name: 'Win-Back',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'Dormant customers are worth fighting for. We build win-back sequences that re-engage subscribers who haven\'t opened or purchased in 60–180 days, with copy designed to earn attention again.',
     emails: '2–3 emails',
@@ -166,7 +166,7 @@ export default function EmailSMSMarketing() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(52px, 8vw, 120px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Not just<br />messages.<br />Revenue.
               </motion.h1>
@@ -217,7 +217,7 @@ export default function EmailSMSMarketing() {
           </div>
           <h2
             className="font-display font-black italic text-cream leading-[0.92]"
-            style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+            style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
           >
             Campaigns that push.<br />Flows that run.
           </h2>
@@ -231,7 +231,7 @@ export default function EmailSMSMarketing() {
           <FadeIn>
             <div className="bg-[#090909] p-8 md:p-10 h-full">
               <div className="flex items-center gap-3 mb-6">
-                <span className="font-sans text-[9px] tracking-[0.22em] uppercase px-2.5 py-1.5 text-[#EDD96A] bg-[#EDD96A18]">
+                <span className="font-sans text-[9px] tracking-[0.22em] uppercase px-2.5 py-1.5 text-[#BFBFBF] bg-[#BFBFBF18]">
                   Campaigns
                 </span>
               </div>
@@ -260,7 +260,7 @@ export default function EmailSMSMarketing() {
           <FadeIn delay={0.08}>
             <div className="bg-[#090909] p-8 md:p-10 h-full">
               <div className="flex items-center gap-3 mb-6">
-                <span className="font-sans text-[9px] tracking-[0.22em] uppercase px-2.5 py-1.5 text-[#C5D8F2] bg-[#C5D8F218]">
+                <span className="font-sans text-[9px] tracking-[0.22em] uppercase px-2.5 py-1.5 text-[#E5E5E5] bg-[#E5E5E518]">
                   Automated Flows
                 </span>
               </div>
@@ -294,7 +294,7 @@ export default function EmailSMSMarketing() {
             </div>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               Revenue that runs<br />while you sleep.
             </h2>
@@ -351,7 +351,7 @@ export default function EmailSMSMarketing() {
             </div>
             <h2
               className="font-display font-black text-cream leading-[0.92] mb-6"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               Right message.<br />
               <span className="italic">Right audience.</span>
@@ -391,7 +391,7 @@ export default function EmailSMSMarketing() {
             </div>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               Audit to<br />live revenue.
             </h2>
@@ -448,13 +448,13 @@ export default function EmailSMSMarketing() {
             <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-brand-green mb-3">Ready to build the channel?</p>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}
+              style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
             >
               Let's turn your list<br />into a revenue engine.
             </h2>
           </FadeIn>
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200">
+            <a href="/#contact" className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200">
               Start a Project →
             </a>
             <a href="/#services" className="inline-flex items-center gap-3 border border-white/15 text-cream/50 hover:text-cream hover:border-white/30 font-sans text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200">

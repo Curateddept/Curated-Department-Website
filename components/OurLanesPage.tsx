@@ -73,8 +73,8 @@ function IndustryItem({ item, index }: { item: (typeof industries)[0]; index: nu
       </div>
       <div className="md:col-span-5">
         <h3
-          className="font-display font-black text-cream uppercase leading-none group-hover:text-brand-green transition-colors duration-300"
-          style={{ fontSize: 'clamp(32px, 4vw, 58px)' }}
+          className="font-display font-black text-cream uppercase leading-none group-hover:text-outline transition-colors duration-300"
+          style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
         >
           {item.name}
         </h3>
@@ -102,7 +102,7 @@ export default function OurLanesPage() {
               animate={{ y: '0%' }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.76, 0, 0.24, 1] }}
               className="font-display font-black text-cream uppercase leading-[0.88]"
-              style={{ fontSize: 'clamp(48px, 9vw, 130px)' }}
+              style={{ fontSize: 'clamp(56px, 11.5vw, 184px)' }}
             >
               Our
             </motion.h1>
@@ -112,8 +112,8 @@ export default function OurLanesPage() {
               initial={{ y: '100%' }}
               animate={{ y: '0%' }}
               transition={{ duration: 0.8, delay: 0.12, ease: [0.76, 0, 0.24, 1] }}
-              className="font-display font-black uppercase leading-[0.88] text-brand-green"
-              style={{ fontSize: 'clamp(48px, 9vw, 130px)' }}
+              className="font-display font-black uppercase leading-[0.88] text-cream text-outline"
+              style={{ fontSize: 'clamp(56px, 11.5vw, 184px)' }}
             >
               Lanes.
             </motion.h1>
@@ -145,11 +145,11 @@ export default function OurLanesPage() {
               </span>
               <h2
                 className="font-display font-black text-cream uppercase leading-[0.9]"
-                style={{ fontSize: 'clamp(36px, 5vw, 72px)' }}
+                style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
               >
                 Culture
                 <br />
-                <span className="text-brand-green">Is the</span>
+                <span className="text-outline">Is the</span>
                 <br />
                 Strategy.
               </h2>
@@ -210,14 +210,14 @@ export default function OurLanesPage() {
           <FadeIn>
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
               <div>
-                <h2 className="font-display font-black text-cream uppercase leading-[0.9] mb-2" style={{ fontSize: 'clamp(28px, 4vw, 56px)' }}>
-                  Your Industry<br /><span className="text-brand-green">Is Our Industry.</span>
+                <h2 className="font-display font-black text-cream uppercase leading-[0.9] mb-2" style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}>
+                  Your Industry<br /><span className="text-outline">Is Our Industry.</span>
                 </h2>
                 <p className="font-sans text-cream/40 text-sm max-w-sm">We're selective about the brands we take on — but always open to the right fit.</p>
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+                className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
               >
                 Get in Touch →
               </a>

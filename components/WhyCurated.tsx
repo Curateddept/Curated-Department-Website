@@ -41,7 +41,7 @@ export default function WhyCurated() {
       >
         <path
           d="M4 30 Q 14 10, 24 30 Q 34 50, 44 30 Q 54 10, 64 30 Q 74 50, 80 30"
-          stroke="#F5F0E4"
+          stroke="#F4F4F2"
           strokeWidth="2"
           fill="none"
           strokeLinecap="round"

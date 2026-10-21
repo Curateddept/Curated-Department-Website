@@ -7,7 +7,7 @@ const subServices = [
   {
     id: '2A',
     title: 'Product Design & Development',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Custom apparel design, full product creation from scratch, and private label builds for brands looking to own their line. We take your vision and turn it into a production-ready product.',
     includes: [
@@ -22,7 +22,7 @@ const subServices = [
   {
     id: '2B',
     title: 'Production & Sourcing',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Low to high quantity runs, domestic and overseas production options, and material sourcing to fit your budget and quality standards. We manage the supply chain so you don\'t have to.',
     includes: [
@@ -37,7 +37,7 @@ const subServices = [
   {
     id: '2C',
     title: 'Store Setup & Management',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'Shopify store builds, product uploads with optimized listings, and ongoing store management for conversions. Your online storefront, built to sell.',
     includes: [
@@ -52,7 +52,7 @@ const subServices = [
   {
     id: '2D',
     title: 'Fulfillment (3PL)',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
     description:
       'Inventory storage, order fulfillment, and shipping logistics. We handle the physical side of your product business — pick, pack, ship — so you never have to touch a package.',
     includes: [
@@ -67,7 +67,7 @@ const subServices = [
   {
     id: '2E',
     title: 'Customer Experience',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Packaging systems, branded boxes and inserts, and customer service support that elevate the unboxing and post-purchase experience. The details that turn customers into repeat buyers.',
     includes: [
@@ -172,7 +172,7 @@ export default function MerchandiseProduction() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(44px, 7vw, 108px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Merchandise<br />Production &amp;<br />Fulfillment.
               </motion.h1>
@@ -231,12 +231,12 @@ export default function MerchandiseProduction() {
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <FadeIn>
             <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-brand-green mb-3">Ready to build your product line?</p>
-            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}>
+            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}>
               Let's build something<br />worth selling.
             </h2>
           </FadeIn>
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200">
+            <a href="/#contact" className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200">
               Get a Quote →
             </a>
             <a href="/#services" className="inline-flex items-center gap-3 border border-white/15 text-cream/50 hover:text-cream hover:border-white/30 font-sans text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200">

@@ -8,15 +8,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'brand-green': '#1E7A38',   // muted forest green — accent only
-        'dark-green': '#0E4520',
-        'deep-green': '#194D2A',
+        // Black & white system — legacy token names kept so existing classes resolve to monochrome.
+        'brand-green': '#FFFFFF',
+        'dark-green': '#0A0A0A',
+        'deep-green': '#1A1A1A',
         'surface': '#111111',
         'card': '#181818',
-        'cream': '#F0EDE4',
-        'pale-blue': '#A8C4DF',
-        'gold': '#C9A84C',
-        'coral': '#D94530',
+        'cream': '#F4F4F2',
+        'pale-blue': '#D4D4D4',
+        'gold': '#A3A3A3',
+        'coral': '#737373',
       },
       fontFamily: {
         display: ['var(--font-display)', 'Georgia', 'serif'],

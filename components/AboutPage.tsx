@@ -92,10 +92,10 @@ export default function AboutPage() {
                 animate={{ y: '0%' }}
                 transition={{ duration: 0.8, delay: 0.2, ease: [0.76, 0, 0.24, 1] }}
                 className="font-display font-black text-cream uppercase leading-[0.88]"
-                style={{ fontSize: 'clamp(56px, 9vw, 140px)' }}
+                style={{ fontSize: 'clamp(56px, 11.5vw, 184px)' }}
               >
                 One Team.<br />
-                <span className="text-brand-green">All Of It.</span>
+                <span className="text-outline">All Of It.</span>
               </motion.h1>
             </div>
 
@@ -117,7 +117,7 @@ export default function AboutPage() {
                 <div>
                   <p
                     className="font-display font-black text-cream uppercase leading-none mb-2"
-                    style={{ fontSize: 'clamp(40px, 5vw, 72px)' }}
+                    style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
                   >
                     {s.num}
                   </p>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 </span>
                 <h2
                   className="font-display font-black text-cream uppercase leading-[0.9]"
-                  style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
+                  style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
                 >
                   Why We<br />Exist.
                 </h2>
@@ -177,7 +177,7 @@ export default function AboutPage() {
           <FadeIn className="mb-16">
             <h2
               className="font-display font-black text-cream uppercase leading-[0.9]"
-              style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               How We<br />Work.
             </h2>
@@ -214,7 +214,7 @@ export default function AboutPage() {
             <FadeIn>
               <h2
                 className="font-display font-black text-cream uppercase leading-[0.9]"
-                style={{ fontSize: 'clamp(36px, 5vw, 64px)' }}
+                style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
               >
                 What We<br />Do.
               </h2>
@@ -254,7 +254,7 @@ export default function AboutPage() {
               <div>
                 <h2
                   className="font-display font-black text-cream uppercase leading-[0.9] mb-3"
-                  style={{ fontSize: 'clamp(32px, 4vw, 56px)' }}
+                  style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
                 >
                   Ready to Build<br />Something Real?
                 </h2>
@@ -265,7 +265,7 @@ export default function AboutPage() {
               <div className="flex gap-3 flex-wrap">
                 <a
                   href="/#contact"
-                  className="inline-flex items-center gap-3 bg-cream text-[#090909] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-brand-green hover:text-cream transition-colors duration-200"
+                  className="inline-flex items-center gap-3 bg-cream text-[#090909] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200"
                 >
                   Get a Quote →
                 </a>

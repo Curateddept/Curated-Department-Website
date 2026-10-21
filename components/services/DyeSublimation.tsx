@@ -7,7 +7,7 @@ const subServices = [
   {
     id: '4A',
     title: 'Dye Sublimation Printing',
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
     description:
       'Full-fabric printing with unlimited color capability — no minimums on colors, no restrictions on complexity. Designs are printed directly into the fabric for a finish that won\'t crack, fade, or peel. Cut & sew ready for production.',
     includes: [
@@ -22,7 +22,7 @@ const subServices = [
   {
     id: '4B',
     title: 'Motocross Gear',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Jerseys, pants, and full race kits — built for the track with professional-grade quality and custom graphics. Our core niche. We know motocross gear, and we build it to perform and stand out.',
     includes: [
@@ -37,7 +37,7 @@ const subServices = [
   {
     id: '4C',
     title: 'Performance Apparel',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Athletic wear, custom uniforms, and technical fabric applications for teams, brands, and organizations that need gear that performs as well as it looks.',
     includes: [
@@ -142,7 +142,7 @@ export default function DyeSublimation() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(44px, 7vw, 108px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Dye Sublimation<br />&amp; Fabric<br />Printing.
               </motion.h1>
@@ -225,12 +225,12 @@ export default function DyeSublimation() {
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <FadeIn>
             <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-brand-green mb-3">Ready to build your kit?</p>
-            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}>
+            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}>
               Let's print<br />something built to perform.
             </h2>
           </FadeIn>
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200">
+            <a href="/#contact" className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200">
               Get a Quote →
             </a>
             <a href="/#services" className="inline-flex items-center gap-3 border border-white/15 text-cream/50 hover:text-cream hover:border-white/30 font-sans text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200">

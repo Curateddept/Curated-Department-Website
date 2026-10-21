@@ -21,7 +21,7 @@ const services = [
     tagline: 'Full-funnel digital presence — from first impression to conversion.',
     description: 'We manage the full digital side of your brand: content strategy, social media management, paid advertising, email campaigns, and analytics. We don\'t just post and ghost — we build systems that compound over time and keep your audience growing.',
     tags: ['Social Media', 'Paid Ads', 'Email Marketing', 'Content Strategy', 'Analytics'],
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
   {
     num: '02',
@@ -30,7 +30,7 @@ const services = [
     tagline: 'From concept sketch to customer doorstep.',
     description: 'We handle the full merchandise pipeline — product ideation, design, sourcing, manufacturing, Shopify build-out, and 3PL fulfillment. Whether it\'s a branded apparel line or a full merch drop, we manage every step so you don\'t have to.',
     tags: ['Product Design', 'Manufacturing', 'Shopify', '3PL Fulfillment', 'Merch Drops'],
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     num: '03',
@@ -39,7 +39,7 @@ const services = [
     tagline: 'Physical brand materials that actually get kept.',
     description: 'Business cards, banners, labels, promo items, event signage, large-format prints — we produce it all. High-quality print work that shows up to events, trade shows, and storefronts looking sharp. We source, produce, and deliver.',
     tags: ['Business Print', 'Large Format', 'Event Signage', 'Promo Items', 'Labels'],
-    accent: '#C9A84C',
+    accent: '#A3A3A3',
   },
   {
     num: '04',
@@ -48,7 +48,7 @@ const services = [
     tagline: 'Full-fabric print built for performance and race day.',
     description: 'Sublimation printing for motocross jerseys, pit shirts, racing apparel, and performance gear. Full-bleed, all-over prints with colors that don\'t crack or fade. Ideal for motorsports teams, events, and brands that need gear that performs on and off the track.',
     tags: ['Motocross Jerseys', 'Pit Shirts', 'Race Apparel', 'All-Over Print', 'Team Kits'],
-    accent: '#D94530',
+    accent: '#8A8A8A',
   },
   {
     num: '05',
@@ -57,7 +57,7 @@ const services = [
     tagline: 'The visual identity your brand deserves.',
     description: 'Logo systems, brand guidelines, packaging, Shopify storefronts, event experience design, and collateral. We build brand identities that hold up across every touchpoint — from a business card to a 40-foot trailer wrap.',
     tags: ['Logo Design', 'Brand Guidelines', 'Packaging', 'Shopify Builds', 'Events'],
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
   {
     num: '06',
@@ -66,7 +66,7 @@ const services = [
     tagline: 'Photo, video, and creative assets that earn attention.',
     description: 'We produce photo and video content built for the platforms your audience lives on — race-day coverage, product shots, behind-the-scenes, reels, and campaign assets. Everything is shot, edited, and delivered ready to publish.',
     tags: ['Photography', 'Video', 'Reels & Shorts', 'Race Day Coverage', 'Campaign Assets'],
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     num: '07',
@@ -75,7 +75,7 @@ const services = [
     tagline: 'Consistent presence. Real growth. No fluff.',
     description: 'We take over your social media and run it the way it should be run — with strategy, consistency, and content that actually fits your brand. Scheduling, community management, trend monitoring, and monthly reporting included.',
     tags: ['Instagram', 'Facebook', 'TikTok', 'Content Calendar', 'Community Management'],
-    accent: '#C9A84C',
+    accent: '#A3A3A3',
   },
   {
     num: '08',
@@ -84,7 +84,7 @@ const services = [
     tagline: 'Owned channels that drive revenue, not just opens.',
     description: 'Campaigns, automations, list growth, and segmentation. Email and SMS are the most direct lines to your customers — we build the infrastructure and write the copy so every send counts. Klaviyo, Mailchimp, and custom platforms.',
     tags: ['Campaigns', 'Automations', 'Klaviyo', 'List Growth', 'SMS'],
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
 ]
 
@@ -107,7 +107,7 @@ function ServiceRow({ service, index }: { service: (typeof services)[0]; index: 
           <span className="font-sans text-[10px] tracking-[0.28em] uppercase block mb-3" style={{ color: service.accent }}>
             {service.num}
           </span>
-          <h2 className="font-display font-black text-cream uppercase leading-[0.92] mb-3" style={{ fontSize: 'clamp(22px, 2.8vw, 38px)' }}>
+          <h2 className="font-display font-black text-cream uppercase leading-[0.92] mb-3" style={{ fontSize: 'clamp(28px, 3.8vw, 56px)' }}>
             {service.name}
           </h2>
           <p className="font-sans text-sm text-cream/40 italic">{service.tagline}</p>
@@ -173,7 +173,7 @@ export default function ServicesPage() {
                 animate={{ y: '0%' }}
                 transition={{ duration: 0.8, delay: 0.1, ease: [0.76, 0, 0.24, 1] }}
                 className="font-display font-black text-cream uppercase leading-[0.88]"
-                style={{ fontSize: 'clamp(52px, 9vw, 130px)' }}
+                style={{ fontSize: 'clamp(56px, 11.5vw, 184px)' }}
               >
                 Eight
               </motion.h1>
@@ -183,8 +183,8 @@ export default function ServicesPage() {
                 initial={{ y: '100%' }}
                 animate={{ y: '0%' }}
                 transition={{ duration: 0.8, delay: 0.16, ease: [0.76, 0, 0.24, 1] }}
-                className="font-display font-black uppercase leading-[0.88] text-brand-green"
-                style={{ fontSize: 'clamp(52px, 9vw, 130px)' }}
+                className="font-display font-black uppercase leading-[0.88] text-cream text-outline"
+                style={{ fontSize: 'clamp(56px, 11.5vw, 184px)' }}
               >
                 Services.
               </motion.h1>
@@ -218,14 +218,14 @@ export default function ServicesPage() {
           <FadeIn>
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
               <div>
-                <h2 className="font-display font-black text-cream uppercase leading-[0.9] mb-2" style={{ fontSize: 'clamp(28px, 4vw, 56px)' }}>
-                  Not Sure<br /><span className="text-brand-green">Where to Start?</span>
+                <h2 className="font-display font-black text-cream uppercase leading-[0.9] mb-2" style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}>
+                  Not Sure<br /><span className="text-outline">Where to Start?</span>
                 </h2>
                 <p className="font-sans text-cream/40 text-sm">Tell us what you need. We'll figure out the right fit.</p>
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+                className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
               >
                 Get a Quote →
               </a>

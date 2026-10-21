@@ -34,10 +34,10 @@ export default function ContactPage() {
               animate={{ y: '0%' }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.76, 0, 0.24, 1] }}
               className="font-display font-black text-cream uppercase leading-[0.88]"
-              style={{ fontSize: 'clamp(56px, 10vw, 148px)' }}
+              style={{ fontSize: 'clamp(56px, 11.5vw, 184px)' }}
             >
               Let's<br />
-              <span className="text-brand-green">Talk.</span>
+              <span className="text-outline">Talk.</span>
             </motion.h1>
           </div>
           <motion.p
@@ -64,7 +64,7 @@ export default function ContactPage() {
                 </span>
                 <h2
                   className="font-display font-black text-cream uppercase leading-[0.9]"
-                  style={{ fontSize: 'clamp(28px, 3.5vw, 48px)' }}
+                  style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
                 >
                   Tell Us What<br />You Need.
                 </h2>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 </span>
                 <h2
                   className="font-display font-black text-cream uppercase leading-[0.9]"
-                  style={{ fontSize: 'clamp(28px, 3.5vw, 48px)' }}
+                  style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
                 >
                   Reach Us<br />Directly.
                 </h2>

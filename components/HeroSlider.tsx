@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const slides = [
-  { prefix: 'CURATED', word: 'DEPT.',     color: '#A8C4DF' },
-  { prefix: 'CURATED', word: 'CONTENT.',  color: '#1E7A38' },
-  { prefix: 'CURATED', word: 'THOUGHTS.', color: '#A8C4DF' },
-  { prefix: 'CURATED', word: 'DESIGN.',   color: '#1E7A38' },
-  { prefix: 'CURATED', word: 'BRAND.',    color: '#A8C4DF' },
-  { prefix: 'WE',      word: 'CURATE.',   color: '#1E7A38' },
+  { prefix: 'CURATED', word: 'DEPT.',     outline: false },
+  { prefix: 'CURATED', word: 'CONTENT.',  outline: true },
+  { prefix: 'CURATED', word: 'THOUGHTS.', outline: false },
+  { prefix: 'CURATED', word: 'DESIGN.',   outline: true },
+  { prefix: 'CURATED', word: 'BRAND.',    outline: false },
+  { prefix: 'WE',      word: 'CURATE.',   outline: true },
 ]
 
 const INTERVAL = 2800
@@ -54,7 +54,7 @@ export default function HeroSlider() {
   return (
     <section
       id="home"
-      className="relative min-h-screen bg-[#090909] flex flex-col justify-between overflow-hidden pt-16"
+      className="relative min-h-screen bg-[#0a0908] flex flex-col justify-between overflow-hidden pt-16"
     >
       {/* Video background */}
       <video
@@ -62,7 +62,7 @@ export default function HeroSlider() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
+        className="absolute inset-0 w-full h-full object-cover opacity-45 grayscale contrast-125"
         style={{ zIndex: 0 }}
       >
         <source src="https://res.cloudinary.com/dd6li0e1c/video/upload/v1777403353/webteas_lulxtl.mp4" type="video/mp4" />
@@ -99,7 +99,7 @@ export default function HeroSlider() {
         </motion.div>
 
         {/* Animated headline */}
-        <div className="mb-8 md:mb-12" style={{ lineHeight: 0.9 }}>
+        <div className="mb-8 md:mb-12" style={{ lineHeight: 0.86 }}>
 
           {/* Prefix line */}
           <div className="overflow-hidden">
@@ -111,8 +111,8 @@ export default function HeroSlider() {
                 animate="center"
                 exit="exit"
                 transition={transition}
-                className="font-display font-black italic text-cream"
-                style={{ fontSize: 'clamp(64px, 11vw, 168px)' }}
+                className="font-display font-black italic text-cream tracking-tighter"
+                style={{ fontSize: 'clamp(56px, 13vw, 210px)' }}
               >
                 {current.prefix}
               </motion.div>
@@ -129,8 +129,8 @@ export default function HeroSlider() {
                 animate="center"
                 exit="exit"
                 transition={{ ...transition, delay: 0.06 }}
-                className="font-display font-black"
-                style={{ fontSize: 'clamp(64px, 11vw, 168px)', color: current.color }}
+                className={`font-display font-black text-cream tracking-tighter ${current.outline ? 'text-outline' : ''}`}
+                style={{ fontSize: 'clamp(56px, 13vw, 210px)' }}
               >
                 {current.word}
               </motion.div>
@@ -167,7 +167,7 @@ export default function HeroSlider() {
           </a>
           <a
             href="#contact"
-            className="btn-wipe inline-flex items-center gap-3 border border-cream/30 text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:border-brand-green transition-colors duration-300"
+            className="btn-wipe [--wipe:#F4F4F2] inline-flex items-center gap-3 border border-cream/40 text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:text-[#0a0908] hover:border-cream transition-colors duration-300"
           >
             Start a Project
           </a>

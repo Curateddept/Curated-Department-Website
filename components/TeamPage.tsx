@@ -20,7 +20,7 @@ const team = [
     bio: 'Albert founded Curated Department in 2018 with a vision to bring agency-level creative to the motorsports and action sports world. He leads strategy, client relationships, and creative direction across all accounts.',
     photo: '/team/albert.jpg',
     initials: 'AG',
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     name: 'Team Member',
@@ -28,7 +28,7 @@ const team = [
     bio: 'Focused on visual storytelling, content production, and campaign execution. Brings ideas to life from concept through delivery across social, print, and digital channels.',
     photo: '/team/member2.jpg',
     initials: 'TM',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
   {
     name: 'Team Member',
@@ -36,7 +36,7 @@ const team = [
     bio: 'Handles brand identity, graphic design, and print production. Detail-oriented and deadline-driven, with a sharp eye for the kind of work clients want on their trucks and jerseys.',
     photo: '/team/member3.jpg',
     initials: 'TM',
-    accent: '#C9A84C',
+    accent: '#A3A3A3',
   },
   {
     name: 'Team Member',
@@ -44,7 +44,7 @@ const team = [
     bio: 'Manages digital presence, social strategy, and analytics. Turns campaign data into decisions and keeps brands moving in the right direction across every platform.',
     photo: '/team/member4.jpg',
     initials: 'TM',
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
 ]
 
@@ -158,7 +158,7 @@ export default function TeamPage() {
                 animate={{ y: '0%' }}
                 transition={{ duration: 0.8, delay: 0.18, ease: [0.76, 0, 0.24, 1] }}
                 className="font-display font-black uppercase leading-[0.88]"
-                style={{ fontSize: 'clamp(52px, 10vw, 140px)', color: '#1E7A38' }}
+                style={{ fontSize: 'clamp(52px, 10vw, 140px)', color: '#FFFFFF' }}
               >
                 The Team.
               </motion.h1>
@@ -197,7 +197,7 @@ export default function TeamPage() {
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20">
           <FadeIn className="mb-14">
             <h2 className="font-display font-black text-cream uppercase leading-[0.9]" style={{ fontSize: 'clamp(28px, 4vw, 52px)' }}>
-              How We<br /><span className="text-brand-green">Operate.</span>
+              How We<br /><span className="text-outline">Operate.</span>
             </h2>
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/[0.05]">
@@ -243,7 +243,7 @@ export default function TeamPage() {
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+                className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
               >
                 Get in Touch →
               </a>

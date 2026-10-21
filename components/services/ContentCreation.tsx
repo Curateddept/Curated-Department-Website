@@ -7,7 +7,7 @@ const contentTypes = [
   {
     num: '01',
     type: 'Short-Form Video',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Reels, TikToks, YouTube Shorts — built natively for each platform. We handle concept, direction, filming, and editing. Fast-cut, hook-first, optimized for the feed.',
     formats: ['Instagram Reels', 'TikTok Videos', 'YouTube Shorts', 'Story Content'],
@@ -15,7 +15,7 @@ const contentTypes = [
   {
     num: '02',
     type: 'Product Clips',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Clean, focused product video built for e-commerce, ads, and landing pages. We shoot and edit content that shows the product in its best light — functional and desirable.',
     formats: ['Product demos', 'Unboxing content', 'Feature highlights', 'Ad-ready cuts'],
@@ -23,7 +23,7 @@ const contentTypes = [
   {
     num: '03',
     type: 'Lifestyle Photography',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'Brand and lifestyle imagery that puts your product in context. Shot to work across social, your website, email campaigns, and paid ads without re-shooting for every use.',
     formats: ['Brand campaigns', 'Product-in-use shots', 'Team & culture', 'Event coverage'],
@@ -31,7 +31,7 @@ const contentTypes = [
   {
     num: '04',
     type: 'Behind-the-Scenes',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
     description:
       'The most human content you can post. Process, people, day-in-the-life — the kind of content that builds trust and keeps an audience coming back between launches.',
     formats: ['Process documentation', 'Day-in-the-life', 'Studio/workspace content', 'Team moments'],
@@ -146,7 +146,7 @@ export default function ContentCreation() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(52px, 8vw, 120px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Content that<br />looks good<br />and performs.
               </motion.h1>
@@ -198,7 +198,7 @@ export default function ContentCreation() {
             </div>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               Four types.<br />One visual system.
             </h2>
@@ -261,7 +261,7 @@ export default function ContentCreation() {
           </div>
           <h2
             className="font-display font-black italic text-cream leading-[0.92]"
-            style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+            style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
           >
             From concept<br />to final file.
           </h2>
@@ -306,7 +306,7 @@ export default function ContentCreation() {
               </div>
               <h2
                 className="font-display font-black text-cream leading-[0.92] mb-6"
-                style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+                style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
               >
                 Consistent.<br />
                 <span className="italic">Intentional.</span><br />
@@ -331,7 +331,7 @@ export default function ContentCreation() {
           </div>
           <h2
             className="font-display font-black italic text-cream leading-[0.92]"
-            style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+            style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
           >
             Brief to<br />final file.
           </h2>
@@ -366,9 +366,9 @@ export default function ContentCreation() {
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {[
-            { name: 'Social Media Management', href: '/services/social-media-management', accent: '#C5D8F2' },
-            { name: 'Paid Ads', href: '/services/paid-ads', accent: '#FF5A3D' },
-            { name: 'Brand Direction', href: '/services/brand-direction', accent: '#EDD96A' },
+            { name: 'Social Media Management', href: '/services/social-media-management', accent: '#E5E5E5' },
+            { name: 'Paid Ads', href: '/services/paid-ads', accent: '#8A8A8A' },
+            { name: 'Brand Direction', href: '/services/brand-direction', accent: '#BFBFBF' },
           ].map((s) => (
             <FadeIn key={s.name}>
               <a href={s.href} className="flex items-center justify-between p-6 border border-white/[0.08] hover:border-white/20 group transition-all duration-200">
@@ -387,13 +387,13 @@ export default function ContentCreation() {
             <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-brand-green mb-3">Ready to create?</p>
             <h2
               className="font-display font-black italic text-cream leading-[0.92]"
-              style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}
+              style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}
             >
               Let's make<br />something worth watching.
             </h2>
           </FadeIn>
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200">
+            <a href="/#contact" className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200">
               Start a Project →
             </a>
             <a href="/#services" className="inline-flex items-center gap-3 border border-white/15 text-cream/50 hover:text-cream hover:border-white/30 font-sans text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200">

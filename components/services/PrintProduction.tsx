@@ -15,7 +15,7 @@ const subServices = [
   {
     id: '3A',
     title: 'Business Essentials',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'The foundational print materials every business needs. Business cards, flyers, hard stock and copy stock — professionally printed and ready to represent your brand.',
     includes: [
@@ -30,7 +30,7 @@ const subServices = [
   {
     id: '3B',
     title: 'Labels & Packaging',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Product labels, packaging design, poly bags, and inserts for a polished, retail-ready presentation. Whether you\'re selling online or on shelf, the packaging is part of the product.',
     includes: [
@@ -45,7 +45,7 @@ const subServices = [
   {
     id: '3C',
     title: 'Apparel & Merchandise',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'A full line of custom branded apparel. T-shirts, hoodies, hats, jackets, tanks, joggers, shorts, polos, beanies, socks — if you can wear it, we can brand it and produce it.',
     includes: [
@@ -60,7 +60,7 @@ const subServices = [
   {
     id: '3D',
     title: 'Promotional Products',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
     description:
       'The possibilities are nearly endless. If it exists, we can put your brand on it. Perfect for trade shows, events, giveaways, corporate gifting, and retail.',
     includes: promoProducts,
@@ -69,7 +69,7 @@ const subServices = [
   {
     id: '3E',
     title: 'Large Format Printing',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'Banners, signage, event graphics, wall wraps, window decals, floor graphics, vehicle wraps, yard signs, and trade show displays for maximum visual impact wherever your brand shows up.',
     includes: [
@@ -199,7 +199,7 @@ export default function PrintProduction() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(44px, 7vw, 108px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Print &amp;<br />Promotional<br />Production.
               </motion.h1>
@@ -258,12 +258,12 @@ export default function PrintProduction() {
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <FadeIn>
             <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-brand-green mb-3">Need a quote?</p>
-            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}>
+            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}>
               Tell us what you<br />need produced.
             </h2>
           </FadeIn>
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200">
+            <a href="/#contact" className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200">
               Get a Quote →
             </a>
             <a href="/#services" className="inline-flex items-center gap-3 border border-white/15 text-cream/50 hover:text-cream hover:border-white/30 font-sans text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200">

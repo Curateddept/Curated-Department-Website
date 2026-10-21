@@ -59,7 +59,7 @@ function ServicesDropdown() {
     >
       <a
         href="/services"
-        className="font-sans text-[10px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap text-cream/55 hover:text-cream flex items-center gap-1.5"
+        className="font-sans font-medium text-[11px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap text-cream/55 hover:text-cream flex items-center gap-1.5"
       >
         Services
         <svg
@@ -145,7 +145,7 @@ export default function Header() {
                 href={link.href}
                 target={link.external ? '_blank' : undefined}
                 rel={link.external ? 'noopener noreferrer' : undefined}
-                className={`font-sans text-[10px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap ${
+                className={`font-sans font-medium text-[11px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap ${
                   link.label === 'Motorsports Curated'
                     ? 'text-brand-green hover:text-cream'
                     : 'text-cream/55 hover:text-cream'
@@ -184,7 +184,7 @@ export default function Header() {
           {/* CTA */}
           <a
             href="/contact"
-            className="hidden md:inline-flex items-center gap-2 bg-brand-green text-cream font-sans font-semibold text-[10px] tracking-[0.16em] uppercase px-4 py-2.5 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+            className="hidden md:inline-flex items-center gap-2 bg-white text-[#0a0908] font-sans font-semibold text-[10px] tracking-[0.16em] uppercase px-4 py-2.5 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
           >
             Get a Quote
           </a>
@@ -196,10 +196,10 @@ export default function Header() {
             className="hidden lg:flex items-center justify-center w-7 h-7 cursor-default select-none"
           >
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-              <line x1="11" y1="0" x2="11" y2="22" stroke="#F5F0E4" strokeWidth="1.5"/>
-              <line x1="0" y1="11" x2="22" y2="11" stroke="#F5F0E4" strokeWidth="1.5"/>
-              <line x1="2.93" y1="2.93" x2="19.07" y2="19.07" stroke="#1E7A38" strokeWidth="1.5"/>
-              <line x1="19.07" y1="2.93" x2="2.93" y2="19.07" stroke="#1E7A38" strokeWidth="1.5"/>
+              <line x1="11" y1="0" x2="11" y2="22" stroke="#F4F4F2" strokeWidth="1.5"/>
+              <line x1="0" y1="11" x2="22" y2="11" stroke="#F4F4F2" strokeWidth="1.5"/>
+              <line x1="2.93" y1="2.93" x2="19.07" y2="19.07" stroke="#FFFFFF" strokeWidth="1.5"/>
+              <line x1="19.07" y1="2.93" x2="2.93" y2="19.07" stroke="#FFFFFF" strokeWidth="1.5"/>
             </svg>
           </motion.div>
 
@@ -299,7 +299,7 @@ export default function Header() {
           <a
             href="/contact"
             onClick={() => setMenuOpen(false)}
-            className="inline-flex items-center gap-2 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-5 py-3 rounded-sm w-fit"
+            className="inline-flex items-center gap-2 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-5 py-3 rounded-sm w-fit"
           >
             Get a Quote →
           </a>

@@ -7,7 +7,7 @@ const subServices = [
   {
     id: '1A',
     title: 'Social Media Management',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Instagram, TikTok, YouTube, and Facebook — fully managed. We handle posting, scheduling, community engagement, content strategy, and monthly content calendars so your brand stays consistent and active across every platform.',
     includes: [
@@ -22,7 +22,7 @@ const subServices = [
   {
     id: '1B',
     title: 'Paid Advertising',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       'Meta Ads across Facebook and Instagram, Google Ads for Search and Display, plus retargeting campaigns and scaling strategies — all built to maximize ROI, not just ad spend.',
     includes: [
@@ -37,7 +37,7 @@ const subServices = [
   {
     id: '1C',
     title: 'Email & SMS Marketing',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
     description:
       'Full campaign builds and automations that run in the background and drive repeat revenue. We build the flows, write the copy, and manage the sends so your list works for you.',
     includes: [
@@ -52,7 +52,7 @@ const subServices = [
   {
     id: '1D',
     title: 'Content Creation',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       "Short-form video production, photo content, and brand storytelling designed to connect with your audience and drive engagement. Built for every platform, in your brand's visual language.",
     includes: [
@@ -67,7 +67,7 @@ const subServices = [
   {
     id: '1E',
     title: 'Brand Strategy & Positioning',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Brand voice development, messaging systems, and offer positioning — the strategic foundation that makes every piece of content and every campaign make sense.',
     includes: [
@@ -82,7 +82,7 @@ const subServices = [
   {
     id: '1F',
     title: 'Brand Management',
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
     description:
       'Full oversight of your brand presence. Creative direction across all platforms, visual consistency across every touchpoint, and a dedicated team that knows your brand inside out.',
     includes: [
@@ -198,7 +198,7 @@ export default function DigitalGrowth() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(44px, 7vw, 108px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Digital Growth<br />&amp; Brand<br />Management.
               </motion.h1>
@@ -259,7 +259,7 @@ export default function DigitalGrowth() {
             <p className="font-sans text-[10px] tracking-[0.28em] uppercase text-brand-green mb-4">— Pricing</p>
             <h2
               className="font-display font-black italic text-cream leading-[0.92] mb-6"
-              style={{ fontSize: 'clamp(36px, 5vw, 68px)' }}
+              style={{ fontSize: 'clamp(40px, 6.5vw, 100px)' }}
             >
               Built around<br />your growth goals.
             </h2>
@@ -290,7 +290,7 @@ export default function DigitalGrowth() {
               <div className="border-t border-white/[0.06] mt-4 pt-6">
                 <a
                   href="/#contact"
-                  className="inline-flex w-full items-center justify-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200"
+                  className="inline-flex w-full items-center justify-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200"
                 >
                   Apply for Digital Growth →
                 </a>

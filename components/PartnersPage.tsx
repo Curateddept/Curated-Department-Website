@@ -59,7 +59,7 @@ export default function PartnersPage() {
               style={{ fontSize: 'clamp(48px, 9vw, 130px)' }}
             >
               Our<br />
-              <span className="text-brand-green">Partners.</span>
+              <span className="text-outline">Partners.</span>
             </motion.h1>
           </div>
           <motion.p
@@ -127,7 +127,7 @@ export default function PartnersPage() {
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+                className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
               >
                 Get in Touch →
               </a>

@@ -13,14 +13,16 @@ export default function TickerBar() {
   const row = [...phrases, ...phrases]
 
   return (
-    <div className="bg-brand-green overflow-hidden py-3 border-y border-black/20" aria-hidden="true">
+    <div className="bg-cream overflow-hidden py-5 border-y-2 border-[#0a0908]" aria-hidden="true">
       <div className="ticker-track flex items-center">
         {row.map((p, i) => (
           <span key={i} className="flex items-center flex-shrink-0">
-            <span className="font-display font-black uppercase text-cream text-sm md:text-base tracking-[0.06em] px-6">
+            <span
+              className={`font-display font-black uppercase text-[#0a0908] tracking-tight px-8 text-2xl md:text-4xl ${i % 2 ? 'text-outline' : ''}`}
+            >
               {p}
             </span>
-            <span className="font-serif italic text-cream/70 text-lg leading-none">✳</span>
+            <span className="text-[#0a0908] text-2xl md:text-3xl leading-none">✳</span>
           </span>
         ))}
       </div>

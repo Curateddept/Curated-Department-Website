@@ -24,7 +24,7 @@ const clients = [
     writeup: 'No Fear is one of the most recognizable names in action sports — and we helped bring it back to life. From rebuilding their digital content engine to launching merch drops that actually sell, we function as their in-house creative team without the overhead.',
     services: ['Brand Direction', 'Social Media Management', 'Content Creation', 'Merchandise Design', 'Paid Advertising'],
     photos: ['/work/no-fear-1.jpg', '/work/no-fear-2.jpg'],
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     id: 'brenthel',
@@ -36,7 +36,7 @@ const clients = [
     writeup: 'Brenthel builds some of the most capable race trucks on the planet. We built the visual system around the brand — from race season activations to trade show presence — making sure the materials match the machines.',
     services: ['Brand Identity', 'Print Production', 'Social Media', 'Event Materials', 'Race Day Content'],
     photos: ['/work/brenthel-1.jpg', '/work/brenthel-2.jpg'],
-    accent: '#C9A84C',
+    accent: '#A3A3A3',
   },
   {
     id: 'fiberwerx',
@@ -48,7 +48,7 @@ const clients = [
     writeup: 'FiberwerX makes high-performance composite body panels for off-road trucks and race vehicles. We manage their digital presence and content strategy — keeping a technical product brand looking sharp and driving qualified traffic.',
     services: ['Digital Strategy', 'Content Creation', 'Paid Advertising', 'Social Management'],
     photos: ['/work/fiberwerx-1.jpg', '/work/fiberwerx-2.jpg'],
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
   {
     id: 'trophy-truck-school',
@@ -60,7 +60,7 @@ const clients = [
     writeup: 'Trophy Truck School gives drivers a real shot at learning the sport from the inside. We handled a complete brand refresh and built the event marketing collateral system — signage, print, social, all of it — that runs every time they hit the desert.',
     services: ['Branding & Identity', 'Print Collateral', 'Social Media', 'Event Design', 'Signage'],
     photos: ['/work/tts-1.jpg', '/work/tts-2.jpg'],
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
   },
   {
     id: 'baja-kits',
@@ -72,7 +72,7 @@ const clients = [
     writeup: 'Baja Kits makes suspension lift kits built for punishment. We produced their merchandise line and ran a print campaign around race season — meeting their customer base exactly where they already are.',
     services: ['Merchandise Production', 'Print Campaign', 'Social Content'],
     photos: ['/work/baja-1.jpg', '/work/baja-2.jpg'],
-    accent: '#D94530',
+    accent: '#8A8A8A',
   },
   {
     id: 'fta',
@@ -84,7 +84,7 @@ const clients = [
     writeup: 'FTA is a foundational name in desert racing culture. We built their event brand system from the ground up — everything from banners and signage to digital assets — creating a cohesive look that runs across every touchpoint at race events.',
     services: ['Brand Identity', 'Event Print', 'Signage System', 'Digital Assets'],
     photos: ['/work/fta-1.jpg', '/work/fta-2.jpg'],
-    accent: '#1E7A38',
+    accent: '#FFFFFF',
   },
 ]
 
@@ -244,7 +244,7 @@ function GalleryStrip() {
         <FadeIn className="mb-10">
           <div className="flex items-end justify-between flex-wrap gap-4">
             <h2 className="font-display font-black text-cream uppercase leading-[0.9]" style={{ fontSize: 'clamp(24px, 3.5vw, 44px)' }}>
-              From the<br /><span className="text-brand-green">Field.</span>
+              From the<br /><span className="text-outline">Field.</span>
             </h2>
             <p className="font-sans text-sm text-cream/35 max-w-xs">
               A sample of what we've produced — drop work images into <code className="text-cream/50">public/work/</code> to populate.
@@ -312,7 +312,7 @@ export default function ClientsPage() {
                   style={{ fontSize: 'clamp(48px, 9vw, 130px)' }}
                 >
                   Our<br />
-                  <span className="text-brand-green">Clients.</span>
+                  <span className="text-outline">Clients.</span>
                 </motion.h1>
               </div>
               <motion.p
@@ -329,7 +329,7 @@ export default function ClientsPage() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
               href="/contact"
-              className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-[#166030] transition-colors duration-200 flex-shrink-0"
+              className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
             >
               Start a Project →
             </motion.a>
@@ -387,7 +387,7 @@ export default function ClientsPage() {
               </div>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 bg-cream text-[#090909] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-brand-green hover:text-cream transition-colors duration-200 flex-shrink-0"
+                className="inline-flex items-center gap-3 bg-cream text-[#090909] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 rounded-sm hover:bg-neutral-300 transition-colors duration-200 flex-shrink-0"
               >
                 Get a Quote →
               </a>

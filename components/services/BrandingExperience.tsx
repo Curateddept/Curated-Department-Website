@@ -7,7 +7,7 @@ const subServices = [
   {
     id: '5A',
     title: 'Brand Identity Systems',
-    accent: '#C5D8F2',
+    accent: '#E5E5E5',
     description:
       'Logo design, visual direction, and comprehensive brand guidelines that give your brand a cohesive, professional foundation — the system everything else is built on top of.',
     includes: [
@@ -22,7 +22,7 @@ const subServices = [
   {
     id: '5B',
     title: 'Event & Booth Design',
-    accent: '#EDD96A',
+    accent: '#BFBFBF',
     description:
       '10x10 setups, full trade show builds, canopies, structures, and custom booth environments designed to stand out in any venue. We design the space and produce everything in it.',
     includes: [
@@ -37,7 +37,7 @@ const subServices = [
   {
     id: '5C',
     title: 'Event Collateral Packages',
-    accent: '#FF5A3D',
+    accent: '#8A8A8A',
     description:
       'Full event branding, print production, setup coordination, and asset delivery — end-to-end execution so you show up ready. Our highest-touch offering for events that need to make an impact.',
     includes: [
@@ -52,7 +52,7 @@ const subServices = [
   {
     id: '5D',
     title: 'Packaging & Product Presentation',
-    accent: '#A8C4DF',
+    accent: '#D4D4D4',
     description:
       'Retail packaging, product display systems, and launch kits that make your product look as good on the shelf as it does online. The physical brand extension that closes the sale.',
     includes: [
@@ -157,7 +157,7 @@ export default function BrandingExperience() {
                 animate={{ y: '0%', opacity: 1 }}
                 transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.15 }}
                 className="font-display font-black italic text-cream leading-[0.88]"
-                style={{ fontSize: 'clamp(44px, 7vw, 108px)' }}
+                style={{ fontSize: 'clamp(48px, 8.5vw, 140px)' }}
               >
                 Branding &amp;<br />Experience<br />Design.
               </motion.h1>
@@ -216,12 +216,12 @@ export default function BrandingExperience() {
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
           <FadeIn>
             <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-brand-green mb-3">Ready to build the brand?</p>
-            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(32px, 4vw, 60px)' }}>
+            <h2 className="font-display font-black italic text-cream leading-[0.92]" style={{ fontSize: 'clamp(36px, 5.5vw, 84px)' }}>
               Let's bring your<br />brand into the world.
             </h2>
           </FadeIn>
           <FadeIn delay={0.15} className="flex-shrink-0 flex flex-col sm:flex-row gap-3">
-            <a href="/#contact" className="inline-flex items-center gap-3 bg-brand-green text-cream font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#1a6830] transition-colors duration-200">
+            <a href="/#contact" className="inline-flex items-center gap-3 bg-white text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm hover:bg-[#D4D4D4] transition-colors duration-200">
               Start a Project →
             </a>
             <a href="/#services" className="inline-flex items-center gap-3 border border-white/15 text-cream/50 hover:text-cream hover:border-white/30 font-sans text-[11px] tracking-[0.16em] uppercase px-8 py-4 rounded-sm transition-all duration-200">
