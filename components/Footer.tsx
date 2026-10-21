@@ -27,7 +27,7 @@ export default function Footer() {
               {['About', 'Work', 'Services', 'Contact'].map((link) => (
                 <a
                   key={link}
-                  href={`#${link.toLowerCase()}`}
+                  href={`/${link.toLowerCase()}`}
                   className="font-sans text-sm text-cream/50 hover:text-cream transition-colors duration-200"
                 >
                   {link}
@@ -39,14 +39,16 @@ export default function Footer() {
                 Connect
               </p>
               {[
-                { label: 'Instagram', href: '#' },
-                { label: 'Email', href: 'mailto:hello@curateddepartment.com' },
-                { label: 'Contact', href: '#contact' },
+                { label: 'Instagram', href: 'https://www.instagram.com/curate.dept/' },
+                { label: 'Email', href: 'mailto:albert@curateddepartment.com' },
+                { label: 'Contact', href: '/contact' },
               ].map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="font-sans text-sm text-cream/50 hover:text-brand-green transition-colors duration-200"
+                  target={item.href.startsWith('http') ? '_blank' : undefined}
+                  rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  className="font-sans text-sm text-cream/50 hover:text-cream transition-colors duration-200"
                 >
                   {item.label}
                 </a>
@@ -58,7 +60,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p className="font-sans text-[10px] tracking-[0.1em] text-cream/25">
-            © 2024 Curated Department. All rights reserved.
+            © {new Date().getFullYear()} Curated Department. All rights reserved.
           </p>
           <p className="font-sans text-[10px] tracking-[0.1em] text-cream/25">
             Creative / Digital / Print / Merchandise / Strategy
