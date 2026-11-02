@@ -25,11 +25,11 @@ export const btnDark =
   'btn-wipe [--wipe:#F4F4F2] inline-flex items-center justify-center gap-3 bg-[#0a0908] text-cream hover:text-[#0a0908] border border-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 transition-colors duration-300'
 
 const NAV = [
-  { label: 'Shop Home', href: '/shop' },
-  { label: 'Kits', href: '/shop/kits' },
-  { label: 'Gifts', href: '/shop/gifts' },
-  { label: 'Single Items', href: '/shop/single-items' },
-  { label: 'How It Works', href: '/shop/how-it-works' },
+  { label: 'Shop Home', href: '/apparel' },
+  { label: 'Kits', href: '/apparel/kits' },
+  { label: 'Gifts', href: '/apparel/gifts' },
+  { label: 'Single Items', href: '/apparel/single-items' },
+  { label: 'How It Works', href: '/apparel/how-it-works' },
 ]
 
 export function ShopNav() {
@@ -40,7 +40,7 @@ export function ShopNav() {
       <div className={`${wrap} flex items-center justify-between gap-6 h-12`}>
         <nav className="flex items-center gap-5 md:gap-7 overflow-x-auto scrollbar-hide">
           <span className="hidden md:inline font-display font-black uppercase text-cream text-sm tracking-[0.12em] pr-2 border-r border-white/15">
-            Crew Kits
+            Apparel
           </span>
           {NAV.map((n) => (
             <a
@@ -54,7 +54,7 @@ export function ShopNav() {
             </a>
           ))}
         </nav>
-        <a href="/shop/cart" className="flex-shrink-0 inline-flex items-center gap-2 font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-cream">
+        <a href="/apparel/cart" className="flex-shrink-0 inline-flex items-center gap-2 font-sans text-[11px] font-semibold uppercase tracking-[0.16em] text-cream">
           Cart
           <span className={`min-w-[22px] h-[22px] px-1.5 rounded-full grid place-items-center text-[10px] ${count ? 'bg-cream text-[#0a0908]' : 'border border-cream/30 text-cream/60'}`}>
             {count}
@@ -83,7 +83,7 @@ export function ProductCard({ p }: { p: Product }) {
   const t = tiers(p)
   const garment = garmentFor(p)
   return (
-    <a href={`/shop/products/${p.handle}`} className="group flex flex-col border border-white/10 hover:border-cream/60 transition-colors duration-300">
+    <a href={`/apparel/products/${p.handle}`} className="group flex flex-col border border-white/10 hover:border-cream/60 transition-colors duration-300">
       <div className="relative aspect-square bg-[#141312] overflow-hidden">
         <GarmentIcon garment={garment} color="#2a2928" className="absolute inset-[14%] w-[72%] h-[72%] group-hover:scale-105 transition-transform duration-500" />
         {p.brand && (
@@ -152,7 +152,7 @@ export function KitCard({ p, featured = false }: { p: Product; featured?: boolea
         ))}
       </ul>
 
-      <a href={`/shop/products/${p.handle}`} className={`mt-8 ${featured ? btnDark : btnLight}`}>
+      <a href={`/apparel/products/${p.handle}`} className={`mt-8 ${featured ? btnDark : btnLight}`}>
         Build This Kit →
       </a>
       <p className={`mt-4 font-sans text-[11px] ${featured ? 'text-[#0a0908]/50' : 'text-cream/40'}`}>
@@ -287,7 +287,7 @@ export function CustomQuote() {
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          <a href="/shop/kits" className={btnLight}>Pick Your Kit →</a>
+          <a href="/apparel/kits" className={btnLight}>Pick Your Kit →</a>
           <a href="/contact" className={btnGhost}>Custom Quote</a>
         </div>
       </div>

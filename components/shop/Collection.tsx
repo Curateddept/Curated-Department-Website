@@ -1,8 +1,8 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { CustomQuote, Display, Eyebrow, KitCard, ProductCard, wrap } from './ui'
-import { CORE_KITS, byCategory, getProduct, priceRange, tiers, type Product } from '@/lib/shop/catalog'
+import { BRANDS, CORE_KITS, brandMatches, byCategory, getProduct, priceRange, tiers, type Product } from '@/lib/shop/catalog'
 
 function Hero({ eyebrow, title, outline, intro }: { eyebrow: string; title: string; outline: string; intro: string }) {
   return (
@@ -73,15 +73,22 @@ export function GiftsCollection() {
 export function SingleItemsCollection() {
   const all = byCategory('single')
   const types = useMemo(() => ['All', ...Array.from(new Set(all.map((p) => p.type).filter(Boolean))).sort()], [all])
-  const brands = useMemo(() => ['All brands', ...Array.from(new Set(all.map((p) => p.brand).filter(Boolean))).sort()], [all])
+  const brands = useMemo(() => ['All brands', ...BRANDS.filter((b) => all.some((p) => brandMatches(p, b))).sort()], [all])
   const [type, setType] = useState('All')
   const [brand, setBrand] = useState('All brands')
   const [sort, setSort] = useState<'featured' | 'low' | 'high'>('featured')
 
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search)
+    const t = q.get('type'), b = q.get('brand')
+    if (t && types.includes(t)) setType(t)
+    if (b && brands.includes(b)) setBrand(b)
+  }, [types, brands])
+
   const unit = (p: Product) => tiers(p).at(-1)?.price ?? priceRange(p).min
   const items = all
     .filter((p) => type === 'All' || p.type === type)
-    .filter((p) => brand === 'All brands' || p.brand === brand)
+    .filter((p) => brand === 'All brands' || brandMatches(p, brand))
     .sort((a, b) => (sort === 'low' ? unit(a) - unit(b) : sort === 'high' ? unit(b) - unit(a) : 0))
 
   return (

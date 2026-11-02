@@ -135,7 +135,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
   return (
     <div className="bg-[#0a0908] text-cream">
       <div className={`${wrap} pt-6 pb-2 font-sans text-[11px] uppercase tracking-[0.16em] text-cream/40`}>
-        <a href="/shop" className="hover:text-cream">Shop</a> / <a href={p.category === 'single' ? '/shop/single-items' : p.category === 'gifts' ? '/shop/gifts' : '/shop/kits'} className="hover:text-cream">{p.category === 'single' ? 'Single Items' : p.category === 'gifts' ? 'Gifts' : 'Kits'}</a> / <span className="text-cream/70">{p.title}</span>
+        <a href="/apparel" className="hover:text-cream">Shop</a> / <a href={p.category === 'single' ? '/apparel/single-items' : p.category === 'gifts' ? '/apparel/gifts' : '/apparel/kits'} className="hover:text-cream">{p.category === 'single' ? 'Single Items' : p.category === 'gifts' ? 'Gifts' : 'Kits'}</a> / <span className="text-cream/70">{p.title}</span>
       </div>
 
       <section className={`${wrap} grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 py-8 md:py-12`}>
@@ -356,7 +356,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
             {added && (
               <div className="mt-4 flex items-center justify-between gap-4 border border-cream/40 px-4 py-3">
                 <span className="font-sans text-sm">Added to your cart.</span>
-                <a href="/shop/cart" className="font-sans text-[11px] font-semibold uppercase tracking-[0.16em] underline underline-offset-4">View cart →</a>
+                <a href="/apparel/cart" className="font-sans text-[11px] font-semibold uppercase tracking-[0.16em] underline underline-offset-4">View cart →</a>
               </div>
             )}
             <p className="font-sans text-sm text-cream mt-5">At your door about {fmtShort(dates.from)} – {fmtShort(dates.to)}</p>

@@ -38,7 +38,7 @@ export function HowItWorksPage() {
           <Eyebrow>Our Promise</Eyebrow>
           <Display size="lg" className="mb-12">See It<br /><span className="text-outline">First.</span></Display>
           <Guarantee />
-          <a href="/shop/kits" className={`mt-10 ${btnLight}`}>Pick Your Kit →</a>
+          <a href="/apparel/kits" className={`mt-10 ${btnLight}`}>Pick Your Kit →</a>
         </div>
       </section>
 

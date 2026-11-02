@@ -236,3 +236,41 @@ export const COLORS: { name: string; hex: string }[] = [
   { name: 'Safety Orange', hex: '#f26a1b' },
   { name: 'Safety Yellow', hex: '#d9f23d' },
 ]
+
+// ---- Brands we carry & categories ----
+
+export const BRANDS = [
+  'Nike', 'Carhartt', 'The North Face', 'Patagonia', 'YETI', 'New Era', 'Peter Millar', 'Vineyard Vines',
+  'Helly Hansen', 'TravisMathew', 'Brooks Brothers', 'Johnnie-O', 'Southern Tide', 'Bonobos', 'OGIO',
+  'Comfort Colors', 'Lane Seven', 'AS Colour', 'Independent', 'Richardson', 'Flexfit', 'Legacy', 'YP Classics',
+  'Yupoong', 'Cap America', '10/10', 'Port Authority', 'Port & Company', 'Gildan', 'Next Level', 'CornerStone',
+  'A4', 'AllPro', 'Shaka Wear', 'Q-Tees', 'KNACK', 'Save the Duck',
+]
+
+export function brandMatches(p: Product, brand: string) {
+  const b = brand.toLowerCase()
+  if (p.brand.toLowerCase() === b) return true
+  return [p.title, ...p.options.flatMap((o) => o.values)].some((t) => t.toLowerCase().includes(b))
+}
+
+/** Where a brand tile should link: the filtered single-items list when possible, else gifts or kits. */
+export function brandHref(brand: string) {
+  const hit = (c: Category) => products.some((p) => p.category === c && brandMatches(p, brand))
+  if (hit('single')) return `/apparel/single-items?brand=${encodeURIComponent(brand)}`
+  if (hit('gifts')) return '/apparel/gifts'
+  return '/apparel/kits'
+}
+
+export function categories() {
+  const singles = products.filter((p) => p.category === 'single' && p.type)
+  const byType = new Map<string, Product[]>()
+  singles.forEach((p) => byType.set(p.type, [...(byType.get(p.type) ?? []), p]))
+  return Array.from(byType.entries())
+    .map(([type, items]) => ({
+      type,
+      count: items.length,
+      from: Math.min(...items.map((p) => tiers(p).at(-1)?.price ?? priceRange(p).min)),
+      garment: garmentFor(items[0]),
+    }))
+    .sort((a, b) => b.count - a.count)
+}

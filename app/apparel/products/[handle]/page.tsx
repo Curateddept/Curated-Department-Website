@@ -9,7 +9,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { handle: string } }) {
   const p = getProduct(params.handle)
   if (!p) return {}
-  return { title: `${p.title} — Curated Crew Kits`, description: p.spec || `${p.title} with your logo.` }
+  return { title: `${p.title} — Curated Apparel`, description: p.spec || `${p.title} with your logo.` }
 }
 
 export default function Page({ params }: { params: { handle: string } }) {

@@ -67,8 +67,8 @@ export default function CartPage() {
         <section className={`${wrap} py-20 flex flex-col items-start gap-6`}>
           <p className="font-sans text-lg text-cream/60">Your cart is empty.</p>
           <div className="flex flex-wrap gap-4">
-            <a href="/shop/kits" className={btnLight}>Pick Your Kit →</a>
-            <a href="/shop/single-items" className={btnGhost}>Single Items</a>
+            <a href="/apparel/kits" className={btnLight}>Pick Your Kit →</a>
+            <a href="/apparel/single-items" className={btnGhost}>Single Items</a>
           </div>
         </section>
       ) : (
@@ -83,7 +83,7 @@ export default function CartPage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex justify-between gap-4">
-                      <a href={`/shop/products/${i.handle}`} className="font-display font-black uppercase text-xl leading-none hover:underline underline-offset-4">
+                      <a href={`/apparel/products/${i.handle}`} className="font-display font-black uppercase text-xl leading-none hover:underline underline-offset-4">
                         {i.title}{i.qty > 1 ? ` × ${i.qty}` : ''}
                       </a>
                       <span className="font-display font-black text-xl">{money(i.total, true)}</span>
@@ -133,7 +133,7 @@ export default function CartPage() {
                 <button type="submit" className={`${btnLight} mt-2`}>Place Order — {money(subtotal, true)}</button>
                 <p className="font-sans text-xs text-cream/45 leading-relaxed">
                   Nothing is charged now. You approve a mockup first, then we invoice. Questions? {SHOP.phone}. See our{' '}
-                  <a href="/shop/policies" className="underline underline-offset-2 hover:text-cream">shop policies</a>.
+                  <a href="/apparel/policies" className="underline underline-offset-2 hover:text-cream">shop policies</a>.
                 </p>
               </form>
             )}

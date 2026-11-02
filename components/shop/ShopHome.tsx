@@ -9,6 +9,8 @@ import {
   CORE_KITS, MORE_KITS, SHOP, SPOTLIGHT_KITS, byCategory, findVariant, getProduct, kitDetails, money, priceRange, tiers,
   type Garment, type Product,
 } from '@/lib/shop/catalog'
+import { BRANDS, brandHref, categories } from '@/lib/shop/catalog'
+import { APPAREL_WORK } from '@/lib/shop/gallery'
 
 const kitsFrom = Math.min(...byCategory('kits', 'winter').map((p) => priceRange(p).min))
 const singlesFrom = Math.min(...byCategory('single').map((p) => tiers(p)[0]?.price ?? Infinity))
@@ -63,8 +65,8 @@ export default function ShopHome() {
             Pick a kit and upload your logo. Your mockup arrives in one business day, and your gear is ready {SHOP.turnaround} after you approve.
           </p>
           <div className="flex flex-wrap gap-4 mt-10">
-            <a href="/shop/kits" className={btnLight}>Pick Your Kit →</a>
-            <a href="/shop/single-items" className={btnGhost}>Single Items</a>
+            <a href="/apparel/kits" className={btnLight}>Pick Your Kit →</a>
+            <a href="/apparel/single-items" className={btnGhost}>Single Items</a>
           </div>
           <ul className="mt-10 flex flex-wrap gap-x-8 gap-y-3 font-sans text-sm text-cream/70">
             <li>— Kits from {money(kitsFrom)} · single items from {money(singlesFrom, true)}</li>
@@ -89,6 +91,37 @@ export default function ShopHome() {
         </div>
       </section>
 
+      {/* Categories */}
+      <section className="py-20 md:py-28 border-b border-white/10">
+        <div className={wrap}>
+          <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+            <div>
+              <Eyebrow>Shop By Category</Eyebrow>
+              <Display size="lg">Every<br /><span className="text-outline">Category.</span></Display>
+            </div>
+            <a href="/apparel/single-items" className={btnGhost}>All Single Items →</a>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/10 border border-white/10">
+            {[
+              ...categories().map((c) => ({ key: c.type, title: c.type, sub: `${c.count} styles · from ${money(c.from, true)}/pc`, href: `/apparel/single-items?type=${encodeURIComponent(c.type)}`, garment: c.garment })),
+              { key: 'kits', title: 'Crew Kits', sub: `Full sets · from ${money(kitsFrom)}`, href: '/apparel/kits', garment: 'kit' as Garment },
+              { key: 'winter', title: 'Winter Kits', sub: `${byCategory('winter').length} kits · flannels, vests, jackets`, href: '/apparel/kits', garment: 'jacket' as Garment },
+              { key: 'packs', title: '24-Piece Packs', sub: `${byCategory('packs').length} packs · one garment, 24 pieces`, href: '/apparel/kits', garment: 'tee' as Garment },
+              { key: 'gifts', title: 'Holiday Gifts', sub: `${byCategory('gifts').length} gift sets`, href: '/apparel/gifts', garment: 'bag' as Garment },
+              { key: 'all', title: 'All Single Items', sub: `${byCategory('single').length} styles`, href: '/apparel/single-items', garment: 'hoodie' as Garment },
+            ].map((c) => (
+              <a key={c.key} href={c.href} className="group bg-[#0a0908] hover:bg-cream hover:text-[#0a0908] transition-colors duration-300 p-5 md:p-6 flex flex-col">
+                <div className="aspect-[4/3] mb-4">
+                  <GarmentIcon garment={c.garment} color="#2a2928" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <h3 className="font-display font-black uppercase text-xl md:text-2xl leading-none">{c.title}</h3>
+                <p className="font-sans text-xs opacity-55 mt-2">{c.sub}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Gifts */}
       <section className="py-20 md:py-28 border-b border-white/10">
         <div className={`${wrap} flex flex-wrap items-end justify-between gap-6 mb-10`}>
@@ -106,7 +139,7 @@ export default function ShopHome() {
           ))}
           <div className="flex-shrink-0 w-6" />
         </div>
-        <div className={`${wrap} mt-8`}><a href="/shop/gifts" className={btnGhost}>Shop All Gifts →</a></div>
+        <div className={`${wrap} mt-8`}><a href="/apparel/gifts" className={btnGhost}>Shop All Gifts →</a></div>
       </section>
 
       {/* Spotlight kits */}
@@ -131,7 +164,7 @@ export default function ShopHome() {
                   {s.backAdd && <li>— Back print +{money(s.backAdd)} a piece</li>}
                   <li>— Mockup in one business day</li>
                 </ul>
-                <a href={`/shop/products/${h}`} className={`mt-8 ${dark ? 'btn-wipe [--wipe:#F4F4F2] inline-flex items-center gap-3 bg-[#0a0908] text-cream hover:text-[#0a0908] border border-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 transition-colors duration-300' : btnLight}`}>
+                <a href={`/apparel/products/${h}`} className={`mt-8 ${dark ? 'btn-wipe [--wipe:#F4F4F2] inline-flex items-center gap-3 bg-[#0a0908] text-cream hover:text-[#0a0908] border border-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 transition-colors duration-300' : btnLight}`}>
                   Build This Kit →
                 </a>
               </div>
@@ -177,7 +210,7 @@ export default function ShopHome() {
               }
               const title = { 'hi-vis-crew-pack-24': 'The Hi-Vis Crew Pack', 'comfy-kit-16': 'The Comfy Kit', 'executive-package': 'The Executive Package' }[p.handle] ?? p.title
               return (
-                <a key={p.handle} href={`/shop/products/${p.handle}`} className="group bg-[#0a0908] p-8 md:p-10 flex flex-col gap-4 hover:bg-cream hover:text-[#0a0908] transition-colors duration-300">
+                <a key={p.handle} href={`/apparel/products/${p.handle}`} className="group bg-[#0a0908] p-8 md:p-10 flex flex-col gap-4 hover:bg-cream hover:text-[#0a0908] transition-colors duration-300">
                   <p className="font-display font-black text-4xl">{p.handle === 'comfy-kit-16' ? 'from ' : ''}{money(min)}</p>
                   <h3 className="font-display font-black uppercase text-2xl leading-none tracking-tight">{title}</h3>
                   <p className="font-sans text-sm opacity-70 leading-relaxed">{blurb[p.handle]}</p>
@@ -207,8 +240,8 @@ export default function ShopHome() {
             </div>
             <p className="md:col-span-2 font-sans text-cream/50 leading-relaxed">Either way, logo setup and your art proof are included, you see a mockup before anything is made, and you get every cent back until you approve it.</p>
             <div className="md:col-span-2 flex flex-wrap gap-4">
-              <a href="/shop/kits" className={btnLight}>Pick Your Kit →</a>
-              <a href="/shop/single-items" className={btnGhost}>Browse Single Items</a>
+              <a href="/apparel/kits" className={btnLight}>Pick Your Kit →</a>
+              <a href="/apparel/single-items" className={btnGhost}>Browse Single Items</a>
             </div>
           </div>
         </div>
@@ -250,7 +283,27 @@ export default function ShopHome() {
             <p>The truck gets you to the job. The person who walks up to the door is who the customer actually judges.</p>
             <p>A crew in matching gear reads as an established company before anyone says a word. A crew in whatever they own reads as a side gig — same people, same work, different price you can charge.</p>
             <p className="text-cream">A kit is a one-time buy starting at {money(Math.min(...more.map((p) => priceRange(p).min)))}. You own it, and it shows up at every job.</p>
-            <a href="/shop/kits" className={btnLight}>Pick Your Kit →</a>
+            <a href="/apparel/kits" className={btnLight}>Pick Your Kit →</a>
+          </div>
+        </div>
+      </section>
+
+      {/* Brands */}
+      <section className="py-20 md:py-28 border-b border-white/10">
+        <div className={wrap}>
+          <div className="flex flex-wrap items-end justify-between gap-6 mb-10">
+            <div>
+              <Eyebrow>Brands We Carry</Eyebrow>
+              <Display size="lg">{BRANDS.length} Brands.<br /><span className="text-outline">Your Logo.</span></Display>
+            </div>
+            <p className="font-sans text-cream/60 max-w-md leading-relaxed">From workwear staples to premium gifting — every brand below is available with your logo printed, embroidered or engraved.</p>
+          </div>
+          <div className="flex flex-wrap gap-2 md:gap-3">
+            {BRANDS.map((b) => (
+              <a key={b} href={brandHref(b)} className="font-display font-black uppercase text-cream text-xl md:text-3xl leading-none px-4 md:px-6 py-3 md:py-4 border border-white/15 hover:bg-cream hover:text-[#0a0908] hover:border-cream transition-colors duration-200">
+                {b}
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -274,10 +327,14 @@ export default function ShopHome() {
             </div>
           </a>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
-            {['back-print', 'black-tee', 'white-tee', 'field'].map((f) => (
-              <div key={f} className="aspect-square overflow-hidden">
-                <img src={`/work/no-fear/${f}.jpg`} alt="Merch produced by Curated" loading="lazy" className="h-full w-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
-              </div>
+            {(APPAREL_WORK.length
+              ? APPAREL_WORK
+              : ['back-print', 'black-tee', 'white-tee', 'field'].map((f) => ({ src: `/work/no-fear/${f}.jpg`, caption: 'Merch produced by Curated' }))
+            ).map((w) => (
+              <figure key={w.src} className="aspect-square overflow-hidden relative group">
+                <img src={w.src} alt={w.caption} loading="lazy" className="h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+                <figcaption className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/80 to-transparent font-sans text-[11px] text-cream opacity-0 group-hover:opacity-100 transition-opacity">{w.caption}</figcaption>
+              </figure>
             ))}
           </div>
         </div>
@@ -289,7 +346,7 @@ export default function ShopHome() {
           <Eyebrow>Our Promise</Eyebrow>
           <Display size="lg" className="mb-12">See It<br /><span className="text-outline">First.</span></Display>
           <Guarantee />
-          <a href="/shop/kits" className={`mt-10 ${btnLight}`}>Pick Your Kit →</a>
+          <a href="/apparel/kits" className={`mt-10 ${btnLight}`}>Pick Your Kit →</a>
         </div>
       </section>
 
