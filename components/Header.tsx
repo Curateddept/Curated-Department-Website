@@ -25,6 +25,7 @@ const navLinks: NavLink[] = [
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services', children: services },
   { label: 'Work', href: '/work' },
+  { label: 'Shop', href: '/shop' },
   // { label: 'Clients', href: '/clients' },  // hidden — revisit when ready
   { label: 'Our Lanes', href: '/our-lanes' },
   // { label: 'Blog', href: '/blog' },   // hidden — revisit when ready
