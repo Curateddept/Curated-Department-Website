@@ -8,6 +8,7 @@ type NavLink = {
   href: string
   external?: boolean
   children?: { label: string; href: string }[]
+  allLabel?: string
 }
 
 const services: { label: string; href: string }[] = [
@@ -21,11 +22,20 @@ const services: { label: string; href: string }[] = [
   { label: 'Email & SMS Marketing', href: '/services/email-sms-marketing' },
 ]
 
+const apparel: { label: string; href: string }[] = [
+  { label: 'Apparel Overview', href: '/apparel' },
+  { label: 'Team Gear', href: '/apparel/team-gear' },
+  { label: 'Crew Kits', href: '/apparel/kits' },
+  { label: 'Holiday Gifts', href: '/apparel/gifts' },
+  { label: 'Single Items', href: '/apparel/single-items' },
+  { label: 'How It Works', href: '/apparel/how-it-works' },
+]
+
 const navLinks: NavLink[] = [
   { label: 'About', href: '/about' },
-  { label: 'Services', href: '/services', children: services },
+  { label: 'Services', href: '/services', children: services, allLabel: 'View All Services' },
   { label: 'Work', href: '/work' },
-  { label: 'Apparel', href: '/apparel' },
+  { label: 'Apparel', href: '/apparel', children: apparel, allLabel: 'Shop Team Gear' },
   // { label: 'Clients', href: '/clients' },  // hidden — revisit when ready
   { label: 'Our Lanes', href: '/our-lanes' },
   // { label: 'Blog', href: '/blog' },   // hidden — revisit when ready
@@ -40,7 +50,7 @@ const InstagramIcon = () => (
   </svg>
 )
 
-function ServicesDropdown() {
+function NavDropdown({ link }: { link: NavLink }) {
   const [open, setOpen] = useState(false)
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -60,10 +70,10 @@ function ServicesDropdown() {
       onMouseLeave={handleLeave}
     >
       <a
-        href="/services"
+        href={link.href}
         className="font-sans font-medium text-[11px] tracking-[0.16em] uppercase transition-colors duration-200 whitespace-nowrap text-cream/55 hover:text-cream flex items-center gap-1.5"
       >
-        Services
+        {link.label}
         <svg
           className={`transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
           width="8"
@@ -85,7 +95,7 @@ function ServicesDropdown() {
             className="absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50"
           >
             <div className="bg-[#0a0a0a]/98 backdrop-blur-md border border-white/[0.08] min-w-[320px] py-2 shadow-2xl">
-              {services.map((s) => (
+              {(link.children ?? []).map((s) => (
                 <a
                   key={s.href}
                   href={s.href}
@@ -96,10 +106,10 @@ function ServicesDropdown() {
               ))}
               <div className="border-t border-white/[0.08] mt-1 pt-1">
                 <a
-                  href="/services"
+                  href={link.label === 'Apparel' ? '/apparel/team-gear' : link.href}
                   className="block px-5 py-3 font-sans text-[10px] tracking-[0.16em] uppercase text-brand-green hover:bg-white/[0.04] transition-colors duration-200"
                 >
-                  View All Services →
+                  {link.allLabel} →
                 </a>
               </div>
             </div>
@@ -113,7 +123,7 @@ function ServicesDropdown() {
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState<string | null>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60)
@@ -140,7 +150,7 @@ export default function Header() {
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) =>
             link.children ? (
-              <ServicesDropdown key={link.label} />
+              <NavDropdown key={link.label} link={link} />
             ) : (
               <a
                 key={link.label}
@@ -230,12 +240,12 @@ export default function Header() {
             link.children ? (
               <div key={link.label} className="flex flex-col">
                 <button
-                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  onClick={() => setMobileOpen(mobileOpen === link.label ? null : link.label)}
                   className="flex items-center justify-between text-left font-display text-2xl font-black uppercase text-cream hover:text-brand-green transition-colors duration-200"
                 >
                   <span>{link.label}</span>
                   <svg
-                    className={`transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180' : ''}`}
+                    className={`transition-transform duration-300 ${mobileOpen === link.label ? 'rotate-180' : ''}`}
                     width="14"
                     height="9"
                     viewBox="0 0 14 9"
@@ -245,7 +255,7 @@ export default function Header() {
                   </svg>
                 </button>
                 <AnimatePresence initial={false}>
-                  {mobileServicesOpen && (
+                  {mobileOpen === link.label && (
                     <motion.div
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
@@ -265,11 +275,11 @@ export default function Header() {
                           </a>
                         ))}
                         <a
-                          href="/services"
+                          href={link.label === 'Apparel' ? '/apparel/team-gear' : link.href}
                           onClick={() => setMenuOpen(false)}
                           className="font-sans text-[10px] tracking-[0.16em] uppercase text-brand-green pt-1"
                         >
-                          View All Services →
+                          {link.allLabel} →
                         </a>
                       </div>
                     </motion.div>

@@ -25,7 +25,8 @@ export const btnDark =
   'btn-wipe [--wipe:#F4F4F2] inline-flex items-center justify-center gap-3 bg-[#0a0908] text-cream hover:text-[#0a0908] border border-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4 transition-colors duration-300'
 
 const NAV = [
-  { label: 'Shop Home', href: '/apparel' },
+  { label: 'Overview', href: '/apparel' },
+  { label: 'Team Gear', href: '/apparel/team-gear' },
   { label: 'Kits', href: '/apparel/kits' },
   { label: 'Gifts', href: '/apparel/gifts' },
   { label: 'Single Items', href: '/apparel/single-items' },
