@@ -10,6 +10,7 @@ import {
   cover,
   garmentFor,
   kitDetails,
+  perPiece,
   pieceCount,
   money,
   priceRange,
@@ -101,9 +102,9 @@ export function ProductCard({ p }: { p: Product }) {
         <h3 className="font-display font-black uppercase text-cream text-lg leading-[1] tracking-tight">{p.title}</h3>
         {p.spec && <p className="font-sans text-[11px] text-cream/45 leading-snug">{p.spec}</p>}
         <p className="mt-auto pt-2 font-sans text-sm text-cream">
-          {t.length ? (
+          {perPiece(p) ? (
             <>
-              From <span className="font-semibold">{money(t[t.length - 1].price, true)}</span>
+              From <span className="font-semibold">{money(t.length ? t[t.length - 1].price : min, true)}</span>
               <span className="text-cream/45"> / piece · {minQty(p)} min</span>
             </>
           ) : min === max ? (

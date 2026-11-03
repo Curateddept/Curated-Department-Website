@@ -2,7 +2,6 @@
   "domain": "2gbbeg-wv.myshopify.com",
   "storefrontToken": "de95e16a411a9e5c068ca72dcb5efea2",
   "apiVersion": "2024-10",
-  "collectionId": "512365002826",
   "skipImages": [
     "-card\\.",
     "-hero\\.",

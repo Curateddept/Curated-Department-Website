@@ -8,7 +8,7 @@ import { track } from '@/lib/track'
 import { CustomQuote, Faq, STEPS, btnLight, wrap } from './ui'
 import {
   COLORS, SHOP, findVariant, garmentFor, isTiered, kitDetails, minQty, money, pieceCount, tierFor, tiers,
-  type Garment, type Product, sized
+  type Garment, type Product, sized, perPiece, colorOption, unitPrice
 } from '@/lib/shop/catalog'
 
 const SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
@@ -54,6 +54,9 @@ function Block({ n, title, children }: { n: number; title: string; children: Rea
 export default function ProductBuilder({ p }: { p: Product }) {
   const cart = useCart()
   const tiered = isTiered(p)
+  const byPiece = perPiece(p)
+  // Products with their own Shopify color option use it instead of the generic swatches.
+  const ownColor = colorOption(p)
   const kit = kitDetails[p.handle]
 
   const pieces: { label: string; garment: Garment }[] = [{ label: p.title, garment: garmentFor(p) }]
@@ -74,22 +77,33 @@ export default function ProductBuilder({ p }: { p: Product }) {
 
   const logoUrl = logos.find((f) => f.preview && f.status !== 'error')?.preview ?? null
   useEffect(() => { if (logoUrl) setView('logo') }, [logoUrl])
+  // Show the photo Shopify ties to the chosen variant (e.g. the backpack in the picked color).
+  const variantImage = findVariant(p, selected).image
+  useEffect(() => {
+    if (!variantImage) return
+    const file = (u: string) => u.split('/').pop()!.split('?')[0].replace(/_[0-9a-f-]{36}(?=\.)/, '')
+    const i = p.images.findIndex((img) => file(img.url) === file(variantImage))
+    if (i >= 0) setView(i)
+  }, [variantImage, p.images])
   const uploading = logos.some((f) => f.status === 'uploading')
 
   const variant = findVariant(p, selected)
   const priceFrom = variant.price
   const tier = tiered ? tierFor(p, qty) : null
-  const base = tiered ? tier!.price * qty : variant.price
+  const unit = unitPrice(p, selected, qty)
+  const base = byPiece ? unit * qty : variant.price
   const bigCount = sizeMode === 'now' ? SIZES.filter((s) => BIG.has(s)).reduce((n, s) => n + (sizes[s] || 0), 0) : 0
   // Checkout charges the Shopify price; the 2XL+ upcharge is billed with the mockup approval.
   const bigUpcharge = bigCount * SHOP.bigSizeUpcharge
   const total = base
-  const count = tiered ? qty : pieceCount(p, selected)
+  const count = byPiece ? qty : pieceCount(p, selected)
   const sizedCount = Object.values(sizes).reduce((a, b) => a + b, 0)
-  const qtyValid = !tiered || qty >= minQty(p)
+  const qtyValid = !byPiece || qty >= minQty(p)
 
   const colorHex = (name: string) => COLORS.find((c) => c.name === name)?.hex ?? '#111111'
-  const shownColor = mix ? pieceColors[active] : kitColor
+  const shownColor = ownColor >= 0 ? selected[ownColor] : mix ? pieceColors[active] : kitColor
+  // Bags, drinkware and blankets have no sizes to collect.
+  const hasSizes = !['bag', 'tumbler', 'blanket'].includes(pieces[0].garment)
 
   const dates = useMemo(() => {
     const now = new Date()
@@ -110,14 +124,14 @@ export default function ProductBuilder({ p }: { p: Product }) {
       handle: p.handle,
       title: p.title,
       options: p.options.map((o, i) => ({ name: o.name, value: selected[i] })),
-      qty: tiered ? qty : 1,
-      unitPrice: tiered ? tier!.price : variant.price,
+      qty: byPiece ? qty : 1,
+      unitPrice: byPiece ? unit : variant.price,
       total,
       pieces: count,
-      colors: mix ? pieces.map((pc, i) => `${pc.label}: ${pieceColors[i]}`).join(' · ') : `All pieces: ${kitColor}`,
+      colors: ownColor >= 0 ? selected[ownColor] : mix ? pieces.map((pc, i) => `${pc.label}: ${pieceColors[i]}`).join(' · ') : `All pieces: ${kitColor}`,
       logoName: uploaded.map((l) => l.name).join(', '),
       logos: uploaded,
-      sizes: sizeMode === 'now' && sizedCount ? SIZES.filter((s) => sizes[s]).map((s) => `${s}×${sizes[s]}`).join(', ') : 'Sending after mockup',
+      sizes: !hasSizes ? 'One size' : sizeMode === 'now' && sizedCount ? SIZES.filter((s) => sizes[s]).map((s) => `${s}×${sizes[s]}`).join(', ') : 'Sending after mockup',
       notes,
     })
     track('AddToCart', { content_ids: [p.handle], content_name: p.title, content_type: 'product', value: total, num_items: count || 1 })
@@ -243,8 +257,8 @@ export default function ProductBuilder({ p }: { p: Product }) {
             </Block>
           )}
 
-          {tiered && (
-            <Block n={2} title="How many?">
+          {byPiece && (
+            <Block n={p.options.length > 0 && !tiered ? 3 : 2} title="How many?">
               <div className="flex items-center gap-3">
                 <button type="button" onClick={() => setQty((q) => Math.max(minQty(p), q - 1))} className="h-12 w-12 border border-white/25 text-xl hover:border-cream" aria-label="Fewer">−</button>
                 <input
@@ -259,7 +273,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
                 <span className="font-sans text-sm text-cream/50">{minQty(p)} minimum</span>
               </div>
               {!qtyValid && <p className="font-sans text-xs text-cream mt-2">Minimum order is {minQty(p)} pieces.</p>}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 border border-white/10 mt-4">
+              {tiered && <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-white/10 border border-white/10 mt-4">
                 {tiers(p).map((t) => (
                   <button
                     key={t.label}
@@ -271,11 +285,12 @@ export default function ProductBuilder({ p }: { p: Product }) {
                     <span className="block font-display font-black text-xl">{money(t.price, true)}</span>
                   </button>
                 ))}
-              </div>
+              </div>}
+              {!tiered && <p className="font-sans text-sm text-cream/60 mt-4">{money(unit, true)} a piece · logo setup and your mockup included</p>}
             </Block>
           )}
 
-          <Block n={3} title="Pick your colors">
+          {ownColor < 0 && <Block n={3} title="Pick your colors">
             <div className="flex gap-2 mb-4">
               {(['One color', 'Mix by piece'] as const).map((m, i) => (
                 <button
@@ -309,9 +324,9 @@ export default function ProductBuilder({ p }: { p: Product }) {
               </div>
             )}
             <p className="font-sans text-xs text-cream/45 mt-3">{shownColor} selected. Need a specific stock color? Add it to the notes — we match it.</p>
-          </Block>
+          </Block>}
 
-          <Block n={4} title="Sizes">
+          {hasSizes && <Block n={4} title="Sizes">
             <div className="flex gap-2 mb-4">
               {(['later', 'now'] as const).map((m) => (
                 <button
@@ -345,13 +360,13 @@ export default function ProductBuilder({ p }: { p: Product }) {
               </>
             )}
             <p className="font-sans text-xs text-cream/45 mt-3">Send sizes any time before you approve. S–XL included; 2XL and up add {money(SHOP.bigSizeUpcharge)} a piece.</p>
-          </Block>
+          </Block>}
 
           {/* Summary */}
           <div className="border border-white/15 p-6">
             <p className="font-display font-black uppercase text-lg mb-4">Order Summary</p>
             <dl className="flex flex-col gap-2 font-sans text-sm">
-              <div className="flex justify-between"><dt className="text-cream/60">{p.title}{tiered ? ` × ${qty}` : ''}</dt><dd>{money(base, true)}</dd></div>
+              <div className="flex justify-between"><dt className="text-cream/60">{p.title}{byPiece ? ` × ${qty}` : ''}</dt><dd>{money(base, true)}</dd></div>
               {bigCount > 0 && <div className="flex justify-between"><dt className="text-cream/60">2XL and up × {bigCount}</dt><dd className="text-cream/60">+{money(bigUpcharge)} at approval</dd></div>}
               <div className="flex justify-between"><dt className="text-cream/60">Design help with your logo</dt><dd>Free</dd></div>
               <div className="flex justify-between"><dt className="text-cream/60">Logo digitizing</dt><dd>Free</dd></div>

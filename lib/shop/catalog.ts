@@ -18,6 +18,7 @@ export type Product = {
   spec: string
   family: string
   featured: boolean
+  giftKit: boolean
   women: boolean
   shopifyId: string
   images: Image[]
@@ -107,12 +108,28 @@ export function tiers(p: Product): Tier[] {
     .sort((a, b) => a.min - b.min)
 }
 
+/** Sold by the piece with a minimum (single items), as opposed to one kit at a set price. */
+export function perPiece(p: Product) {
+  return isTiered(p) || p.category === 'single'
+}
+
 export function minQty(p: Product) {
   const t = tiers(p)
   if (t.length) return t[0].min
   const m = p.spec.match(/(\d+)\s+minimum/)
-  return m ? Number(m[1]) : 1
+  if (m) return Number(m[1])
+  // Untagged single items fall back to the shop-wide minimums: 8 embroidered, 12 otherwise.
+  if (p.category === 'single') return /embroider/i.test(p.deco) ? 8 : 12
+  return 1
 }
+
+/** Price per piece at a given quantity — tier price for tiered items, the variant price otherwise. */
+export function unitPrice(p: Product, selected: string[], qty: number) {
+  return isTiered(p) ? tierFor(p, qty).price : findVariant(p, selected).price
+}
+
+/** A product's own color option from Shopify (e.g. backpacks, tumblers), if it has one. */
+export const colorOption = (p: Product) => p.options.findIndex((o) => /^colou?r$/i.test(o.name))
 
 export function tierFor(p: Product, qty: number) {
   const t = tiers(p)

@@ -1,4 +1,5 @@
-// Pulls the shop collection from Shopify into lib/shop/catalog.json.
+// Pulls every published product in the Shopify store into lib/shop/catalog.json.
+// Tag a product "hidden" in Shopify to keep it off the site.
 // Runs before every build (npm run build) and on demand: npm run sync:shopify
 // If Shopify can't be reached, the last committed catalog is kept so builds never break.
 
@@ -12,9 +13,8 @@ const out = path.join(root, 'lib/shop/catalog.json')
 
 const CATEGORY = { 'Crew Kits': 'kits', 'Holiday Gifts': 'gifts', 'Single Items': 'single', 'Winter Kits': 'winter', Packs: 'packs' }
 
-const QUERY = `query($id: ID!, $after: String) {
-  collection(id: $id) {
-    products(first: 100, after: $after) {
+const QUERY = `query($after: String) {
+  products(first: 100, after: $after, sortKey: TITLE) {
       pageInfo { hasNextPage endCursor }
       nodes {
         id handle title productType tags availableForSale
@@ -22,7 +22,6 @@ const QUERY = `query($id: ID!, $after: String) {
         images(first: 10) { nodes { url width height } }
         variants(first: 100) { nodes { id availableForSale price { amount } selectedOptions { name value } image { url } } }
       }
-    }
   }
 }`
 
@@ -33,12 +32,11 @@ async function fetchAll() {
     const res = await fetch(`https://${config.domain}/api/${config.apiVersion}/graphql.json`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'X-Shopify-Storefront-Access-Token': config.storefrontToken },
-      body: JSON.stringify({ query: QUERY, variables: { id: `gid://shopify/Collection/${config.collectionId}`, after } }),
+      body: JSON.stringify({ query: QUERY, variables: { after } }),
     })
     const json = await res.json()
     if (!res.ok || json.errors) throw new Error(JSON.stringify(json.errors ?? res.status))
-    const page = json.data.collection?.products
-    if (!page) throw new Error('Collection not found')
+    const page = json.data.products
     nodes.push(...page.nodes)
     after = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null
   } while (after)
@@ -49,12 +47,17 @@ async function fetchAll() {
 const skip = (config.skipImages ?? []).map((r) => new RegExp(r, 'i'))
 const keepImage = (url) => !skip.some((r) => r.test(url.split('/files/').pop().split('?')[0]))
 
+// Newer products use plain tags ("bags", "embroidered") instead of "type:" / "deco:" tags.
+const PLAIN_TYPES = { bags: 'Bags', drinkware: 'Drinkware', hats: 'Hats', outerwear: 'Outerwear', polos: 'Polos' }
+const PLAIN_DECO = { embroidered: 'Embroidered', 'laser engraved': 'Laser engraved', printed: 'Printed' }
+const plain = (tags, map) => map[tags.map((t) => t.toLowerCase()).find((t) => map[t])] ?? ''
+
 const tag = (tags, key) => tags.filter((t) => t.startsWith(`${key}:`)).map((t) => t.slice(key.length + 1).trim())
 
 function toProduct(n, typeCounts) {
   const types = tag(n.tags, 'type')
   // Products tagged with two types (e.g. Camo + Hats) file under the more common one.
-  const type = types.sort((a, b) => (typeCounts[b] ?? 0) - (typeCounts[a] ?? 0))[0] ?? ''
+  const type = types.sort((a, b) => (typeCounts[b] ?? 0) - (typeCounts[a] ?? 0))[0] ?? plain(n.tags, PLAIN_TYPES)
   // Shopify gives single-variant products a placeholder "Title / Default Title" option.
   const options = n.options.filter((o) => !(o.name === 'Title' && o.values.length === 1 && o.values[0] === 'Default Title'))
   return {
@@ -63,10 +66,11 @@ function toProduct(n, typeCounts) {
     category: CATEGORY[n.productType] ?? (n.tags.includes('kit') ? 'kits' : 'single'),
     type,
     brand: tag(n.tags, 'brand')[0] ?? '',
-    deco: tag(n.tags, 'deco')[0] ?? '',
+    deco: tag(n.tags, 'deco')[0] ?? plain(n.tags, PLAIN_DECO),
     spec: tag(n.tags, 'line')[0] ?? '',
     family: tag(n.tags, 'family')[0] ?? '',
     featured: n.tags.includes('featured-kit'),
+    giftKit: n.tags.includes('gift-kit'),
     women: n.tags.includes('women'),
     shopifyId: n.id,
     images: n.images.nodes.filter((i) => keepImage(i.url)).map((i) => ({ url: i.url, w: i.width, h: i.height })),
@@ -83,7 +87,7 @@ function toProduct(n, typeCounts) {
 }
 
 try {
-  const nodes = (await fetchAll()).filter((n) => n.availableForSale)
+  const nodes = (await fetchAll()).filter((n) => n.availableForSale && !n.tags.includes('hidden'))
   const typeCounts = {}
   nodes.forEach((n) => tag(n.tags, 'type').forEach((t) => (typeCounts[t] = (typeCounts[t] ?? 0) + 1)))
   const products = nodes.map((n) => toProduct(n, typeCounts)).filter((p) => p.variants.length)

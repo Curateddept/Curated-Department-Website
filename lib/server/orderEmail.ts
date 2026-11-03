@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 import { randomBytes } from 'crypto'
-import { SHOP, findVariant, getProduct, isTiered, minQty, money, tierFor, type Variant } from '@/lib/shop/catalog'
+import { SHOP, findVariant, getProduct, isTiered, minQty, money, perPiece, tierFor, type Variant } from '@/lib/shop/catalog'
 import { MAX_LOGOS_PER_ITEM, fileSize, safeFileName, type LogoRef } from '@/lib/shop/logos'
 import { LOCAL_DIR, isDev, isStoredLogoUrl, loadLogo } from './logoStore'
 
@@ -54,8 +54,8 @@ export function parseOrder(body: any): { customer: Customer; items: Item[] } | s
       const tier = tierFor(p, qty)
       variant = p.variants.find((v) => v.options[0] === tier.label) ?? p.variants[0]
     } else {
-      qty = 1
       variant = findVariant(p, p.options.map((o) => options.find((x: { name: string }) => x.name === o.name)?.value ?? ''))
+      qty = perPiece(p) ? Math.max(minQty(p), Math.floor(num(i.qty))) : 1
     }
     items.push({
       title: p.title,
@@ -64,7 +64,10 @@ export function parseOrder(body: any): { customer: Customer; items: Item[] } | s
       qty,
       total: Math.round(variant.price * qty * 100) / 100,
       pieces: num(i.pieces),
-      options: isTiered(p) ? [{ name: 'Quantity', value: `${qty} pieces` }] : p.options.map((o, n) => ({ name: o.name, value: variant.options[n] })),
+      options: [
+        ...(isTiered(p) ? [] : p.options.map((o, n) => ({ name: o.name, value: variant.options[n] }))),
+        ...(perPiece(p) ? [{ name: 'Quantity', value: `${qty} pieces` }] : []),
+      ],
       colors: str(i.colors, 600),
       sizes: str(i.sizes, 300),
       notes: str(i.notes, 2000),

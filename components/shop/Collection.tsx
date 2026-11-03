@@ -44,6 +44,7 @@ export function KitsCollection() {
   const kits = allKits()
   const winter = byCategory('winter')
   const packs = byCategory('packs')
+  const giftKits = byCategory('gifts').filter((p) => p.giftKit).sort((a, b) => priceRange(a).min - priceRange(b).min)
   return (
     <div className="bg-[#0a0908] text-cream">
       <Hero eyebrow="All Kits" title="Crew" outline="Kits." intro="Every kit is a full run at one price — your logo on every piece, a mockup in one business day, and a full refund until you approve." />
@@ -52,6 +53,13 @@ export function KitsCollection() {
           {kits.map((p) => <KitCard key={p.handle} p={p} featured={p.featured} />)}
         </div>
       </Group>
+      {giftKits.length > 0 && (
+        <Group title="Gift Kits" note="Ready-made sets for clients, partners and your crew — logo stitched or engraved on every piece.">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-3">
+            {giftKits.map((p) => <KitCard key={p.handle} p={p} />)}
+          </div>
+        </Group>
+      )}
       {winter.length > 0 && <Group title="Winter Kits" note="Flannels, vests, jackets and hi-vis outerwear for the cold months."><Grid items={winter} /></Group>}
       {packs.length > 0 && <Group title="24-Piece Packs" note="One garment, 24 pieces, logo included."><Grid items={packs} /></Group>}
       <Group title="Want One Garment Instead?" note="Single items start at 8 pieces embroidered or 12 printed.">
