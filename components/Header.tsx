@@ -15,6 +15,8 @@ const services: { label: string; href: string }[] = [
   { label: 'Digital Growth & Brand Management', href: '/services/digital-growth' },
   { label: 'Merchandise Production & Fulfillment', href: '/services/merchandise-production' },
   { label: 'Print & Promotional Production', href: '/services/print-production' },
+  { label: 'Screen Printing', href: '/services/screen-printing' },
+  { label: 'Embroidery', href: '/services/embroidery' },
   { label: 'Dye Sublimation & Fabric Printing', href: '/services/dye-sublimation' },
   { label: 'Branding & Experience Design', href: '/services/branding-experience' },
   { label: 'Content Creation', href: '/services/content-creation' },
