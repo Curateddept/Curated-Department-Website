@@ -4,10 +4,14 @@ import { motion } from 'framer-motion'
 import GarmentIcon from './GarmentIcon'
 import { wrap } from './ui'
 import {
-  BRANDS, brandHref, byCategory, categories, cover, getProduct, money, priceRange,
-  type Garment, type Product, sized
+  BRANDS, allKits, brandHref, byCategory, categories, cover, getProduct, money, priceRange,
+  type Category, type Garment, type Product, sized
 } from '@/lib/shop/catalog'
 import { APPAREL_WORK } from '@/lib/shop/gallery'
+
+/** A photo for a category tile: the first product in it with a photo (optionally of one type). */
+const categoryImage = (cat: Category, type?: string) =>
+  cover(byCategory(cat).find((p) => p.images.length && (!type || p.type === type)) ?? byCategory(cat)[0] ?? ({ images: [] } as unknown as Product))
 
 const kitsFrom = Math.min(...byCategory('kits').map((p) => priceRange(p).min))
 
@@ -290,16 +294,20 @@ export default function ApparelIntro() {
           <SectionHead dark eyebrow="Shop by category" title="Every Category." />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             {[
-              ...categories().map((c) => ({ key: c.type, title: c.type, sub: `${c.count} styles · from ${money(c.from, true)}/pc`, href: `/apparel/single-items?type=${encodeURIComponent(c.type)}`, garment: c.garment })),
-              { key: 'kits', title: 'Crew Kits', sub: `Full sets · from ${money(kitsFrom)}`, href: '/apparel/kits', garment: 'kit' as Garment },
-              { key: 'winter', title: 'Winter Kits', sub: `${byCategory('winter').length} kits`, href: '/apparel/kits', garment: 'jacket' as Garment, n: byCategory('winter').length },
-              { key: 'packs', title: '24-Piece Packs', sub: `${byCategory('packs').length} packs`, href: '/apparel/kits', garment: 'tee' as Garment, n: byCategory('packs').length },
-              { key: 'gifts', title: 'Holiday Gifts', sub: `${byCategory('gifts').length} gift set${byCategory('gifts').length === 1 ? '' : 's'}`, href: '/apparel/gifts', garment: 'bag' as Garment, n: byCategory('gifts').length },
-              { key: 'all', title: 'All Single Items', sub: `${byCategory('single').length} styles`, href: '/apparel/single-items', garment: 'hoodie' as Garment },
+              ...categories().map((c) => ({ key: c.type, title: c.type, sub: `${c.count} style${c.count === 1 ? '' : 's'} · from ${money(c.from, true)}/pc`, href: `/apparel/single-items?type=${encodeURIComponent(c.type)}`, garment: c.garment, image: c.image })),
+              { key: 'kits', title: 'Crew Kits', sub: `Full sets · from ${money(kitsFrom)}`, href: '/apparel/kits', garment: 'kit' as Garment, image: cover(allKits()[0]) },
+              { key: 'winter', title: 'Winter Kits', sub: `${byCategory('winter').length} kits`, href: '/apparel/kits', garment: 'jacket' as Garment, n: byCategory('winter').length, image: categoryImage('winter') },
+              { key: 'packs', title: '24-Piece Packs', sub: `${byCategory('packs').length} packs`, href: '/apparel/kits', garment: 'tee' as Garment, n: byCategory('packs').length, image: categoryImage('packs') },
+              { key: 'gifts', title: 'Holiday Gifts', sub: `${byCategory('gifts').length} gift set${byCategory('gifts').length === 1 ? '' : 's'}`, href: '/apparel/gifts', garment: 'bag' as Garment, n: byCategory('gifts').length, image: categoryImage('gifts') },
+              { key: 'all', title: 'All Single Items', sub: `${byCategory('single').length} styles`, href: '/apparel/single-items', garment: 'hoodie' as Garment, image: categoryImage('single', 'Hoodies & Crews') },
             ].filter((c) => !('n' in c) || c.n).map((c) => (
               <a key={c.key} href={c.href} className="group rounded-2xl bg-white border border-[#0a0908]/10 hover:bg-[#0a0908] hover:text-cream transition-colors duration-300 p-5 flex flex-col">
-                <div className="aspect-[4/3] mb-3">
-                  <GarmentIcon garment={c.garment} color="#1c1c1c" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                <div className="relative aspect-[4/3] mb-3 rounded-xl overflow-hidden bg-white">
+                  {c.image ? (
+                    <img src={sized(c.image, 600)} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-contain group-hover:scale-105 transition-transform duration-500" />
+                  ) : (
+                    <GarmentIcon garment={c.garment} color="#1c1c1c" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                  )}
                 </div>
                 <h3 className="font-display font-black uppercase text-lg md:text-xl leading-none">{c.title}</h3>
                 <p className="font-sans text-xs opacity-55 mt-2">{c.sub}</p>

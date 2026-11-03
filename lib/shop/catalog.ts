@@ -225,6 +225,7 @@ export function categories() {
       count: items.length,
       from: Math.min(...items.map((p) => tiers(p).at(-1)?.price ?? priceRange(p).min)),
       garment: garmentFor(items[0]),
+      image: cover(items.find((p) => p.images.length) ?? items[0]),
     }))
     .sort((a, b) => b.count - a.count)
 }
