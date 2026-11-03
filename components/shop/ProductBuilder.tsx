@@ -8,7 +8,7 @@ import { track } from '@/lib/track'
 import { CustomQuote, Faq, STEPS, btnLight, wrap } from './ui'
 import {
   COLORS, SHOP, findVariant, garmentFor, isTiered, kitDetails, minQty, money, pieceCount, tierFor, tiers,
-  type Garment, type Product,
+  type Garment, type Product, sized
 } from '@/lib/shop/catalog'
 
 const SIZES = ['S', 'M', 'L', 'XL', '2XL', '3XL', '4XL']
@@ -154,7 +154,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
                   <span className="absolute bottom-4 left-4 font-display font-black uppercase text-cream text-sm">{pieces[active].label} · {shownColor}</span>
                 </>
               ) : (
-                <img src={`${p.images[view].url}&width=1200`} alt={p.title} className="absolute inset-0 h-full w-full object-cover" />
+                <img src={sized(p.images[view].url, 1200)} alt={p.title} className="absolute inset-0 h-full w-full object-cover" />
               )}
             </div>
             <div className="grid grid-cols-5 gap-2 mt-2">
@@ -166,7 +166,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
                   className={`relative aspect-square bg-[#141312] border overflow-hidden ${view === i ? 'border-cream' : 'border-white/10 hover:border-white/40'}`}
                   aria-label={`Photo ${i + 1}`}
                 >
-                  <img src={`${img.url}&width=200`} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                  <img src={sized(img.url, 200)} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
                 </button>
               ))}
               <button

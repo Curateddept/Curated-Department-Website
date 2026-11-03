@@ -5,7 +5,7 @@ import { useCart, type CartItem } from './CartContext'
 import GarmentIcon from './GarmentIcon'
 import LogoUpload, { doneLogos, type LogoFile } from './LogoUpload'
 import { btnGhost, btnLight, wrap } from './ui'
-import { SHOP, cover, garmentFor, getProduct, money } from '@/lib/shop/catalog'
+import { SHOP, cover, garmentFor, getProduct, money, sized } from '@/lib/shop/catalog'
 import { fileSize } from '@/lib/shop/logos'
 import { track } from '@/lib/track'
 
@@ -152,7 +152,7 @@ export default function CartPage() {
                 <div key={i.id} className="flex gap-5 border-b border-white/10 py-6">
                   <div className="relative w-24 h-24 flex-shrink-0 bg-[#141312] overflow-hidden">
                     {p && cover(p) ? (
-                      <img src={`${cover(p)}&width=200`} alt="" className="absolute inset-0 h-full w-full object-cover" />
+                      <img src={sized(cover(p), 200)} alt="" className="absolute inset-0 h-full w-full object-cover" />
                     ) : (
                       p && <GarmentIcon garment={garmentFor(p)} color="#2a2928" className="w-full h-full p-2" />
                     )}

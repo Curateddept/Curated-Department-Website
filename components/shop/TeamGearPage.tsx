@@ -7,7 +7,7 @@ import {
 } from './ui'
 import {
   SHOP, SPOTLIGHT_KITS, allKits, byCategory, cover, findVariant, getProduct, money, priceRange, tiers,
-  type Garment,
+  type Garment, sized
 } from '@/lib/shop/catalog'
 
 const kitsFrom = Math.min(...byCategory('kits').map((p) => priceRange(p).min))
@@ -136,11 +136,13 @@ export default function TeamGearPage() {
               </div>
               <div className={`relative aspect-square max-w-[520px] w-full mx-auto ${dark ? 'bg-[#0a0908]' : 'bg-[#141312]'}`}>
                 {cover(s.p) ? (
-                  <img src={`${cover(s.p)}&width=1000`} alt={s.p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                  <img src={sized(cover(s.p), 1000)} alt={s.p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
                 ) : (
                   <GarmentIcon garment={c.garment} color={dark ? '#f4f4f2' : '#2a2928'} className="absolute inset-[12%] w-[76%] h-[76%]" />
                 )}
-                <span className="absolute bottom-4 right-4 bg-[#0a0908]/85 px-3 py-1 font-display font-black text-4xl text-cream">{money(s.perPiece, true)}<span className="font-sans text-xs font-normal opacity-60"> /pc</span></span>
+                {!cover(s.p) && (
+                  <span className="absolute bottom-4 right-4 bg-[#0a0908]/85 px-3 py-1 font-display font-black text-4xl text-cream">{money(s.perPiece, true)}<span className="font-sans text-xs font-normal opacity-60"> /pc</span></span>
+                )}
               </div>
             </div>
           </section>

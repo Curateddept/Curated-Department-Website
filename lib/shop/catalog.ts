@@ -61,6 +61,10 @@ export function allKits() {
 /** Product photo for cards: the first Shopify image. */
 export const cover = (p: Product) => p.images[0]?.url ?? null
 
+/** Asks Shopify's CDN for a resized copy; local images are served as-is. */
+export const sized = (url: string | null, width: number) =>
+  !url ? '' : url.includes('cdn.shopify.com') ? `${url}${url.includes('?') ? '&' : '?'}width=${width}` : url
+
 export function getProduct(handle: string) {
   return products.find((p) => p.handle === handle)
 }
@@ -182,8 +186,17 @@ export const BRANDS = [
   'A4', 'AllPro', 'Shaka Wear', 'Q-Tees', 'KNACK', 'Save the Duck',
 ]
 
+// Curated-branded kit cards (public/shop/kits) lead each kit's gallery, ahead of the Shopify photos.
+const KIT_CARDS: Record<string, string> = {
+  'premium-tee-kit': '/shop/kits/premium-tee-kit.webp',
+  'beanie-kit': '/shop/kits/beanie-kit.webp',
+  'crewneck-kit': '/shop/kits/crewneck-kit.webp',
+  'hoodie-kit': '/shop/kits/hoodie-kit.webp',
+}
+
 export const products: Product[] = (raw as Product[]).map((p) => ({
   ...p,
+  images: KIT_CARDS[p.handle] ? [{ url: KIT_CARDS[p.handle], w: 1254, h: 1254 }, ...p.images] : p.images,
   // Most products carry no brand tag; read it off the front of the title instead.
   brand: p.brand || BRANDS.filter((b) => p.title.startsWith(b)).sort((a, b) => b.length - a.length)[0] || '',
 }))

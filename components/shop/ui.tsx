@@ -14,7 +14,7 @@ import {
   money,
   priceRange,
   tiers,
-  minQty,
+  minQty, sized
 } from '@/lib/shop/catalog'
 
 export const wrap = 'max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20'
@@ -89,7 +89,7 @@ export function ProductCard({ p }: { p: Product }) {
     <a href={`/apparel/products/${p.handle}`} className="group flex flex-col border border-white/10 hover:border-cream/60 transition-colors duration-300">
       <div className="relative aspect-square bg-[#141312] overflow-hidden">
         {cover(p) ? (
-          <img src={`${cover(p)}&width=600`} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <img src={sized(cover(p), 600)} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
         ) : (
           <GarmentIcon garment={garment} color="#2a2928" className="absolute inset-[14%] w-[72%] h-[72%] group-hover:scale-105 transition-transform duration-500" />
         )}
@@ -140,7 +140,7 @@ export function KitCard({ p, featured = false }: { p: Product; featured?: boolea
       )}
       {img && (
         <div className="relative aspect-square overflow-hidden bg-[#141312]">
-          <img src={`${img}&width=800`} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <img src={sized(img, 800)} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
         </div>
       )}
       <div className="flex flex-col flex-1 p-6 md:p-7">

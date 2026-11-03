@@ -5,7 +5,7 @@ import GarmentIcon from './GarmentIcon'
 import { wrap } from './ui'
 import {
   BRANDS, brandHref, byCategory, categories, cover, getProduct, money, priceRange,
-  type Garment, type Product,
+  type Garment, type Product, sized
 } from '@/lib/shop/catalog'
 import { APPAREL_WORK } from '@/lib/shop/gallery'
 
@@ -159,7 +159,7 @@ export default function ApparelIntro() {
                 <a key={p.handle} href={`/apparel/products/${p.handle}`} className="group flex flex-col rounded-2xl bg-white border border-[#0a0908]/10 overflow-hidden hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.35)] transition-shadow">
                   <div className="relative aspect-square bg-[#0a0908] p-8">
                     {cover(p) ? (
-                      <img src={`${cover(p)}&width=700`} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={sized(cover(p), 700)} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     ) : (
                       <GarmentIcon garment={garment} color="#f4f4f2" logo="/logo-icon.png" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />
                     )}
