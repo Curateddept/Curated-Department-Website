@@ -1,10 +1,10 @@
-import ApparelIntro from '@/components/shop/ApparelIntro'
+import OverviewPage from '@/components/shop/OverviewPage'
 
 export const metadata = {
   title: 'Apparel — Curated Department',
-  description: 'Custom apparel by Curated: screen printing, embroidery, DTF and dye sublimation, plus team gear, kits and gifts with your logo.',
+  description: 'Crew kits, gifts and single items with your logo. Mockup in one business day, full refund until you approve.',
 }
 
 export default function Page() {
-  return <ApparelIntro />
+  return <OverviewPage />
 }
