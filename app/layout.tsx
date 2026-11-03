@@ -3,6 +3,7 @@ import { Barlow, DM_Sans, Fraunces } from 'next/font/google'
 import './globals.css'
 import CustomCursor from '@/components/CustomCursor'
 import Preloader from '@/components/Preloader'
+import MetaPixel from '@/components/MetaPixel'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Preloader />
         <CustomCursor />
         {children}
+        <MetaPixel />
       </body>
     </html>
   )

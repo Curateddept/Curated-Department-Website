@@ -24,3 +24,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 public/videos/
+
+# local logo uploads / order outbox (next dev)
+.uploads/

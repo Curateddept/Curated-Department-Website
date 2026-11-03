@@ -1,6 +1,7 @@
 'use client'
 
 import { createContext, useContext, useEffect, useState } from 'react'
+import type { LogoRef } from '@/lib/shop/logos'
 
 export type CartItem = {
   id: string
@@ -13,6 +14,7 @@ export type CartItem = {
   pieces: number
   colors: string
   logoName: string
+  logos: LogoRef[]
   sizes: string
   notes: string
 }
@@ -21,6 +23,7 @@ type Cart = {
   items: CartItem[]
   add: (item: Omit<CartItem, 'id'>) => void
   remove: (id: string) => void
+  update: (id: string, patch: Partial<CartItem>) => void
   clear: () => void
   subtotal: number
   count: number
@@ -36,7 +39,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     try {
       const saved = localStorage.getItem(KEY)
-      if (saved) setItems(JSON.parse(saved))
+      if (saved) setItems((JSON.parse(saved) as CartItem[]).map((i) => ({ ...i, logos: i.logos ?? [] })))
     } catch {}
     setLoaded(true)
   }, [])
@@ -52,6 +55,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     items,
     add: (item) => setItems((prev) => [...prev, { ...item, id: `${item.handle}-${Date.now()}` }]),
     remove: (id) => setItems((prev) => prev.filter((i) => i.id !== id)),
+    update: (id, patch) => setItems((prev) => prev.map((i) => (i.id === id ? { ...i, ...patch } : i))),
     clear: () => setItems([]),
     subtotal: items.reduce((s, i) => s + i.total, 0),
     count: items.length,

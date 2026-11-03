@@ -1,8 +1,10 @@
 'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useCart } from './CartContext'
 import GarmentIcon from './GarmentIcon'
+import LogoUpload, { doneLogos, type LogoFile } from './LogoUpload'
+import { track } from '@/lib/track'
 import { CustomQuote, Faq, STEPS, btnLight, wrap } from './ui'
 import {
   COLORS, SHOP, findVariant, garmentFor, isTiered, kitDetails, minQty, money, pieceCount, tierFor, tiers,
@@ -60,8 +62,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
 
   const [selected, setSelected] = useState<string[]>(p.options.map((o) => o.values[0]))
   const [qty, setQty] = useState(minQty(p))
-  const [logoUrl, setLogoUrl] = useState<string | null>(null)
-  const [logoName, setLogoName] = useState('')
+  const [logos, setLogos] = useState<LogoFile[]>([])
   const [notes, setNotes] = useState('')
   const [mix, setMix] = useState(false)
   const [kitColor, setKitColor] = useState(COLORS[0].name)
@@ -70,12 +71,12 @@ export default function ProductBuilder({ p }: { p: Product }) {
   const [sizeMode, setSizeMode] = useState<'later' | 'now'>('later')
   const [sizes, setSizes] = useState<Record<string, number>>({})
   const [added, setAdded] = useState(false)
-  const [dragging, setDragging] = useState(false)
-  const fileRef = useRef<HTMLInputElement>(null)
 
-  useEffect(() => () => { if (logoUrl) URL.revokeObjectURL(logoUrl) }, [logoUrl])
+  const logoUrl = logos.find((f) => f.preview && f.status !== 'error')?.preview ?? null
+  const uploading = logos.some((f) => f.status === 'uploading')
 
   const variant = findVariant(p, selected)
+  const priceFrom = variant.price
   const tier = tiered ? tierFor(p, qty) : null
   const base = tiered ? tier!.price * qty : variant.price
   const bigCount = sizeMode === 'now' ? SIZES.filter((s) => BIG.has(s)).reduce((n, s) => n + (sizes[s] || 0), 0) : 0
@@ -94,15 +95,14 @@ export default function ProductBuilder({ p }: { p: Product }) {
     return { mockup, from: addBusinessDays(mockup, 12), to: addBusinessDays(mockup, 15) }
   }, [])
 
-  const onFile = (f?: File | null) => {
-    if (!f) return
-    if (logoUrl) URL.revokeObjectURL(logoUrl)
-    setLogoName(f.name)
-    setLogoUrl(f.type.startsWith('image/') ? URL.createObjectURL(f) : null)
-  }
+  useEffect(() => {
+    track('ViewContent', { content_ids: [p.handle], content_name: p.title, content_type: 'product', value: priceFrom })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [p.handle])
 
   const addToCart = () => {
-    if (!qtyValid) return
+    if (!qtyValid || uploading) return
+    const uploaded = doneLogos(logos)
     cart.add({
       handle: p.handle,
       title: p.title,
@@ -112,10 +112,12 @@ export default function ProductBuilder({ p }: { p: Product }) {
       total,
       pieces: count,
       colors: mix ? pieces.map((pc, i) => `${pc.label}: ${pieceColors[i]}`).join(' · ') : `All pieces: ${kitColor}`,
-      logoName,
+      logoName: uploaded.map((l) => l.name).join(', '),
+      logos: uploaded,
       sizes: sizeMode === 'now' && sizedCount ? SIZES.filter((s) => sizes[s]).map((s) => `${s}×${sizes[s]}`).join(', ') : 'Sending after mockup',
       notes,
     })
+    track('AddToCart', { content_ids: [p.handle], content_name: p.title, content_type: 'product', value: total, num_items: count || 1 })
     setAdded(true)
   }
 
@@ -162,7 +164,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
                 ))}
               </div>
             )}
-            {!logoUrl && <p className="font-sans text-xs text-cream/40 mt-3">Upload an image logo to see it on the preview. Your real mockup comes from our design team in one business day.</p>}
+            {!logoUrl && <p className="font-sans text-xs text-cream/40 mt-3">Upload a PNG or JPG logo to see it on the preview. Your real mockup comes from our design team in one business day.</p>}
           </div>
         </div>
 
@@ -184,16 +186,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
           </div>
 
           <Block n={1} title="Upload your logo">
-            <label
-              onDragOver={(e) => { e.preventDefault(); setDragging(true) }}
-              onDragLeave={() => setDragging(false)}
-              onDrop={(e) => { e.preventDefault(); setDragging(false); onFile(e.dataTransfer.files?.[0]) }}
-              className={`flex flex-col items-center justify-center gap-2 border border-dashed px-6 py-8 text-center cursor-pointer transition-colors ${dragging ? 'border-cream bg-white/5' : 'border-white/25 hover:border-cream/60'}`}
-            >
-              <input ref={fileRef} type="file" accept="image/*,.pdf,.ai,.eps,.svg,.zip" className="sr-only" onChange={(e) => onFile(e.target.files?.[0])} />
-              <span className="font-sans font-semibold text-sm uppercase tracking-[0.14em]">{logoName || 'Choose a file or drop it here'}</span>
-              <span className="font-sans text-xs text-cream/50 max-w-sm">No perfect file needed — a photo of your truck, shirt or business card works. Any image, PDF, AI or ZIP.</span>
-            </label>
+            <LogoUpload files={logos} onChange={setLogos} />
             <textarea
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
@@ -350,9 +343,12 @@ export default function ProductBuilder({ p }: { p: Product }) {
               <div className="flex justify-between"><dt className="text-cream/60">Shipping</dt><dd className="text-cream/60">At checkout</dd></div>
               <div className="flex justify-between border-t border-white/15 pt-3 mt-1 text-base font-semibold"><dt>Total</dt><dd>{money(total, true)}</dd></div>
             </dl>
-            <button type="button" onClick={addToCart} disabled={!qtyValid} className={`${btnLight} w-full mt-6 disabled:opacity-40 disabled:pointer-events-none`}>
-              Add To Cart — {money(total, true)}
+            <button type="button" onClick={addToCart} disabled={!qtyValid || uploading} className={`${btnLight} w-full mt-6 disabled:opacity-40 disabled:pointer-events-none`}>
+              {uploading ? 'Uploading your logo…' : `Add To Cart — ${money(total, true)}`}
             </button>
+            {!added && !doneLogos(logos).length && (
+              <p className="font-sans text-xs text-cream/50 mt-3">No logo handy? Add it to your cart anyway — you can upload it at checkout.</p>
+            )}
             {added && (
               <div className="mt-4 flex items-center justify-between gap-4 border border-cream/40 px-4 py-3">
                 <span className="font-sans text-sm">Added to your cart.</span>
