@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "sync:shopify": "node scripts/sync-shopify.mjs",
+    "prebuild": "node scripts/sync-shopify.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

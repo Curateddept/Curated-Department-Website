@@ -1,7474 +1,3760 @@
 [
-{
-"handle": "comfort-colors-heavyweight-long-sleeve-pack",
-"title": "Comfort Colors Heavyweight Long Sleeve Pack",
-"category": "packs",
-"type": "Long Sleeves",
-"brand": "Comfort Colors",
-"deco": "",
-"spec": "24 long sleeves \u00b7 your logo printed",
-"options": [
-{
-"name": "How many long sleeves",
-"values": [
-"12",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 303.0
-},
-{
-"options": [
-"24"
-],
-"price": 570.0
-},
-{
-"options": [
-"48"
-],
-"price": 1116.0
-}
-]
-},
-{
-"handle": "comfort-colors-heavyweight-tee-pack",
-"title": "Comfort Colors Heavyweight Tee Pack",
-"category": "packs",
-"type": "T-Shirts",
-"brand": "Comfort Colors",
-"deco": "",
-"spec": "24 tees \u00b7 your logo printed",
-"options": [
-{
-"name": "How many tees",
-"values": [
-"12",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 213.0
-},
-{
-"options": [
-"24"
-],
-"price": 384.0
-},
-{
-"options": [
-"48"
-],
-"price": 720.0
-}
-]
-},
-{
-"handle": "gildan-heavy-blend-crewneck-pack",
-"title": "Gildan Heavy Blend Crewneck Pack",
-"category": "packs",
-"type": "Hoodies & Crews",
-"brand": "Gildan",
-"deco": "",
-"spec": "24 crewnecks \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many crewnecks",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 158.0
-},
-{
-"options": [
-"24"
-],
-"price": 390.0
-},
-{
-"options": [
-"48"
-],
-"price": 744.0
-}
-]
-},
-{
-"handle": "gildan-heavy-blend-hoodie-pack",
-"title": "Gildan Heavy Blend Hoodie Pack",
-"category": "packs",
-"type": "Hoodies & Crews",
-"brand": "Gildan",
-"deco": "",
-"spec": "24 hoodies \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many hoodies",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 194.0
-},
-{
-"options": [
-"24"
-],
-"price": 498.0
-},
-{
-"options": [
-"48"
-],
-"price": 960.0
-}
-]
-},
-{
-"handle": "gildan-64000-softstyle-tee-pack",
-"title": "Gildan Softstyle Tee Pack",
-"category": "packs",
-"type": "T-Shirts",
-"brand": "Gildan",
-"deco": "",
-"spec": "24 tees \u00b7 your logo printed",
-"options": [
-{
-"name": "How many tees",
-"values": [
-"12",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 111.0
-},
-{
-"options": [
-"24"
-],
-"price": 180.0
-},
-{
-"options": [
-"48"
-],
-"price": 336.0
-}
-]
-},
-{
-"handle": "gildan-heavy-cotton-tee-pack",
-"title": "Gildan Heavy Cotton Tee Pack",
-"category": "packs",
-"type": "T-Shirts",
-"brand": "Gildan",
-"deco": "",
-"spec": "24 tees \u00b7 your logo printed",
-"options": [
-{
-"name": "How many tees",
-"values": [
-"12",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 111.0
-},
-{
-"options": [
-"24"
-],
-"price": 180.0
-},
-{
-"options": [
-"48"
-],
-"price": 324.0
-}
-]
-},
-{
-"handle": "legacy-rempa-reclaim-mid-pro-cap-pack",
-"title": "Legacy Reclaim Mid-Pro Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Legacy",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 256.0
-},
-{
-"options": [
-"24"
-],
-"price": 648.0
-},
-{
-"options": [
-"48"
-],
-"price": 1248.0
-}
-]
-},
-{
-"handle": "legacy-mps-mid-pro-snapback-trucker-pack",
-"title": "Legacy Mid-Pro Snapback Trucker Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Legacy",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 216.0
-},
-{
-"options": [
-"24"
-],
-"price": 552.0
-},
-{
-"options": [
-"48"
-],
-"price": 1008.0
-}
-]
-},
-{
-"handle": "yp-classics-6601-elite-cap-pack",
-"title": "YP Classics Elite Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "YP Classics",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 168.0
-},
-{
-"options": [
-"24"
-],
-"price": 384.0
-},
-{
-"options": [
-"48"
-],
-"price": 720.0
-}
-]
-},
-{
-"handle": "yp-classics-6245cm-classic-dad-hat-pack",
-"title": "YP Classics Classic Dad Hat Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "YP Classics",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 176.0
-},
-{
-"options": [
-"24"
-],
-"price": 432.0
-},
-{
-"options": [
-"48"
-],
-"price": 768.0
-}
-]
-},
-{
-"handle": "yupoong-6089m-flat-bill-snapback-pack",
-"title": "Yupoong 6089M Flat Bill Snapback Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Yupoong",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 176.0
-},
-{
-"options": [
-"24"
-],
-"price": 408.0
-},
-{
-"options": [
-"48"
-],
-"price": 768.0
-}
-]
-},
-{
-"handle": "flexfit-6277-fitted-cap-pack",
-"title": "Flexfit 6277 Fitted Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Flexfit",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 208.0
-},
-{
-"options": [
-"24"
-],
-"price": 504.0
-},
-{
-"options": [
-"48"
-],
-"price": 960.0
-}
-]
-},
-{
-"handle": "new-era-ne209-performance-dash-adjustable-cap-pack",
-"title": "New Era Performance Dash Adjustable Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "New Era",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 208.0
-},
-{
-"options": [
-"24"
-],
-"price": 528.0
-},
-{
-"options": [
-"48"
-],
-"price": 960.0
-}
-]
-},
-{
-"handle": "new-era-ne205-snapback-trucker-cap-pack",
-"title": "New Era Snapback Trucker Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "New Era",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 200.0
-},
-{
-"options": [
-"24"
-],
-"price": 480.0
-},
-{
-"options": [
-"48"
-],
-"price": 912.0
-}
-]
-},
-{
-"handle": "new-era-ne400-9fifty-flat-bill-snapback-cap-pack",
-"title": "New Era 9FIFTY Flat Bill Snapback Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "New Era",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 208.0
-},
-{
-"options": [
-"24"
-],
-"price": 528.0
-},
-{
-"options": [
-"48"
-],
-"price": 960.0
-}
-]
-},
-{
-"handle": "richardson-112pfp-camo-trucker-cap-pack",
-"title": "Richardson Printed Camo Trucker Cap Pack",
-"category": "packs",
-"type": "Camo",
-"brand": "Richardson",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 208.0
-},
-{
-"options": [
-"24"
-],
-"price": 504.0
-},
-{
-"options": [
-"48"
-],
-"price": 960.0
-}
-]
-},
-{
-"handle": "richardson-326-garment-washed-cap-pack",
-"title": "Richardson 326 Garment Washed Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Richardson",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 176.0
-},
-{
-"options": [
-"24"
-],
-"price": 432.0
-},
-{
-"options": [
-"48"
-],
-"price": 768.0
-}
-]
-},
-{
-"handle": "richardson-115-low-pro-trucker-pack",
-"title": "Richardson 115 Low Pro Trucker Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Richardson",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 184.0
-},
-{
-"options": [
-"24"
-],
-"price": 432.0
-},
-{
-"options": [
-"48"
-],
-"price": 816.0
-}
-]
-},
-{
-"handle": "richardson-112-trucker-cap-pack",
-"title": "Richardson 112 Trucker Cap Pack",
-"category": "packs",
-"type": "Hats",
-"brand": "Richardson",
-"deco": "",
-"spec": "24 caps \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many caps",
-"values": [
-"8",
-"24",
-"48"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8"
-],
-"price": 184.0
-},
-{
-"options": [
-"24"
-],
-"price": 432.0
-},
-{
-"options": [
-"48"
-],
-"price": 816.0
-}
-]
-},
-{
-"handle": "holiday-gift-box",
-"title": "Holiday Gift Box",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 people \u00b7 a beanie and a tumbler each \u00b7 your logo on both",
-"options": [
-{
-"name": "How many people",
-"values": [
-"24",
-"50"
-]
-}
-],
-"variants": [
-{
-"options": [
-"24"
-],
-"price": 720.0
-},
-{
-"options": [
-"50"
-],
-"price": 1400.0
-}
-]
-},
-{
-"handle": "tumbler-gift-kit",
-"title": "Tumbler Gift Kit",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 stainless tumblers \u00b7 your logo engraved",
-"options": [
-{
-"name": "How many tumblers",
-"values": [
-"24",
-"50"
-]
-}
-],
-"variants": [
-{
-"options": [
-"24"
-],
-"price": 504.0
-},
-{
-"options": [
-"50"
-],
-"price": 950.0
-}
-]
-},
-{
-"handle": "backpack-kit",
-"title": "Backpack Kit",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 backpacks \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many backpacks",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Backpack",
-"values": [
-"Basic Backpack",
-"Transit Backpack"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Basic Backpack"
-],
-"price": 312.0
-},
-{
-"options": [
-"24",
-"Basic Backpack"
-],
-"price": 576.0
-},
-{
-"options": [
-"50",
-"Basic Backpack"
-],
-"price": 1100.0
-},
-{
-"options": [
-"12",
-"Transit Backpack"
-],
-"price": 480.0
-},
-{
-"options": [
-"24",
-"Transit Backpack"
-],
-"price": 912.0
-},
-{
-"options": [
-"50",
-"Transit Backpack"
-],
-"price": 1800.0
-}
-]
-},
-{
-"handle": "blanket-gift-kit",
-"title": "Blanket Gift Kit",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 plush blankets \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many blankets",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Blanket",
-"values": [
-"Ultra Plush Blanket",
-"Mountain Lodge Blanket"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Ultra Plush Blanket"
-],
-"price": 300.0
-},
-{
-"options": [
-"24",
-"Ultra Plush Blanket"
-],
-"price": 552.0
-},
-{
-"options": [
-"50",
-"Ultra Plush Blanket"
-],
-"price": 1050.0
-},
-{
-"options": [
-"12",
-"Mountain Lodge Blanket"
-],
-"price": 444.0
-},
-{
-"options": [
-"24",
-"Mountain Lodge Blanket"
-],
-"price": 840.0
-},
-{
-"options": [
-"50",
-"Mountain Lodge Blanket"
-],
-"price": 1650.0
-}
-]
-},
-{
-"handle": "flannel-kit",
-"title": "Flannel Kit",
-"category": "winter",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 plaid flannels \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many flannels",
-"values": [
-"12",
-"24",
-"50"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 396.0
-},
-{
-"options": [
-"24"
-],
-"price": 744.0
-},
-{
-"options": [
-"50"
-],
-"price": 1450.0
-}
-]
-},
-{
-"handle": "winter-crew-kit",
-"title": "Winter Crew Kit",
-"category": "winter",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 people \u00b7 jacket",
-"options": [
-{
-"name": "How many people",
-"values": [
-"12",
-"24",
-"50"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 840.0
-},
-{
-"options": [
-"24"
-],
-"price": 1440.0
-},
-{
-"options": [
-"50"
-],
-"price": 2750.0
-}
-]
-},
-{
-"handle": "hi-vis-winter-pack",
-"title": "Hi-Vis Winter Pack",
-"category": "winter",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 ANSI Class 3 hoodies or bombers \u00b7 your logo on the chest",
-"options": [
-{
-"name": "How many pieces",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Style",
-"values": [
-"Fleece Full-Zip Hoodie",
-"Insulated Bomber Jacket"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Fleece Full-Zip Hoodie"
-],
-"price": 528.0
-},
-{
-"options": [
-"24",
-"Fleece Full-Zip Hoodie"
-],
-"price": 1008.0
-},
-{
-"options": [
-"50",
-"Fleece Full-Zip Hoodie"
-],
-"price": 2000.0
-},
-{
-"options": [
-"12",
-"Insulated Bomber Jacket"
-],
-"price": 696.0
-},
-{
-"options": [
-"24",
-"Insulated Bomber Jacket"
-],
-"price": 1344.0
-},
-{
-"options": [
-"50",
-"Insulated Bomber Jacket"
-],
-"price": 2700.0
-}
-]
-},
-{
-"handle": "vest-kit",
-"title": "Vest Kit",
-"category": "winter",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 work vests \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many vests",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Vest",
-"values": [
-"Port Authority Puffy Vest",
-"Carhartt Gilliam Vest"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Port Authority Puffy Vest"
-],
-"price": 504.0
-},
-{
-"options": [
-"24",
-"Port Authority Puffy Vest"
-],
-"price": 960.0
-},
-{
-"options": [
-"50",
-"Port Authority Puffy Vest"
-],
-"price": 1900.0
-},
-{
-"options": [
-"12",
-"Carhartt Gilliam Vest"
-],
-"price": 948.0
-},
-{
-"options": [
-"24",
-"Carhartt Gilliam Vest"
-],
-"price": 1848.0
-},
-{
-"options": [
-"50",
-"Carhartt Gilliam Vest"
-],
-"price": 3750.0
-}
-]
-},
-{
-"handle": "jacket-kit",
-"title": "Jacket Kit",
-"category": "winter",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 work jackets \u00b7 your logo embroidered",
-"options": [
-{
-"name": "How many jackets",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Jacket",
-"values": [
-"Port Authority Soft Shell",
-"Carhartt Duck Active Jac"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Port Authority Soft Shell"
-],
-"price": 432.0
-},
-{
-"options": [
-"24",
-"Port Authority Soft Shell"
-],
-"price": 792.0
-},
-{
-"options": [
-"50",
-"Port Authority Soft Shell"
-],
-"price": 1550.0
-},
-{
-"options": [
-"12",
-"Carhartt Duck Active Jac"
-],
-"price": 1188.0
-},
-{
-"options": [
-"24",
-"Carhartt Duck Active Jac"
-],
-"price": 2328.0
-},
-{
-"options": [
-"50",
-"Carhartt Duck Active Jac"
-],
-"price": 4750.0
-}
-]
-},
-{
-"handle": "as-colour-5146-heavy-hood",
-"title": "AS Colour Heavy Hood",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "AS Colour",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 42.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 38.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 37.75
-},
-{
-"options": [
-"100 or more"
-],
-"price": 37.25
-}
-]
-},
-{
-"handle": "as-colour-5083-heavy-faded-long-sleeve-tee",
-"title": "AS Colour Heavy Faded Long Sleeve Tee",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "AS Colour",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 25.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 22.75
-},
-{
-"options": [
-"100 or more"
-],
-"price": 22.0
-}
-]
-},
-{
-"handle": "as-colour-5080-heavy-tee",
-"title": "AS Colour Heavy Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "AS Colour",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 21.5
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 20.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 19.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 18.75
-}
-]
-},
-{
-"handle": "as-colour-5052-block-oversized-tee",
-"title": "AS Colour Block Oversized Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "AS Colour",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 12.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 10.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 9.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 9.25
-}
-]
-},
-{
-"handle": "as-colour-5030-box-tee",
-"title": "AS Colour Box Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "AS Colour",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 17.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 15.75
-},
-{
-"options": [
-"48 or more"
-],
-"price": 15.25
-}
-]
-},
-{
-"handle": "as-colour-5020-staple-long-sleeve-tee",
-"title": "AS Colour Staple Long Sleeve Tee",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "AS Colour",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 17.5
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 16.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 16.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 15.5
-}
-]
-},
-{
-"handle": "as-colour-1165c-frame-two-tone-camo-cap",
-"title": "AS Colour Frame Two-Tone Camo Cap",
-"category": "single",
-"type": "Hats",
-"brand": "AS Colour",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 15.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.25
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 11.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 11.0
-}
-]
-},
-{
-"handle": "as-colour-1165-frame-two-tone-cap",
-"title": "AS Colour Frame Two-Tone Cap",
-"category": "single",
-"type": "Hats",
-"brand": "AS Colour",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 15.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.25
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 11.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 11.0
-}
-]
-},
-{
-"handle": "as-colour-1154-class-two-tone-cap",
-"title": "AS Colour Class Two-Tone Cap",
-"category": "single",
-"type": "Hats",
-"brand": "AS Colour",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 16.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 11.75
-},
-{
-"options": [
-"100 or more"
-],
-"price": 11.25
-}
-]
-},
-{
-"handle": "allpro-41800l-womens-pro-lock-performance-polo",
-"title": "AllPro Women's Pro-Lock Performance Polo",
-"category": "single",
-"type": "Polos",
-"brand": "AllPro",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 18.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 14.75
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 14.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 13.5
-}
-]
-},
-{
-"handle": "allpro-41800-pro-lock-performance-polo",
-"title": "AllPro Pro-Lock Performance Polo",
-"category": "single",
-"type": "Polos",
-"brand": "AllPro",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 18.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 16.75
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 16.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 15.75
-}
-]
-},
-{
-"handle": "q-tees-q600-jumbo-tote",
-"title": "Q-Tees Jumbo Tote",
-"category": "single",
-"type": "Bags",
-"brand": "Q-Tees",
-"deco": "Printed",
-"spec": "12 minimum \u00b7 printed front",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 10.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 9.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 9.25
-},
-{
-"options": [
-"100 or more"
-],
-"price": 9.0
-}
-]
-},
-{
-"handle": "independent-ind50tee-lux-heavyweight-tee",
-"title": "Independent Trading Co. LUX Heavyweight Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Independent Trading Co.",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 19.5
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 17.75
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 17.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 16.25
-}
-]
-},
-{
-"handle": "independent-ind5000c-legend-heavyweight-crewneck",
-"title": "Independent Trading Co. Legend Heavyweight Crewneck",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Independent Trading Co.",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 40.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 37.25
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 36.25
-},
-{
-"options": [
-"100 or more"
-],
-"price": 36.0
-}
-]
-},
-{
-"handle": "independent-ind280sl-avenue-midweight-hoodie",
-"title": "Independent Trading Co. Avenue Midweight Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Independent Trading Co.",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 28.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 24.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 23.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 23.0
-}
-]
-},
-{
-"handle": "yp-classics-6606-retro-trucker-cap",
-"title": "YP Classics Retro Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "YP Classics",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 15.25
-},
-{
-"options": [
-"24 or more"
-],
-"price": 14.0
-}
-]
-},
-{
-"handle": "richardson-323fpc-full-fabric-five-panel-cap",
-"title": "Richardson Full Fabric Five-Panel Cap",
-"category": "single",
-"type": "Hats",
-"brand": "Richardson",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 17.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 13.75
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 13.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 12.5
-}
-]
-},
-{
-"handle": "richardson-112fp-five-panel-trucker-cap",
-"title": "Richardson Five-Panel Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "Richardson",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 16.75
-},
-{
-"options": [
-"24 or more"
-],
-"price": 14.0
-}
-]
-},
-{
-"handle": "comfort-colors-9018-youth-heavyweight-tee",
-"title": "Comfort Colors Youth Heavyweight Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Comfort Colors",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 12.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 11.25
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 11.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 10.5
-}
-]
-},
-{
-"handle": "comfort-colors-3023cl-womens-heavyweight-boxy-tee",
-"title": "Comfort Colors Women's Heavyweight Boxy Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Comfort Colors",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 14.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 12.25
-},
-{
-"options": [
-"100 or more"
-],
-"price": 11.75
-}
-]
-},
-{
-"handle": "comfort-colors-1580-garment-dyed-quarter-zip",
-"title": "Comfort Colors Garment-Dyed Quarter Zip",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Comfort Colors",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 42.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 38.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 37.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 37.0
-}
-]
-},
-{
-"handle": "nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie",
-"title": "Nike Club Fleece Sleeve Swoosh Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Nike",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 51.5
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 48.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 47.25
-},
-{
-"options": [
-"100 or more"
-],
-"price": 45.75
-}
-]
-},
-{
-"handle": "nike-nkbq5231-dri-fit-cotton-poly-tee",
-"title": "Nike Dri-FIT Cotton/Poly Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Nike",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 25.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 24.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 23.25
-},
-{
-"options": [
-"100 or more"
-],
-"price": 22.75
-}
-]
-},
-{
-"handle": "next-level-6010-tri-blend-tee",
-"title": "Next Level Tri-Blend Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Next Level",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 12.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 11.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 10.25
-},
-{
-"options": [
-"100 or more"
-],
-"price": 9.75
-}
-]
-},
-{
-"handle": "gildan-64000cvc-softstyle-cvc-tee",
-"title": "Gildan Softstyle CVC Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Gildan",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 10.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 8.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 7.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 7.0
-}
-]
-},
-{
-"handle": "gildan-64000-softstyle-tee",
-"title": "Gildan Softstyle Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Gildan",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 9.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 7.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 7.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 6.75
-}
-]
-},
-{
-"handle": "gildan-18500b-youth-heavy-blend-hoodie",
-"title": "Gildan Youth Heavy Blend Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Gildan",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 23.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 20.25
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 19.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 19.0
-}
-]
-},
-{
-"handle": "gildan-18000b-youth-heavy-blend-crewneck",
-"title": "Gildan Youth Heavy Blend Crewneck",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Gildan",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 16.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 13.75
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 13.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 13.0
-}
-]
-},
-{
-"handle": "gildan-sf500-softstyle-midweight-hoodie",
-"title": "Gildan Softstyle Midweight Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Gildan",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 24.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 22.75
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 22.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 21.25
-}
-]
-},
-{
-"handle": "lane-seven-ls14001yh-premium-youth-pullover-hoodie",
-"title": "Lane Seven Premium Youth Pullover Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 26.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 22.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 20.0
-}
-]
-},
-{
-"handle": "lane-seven-ls15009-heavyweight-long-sleeve-tee",
-"title": "Lane Seven Heavyweight Long Sleeve Tee",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 15.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 11.0
-}
-]
-},
-{
-"handle": "lane-seven-ls15001-heavyweight-tee",
-"title": "Lane Seven Heavyweight Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 14.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 10.0
-}
-]
-},
-{
-"handle": "lane-seven-ls15000-deluxe-tee",
-"title": "Lane Seven Deluxe Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 14.0
-},
-{
-"options": [
-"24 or more"
-],
-"price": 13.0
-}
-]
-},
-{
-"handle": "lane-seven-ls16001-urban-hoodie",
-"title": "Lane Seven Urban Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 33.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 28.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 27.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 26.0
-}
-]
-},
-{
-"handle": "lane-seven-ls19001-heavyweight-pullover-hoodie",
-"title": "Lane Seven Heavyweight Pullover Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 32.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 28.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 26.0
-}
-]
-},
-{
-"handle": "lane-seven-ls14014-premium-quarter-zip",
-"title": "Lane Seven Premium Quarter Zip",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 28.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 22.0
-}
-]
-},
-{
-"handle": "lane-seven-ls14004-premium-crewneck-sweatshirt",
-"title": "Lane Seven Premium Crewneck Sweatshirt",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 25.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 21.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 20.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 19.0
-}
-]
-},
-{
-"handle": "lane-seven-ls14003-premium-full-zip-hoodie",
-"title": "Lane Seven Premium Full Zip Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 31.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 27.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 25.0
-}
-]
-},
-{
-"handle": "lane-seven-ls14001-premium-pullover-hoodie",
-"title": "Lane Seven Premium Pullover Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "Lane Seven",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 28.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 24.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 22.0
-}
-]
-},
-{
-"handle": "beanie-kit",
-"title": "Beanie Kit",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 Port Authority knit beanies \u00b7 logo embroidered on the cuff",
-"options": [
-{
-"name": "How many beanies",
-"values": [
-"12",
-"24",
-"50"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12"
-],
-"price": 120.0
-},
-{
-"options": [
-"24"
-],
-"price": 200.0
-},
-{
-"options": [
-"50"
-],
-"price": 375.0
-}
-]
-},
-{
-"handle": "crewneck-kit",
-"title": "Crewneck Kit",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 Lane Seven crewnecks \u00b7 front print included \u00b7 add a back print",
-"options": [
-{
-"name": "How many crewnecks",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Print",
-"values": [
-"Front only",
-"Front + back"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Front only"
-],
-"price": 216.0
-},
-{
-"options": [
-"12",
-"Front + back"
-],
-"price": 300.0
-},
-{
-"options": [
-"24",
-"Front only"
-],
-"price": 408.0
-},
-{
-"options": [
-"24",
-"Front + back"
-],
-"price": 576.0
-},
-{
-"options": [
-"50",
-"Front only"
-],
-"price": 700.0
-},
-{
-"options": [
-"50",
-"Front + back"
-],
-"price": 1050.0
-}
-]
-},
-{
-"handle": "partner-gift-sets",
-"title": "Partner Gift Sets",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "16 pieces \u00b7 8 backpacks and 8 quarter-zips \u00b7 your logo on both",
-"options": [
-{
-"name": "Backpack",
-"values": [
-"KNACK Laptop Backpack",
-"Helly Hansen Guide Daypack",
-"Peter Millar Corporate Backpack"
-]
-},
-{
-"name": "Quarter-zip",
-"values": [
-"Vineyard Vines Shep",
-"Johnnie-O Susie (women's)",
-"Johnnie-O Sully",
-"Vineyard Vines Dreamcloth Shep (women's)",
-"Peter Millar Perth",
-"Peter Millar Perth (women's)"
-]
-}
-],
-"variants": [
-{
-"options": [
-"KNACK Laptop Backpack",
-"Vineyard Vines Shep"
-],
-"price": 1999.0
-},
-{
-"options": [
-"KNACK Laptop Backpack",
-"Johnnie-O Susie (women's)"
-],
-"price": 1999.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack",
-"Vineyard Vines Shep"
-],
-"price": 1999.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack",
-"Johnnie-O Susie (women's)"
-],
-"price": 1999.0
-},
-{
-"options": [
-"KNACK Laptop Backpack",
-"Johnnie-O Sully"
-],
-"price": 2199.0
-},
-{
-"options": [
-"KNACK Laptop Backpack",
-"Vineyard Vines Dreamcloth Shep (women's)"
-],
-"price": 2199.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack",
-"Vineyard Vines Shep"
-],
-"price": 2199.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack",
-"Johnnie-O Susie (women's)"
-],
-"price": 2199.0
-},
-{
-"options": [
-"KNACK Laptop Backpack",
-"Peter Millar Perth"
-],
-"price": 2299.0
-},
-{
-"options": [
-"KNACK Laptop Backpack",
-"Peter Millar Perth (women's)"
-],
-"price": 2299.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack",
-"Johnnie-O Sully"
-],
-"price": 2299.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack",
-"Vineyard Vines Dreamcloth Shep (women's)"
-],
-"price": 2299.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack",
-"Peter Millar Perth"
-],
-"price": 2299.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack",
-"Peter Millar Perth (women's)"
-],
-"price": 2299.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack",
-"Johnnie-O Sully"
-],
-"price": 2399.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack",
-"Vineyard Vines Dreamcloth Shep (women's)"
-],
-"price": 2399.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack",
-"Peter Millar Perth"
-],
-"price": 2499.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack",
-"Peter Millar Perth (women's)"
-],
-"price": 2499.0
-}
-]
-},
-{
-"handle": "holiday-client-gift",
-"title": "Holiday Client Gift",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "48 YETI tumblers \u00b7 your logo laser engraved",
-"options": [
-{
-"name": "Tumbler",
-"values": [
-"YETI Rambler 20 oz"
-]
-}
-],
-"variants": [
-{
-"options": [
-"YETI Rambler 20 oz"
-],
-"price": 1999.0
-}
-]
-},
-{
-"handle": "executive-travel",
-"title": "Executive Travel",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "8 backpacks \u00b7 your logo stitched on each",
-"options": [
-{
-"name": "Backpack",
-"values": [
-"KNACK Laptop Backpack",
-"Helly Hansen Guide Daypack",
-"Peter Millar Corporate Backpack",
-"Patagonia Black Hole 25L"
-]
-}
-],
-"variants": [
-{
-"options": [
-"KNACK Laptop Backpack"
-],
-"price": 1099.0
-},
-{
-"options": [
-"Helly Hansen Guide Daypack"
-],
-"price": 1199.0
-},
-{
-"options": [
-"Peter Millar Corporate Backpack"
-],
-"price": 1299.0
-},
-{
-"options": [
-"Patagonia Black Hole 25L"
-],
-"price": 1299.0
-}
-]
-},
-{
-"handle": "the-crew-vest",
-"title": "The Crew Vest",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "8 vests \u00b7 men's and women's \u00b7 your logo stitched",
-"options": [
-{
-"name": "Vest",
-"values": [
-"Patagonia Better Sweater",
-"Patagonia Better Sweater (women's)",
-"Johnnie-O Reggie",
-"Helly Hansen Crew Insulator",
-"Bonobos Fairgame",
-"Helly Hansen Crew Insulator (women's)",
-"Save the Duck Charlotte (women's)"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Patagonia Better Sweater"
-],
-"price": 1099.0
-},
-{
-"options": [
-"Patagonia Better Sweater (women's)"
-],
-"price": 1099.0
-},
-{
-"options": [
-"Johnnie-O Reggie"
-],
-"price": 1299.0
-},
-{
-"options": [
-"Helly Hansen Crew Insulator"
-],
-"price": 1299.0
-},
-{
-"options": [
-"Bonobos Fairgame"
-],
-"price": 1299.0
-},
-{
-"options": [
-"Helly Hansen Crew Insulator (women's)"
-],
-"price": 1299.0
-},
-{
-"options": [
-"Save the Duck Charlotte (women's)"
-],
-"price": 1399.0
-}
-]
-},
-{
-"handle": "signature-layers",
-"title": "Signature Layers",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "8 quarter-zips \u00b7 men's and women's \u00b7 your logo stitched",
-"options": [
-{
-"name": "Quarter-zip",
-"values": [
-"Vineyard Vines Shep",
-"Johnnie-O Susie (women's)",
-"Peter Millar Perth",
-"Johnnie-O Sully",
-"Peter Millar Perth (women's)",
-"Vineyard Vines Dreamcloth Shep (women's)"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Vineyard Vines Shep"
-],
-"price": 899.0
-},
-{
-"options": [
-"Johnnie-O Susie (women's)"
-],
-"price": 899.0
-},
-{
-"options": [
-"Peter Millar Perth"
-],
-"price": 1199.0
-},
-{
-"options": [
-"Johnnie-O Sully"
-],
-"price": 1199.0
-},
-{
-"options": [
-"Peter Millar Perth (women's)"
-],
-"price": 1199.0
-},
-{
-"options": [
-"Vineyard Vines Dreamcloth Shep (women's)"
-],
-"price": 1199.0
-}
-]
-},
-{
-"handle": "team-polos",
-"title": "Team Polos",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "8 performance polos \u00b7 men's and women's \u00b7 your logo stitched",
-"options": [
-{
-"name": "Polo",
-"values": [
-"Helly Hansen Tech Crew (women's)",
-"Johnnie-O Birdie",
-"Southern Tide Skipjack",
-"Peter Millar Solid Performance",
-"Johnnie-O Adelaide (women's)",
-"Peter Millar Button Polo (women's)"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Helly Hansen Tech Crew (women's)"
-],
-"price": 699.0
-},
-{
-"options": [
-"Johnnie-O Birdie"
-],
-"price": 799.0
-},
-{
-"options": [
-"Southern Tide Skipjack"
-],
-"price": 799.0
-},
-{
-"options": [
-"Peter Millar Solid Performance"
-],
-"price": 899.0
-},
-{
-"options": [
-"Johnnie-O Adelaide (women's)"
-],
-"price": 899.0
-},
-{
-"options": [
-"Peter Millar Button Polo (women's)"
-],
-"price": 999.0
-}
-]
-},
-{
-"handle": "client-appreciation",
-"title": "Client Appreciation",
-"category": "gifts",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "8 sling bags \u00b7 your logo stitched on each",
-"options": [
-{
-"name": "Sling bag",
-"values": [
-"KNACK Expandable Sling",
-"Patagonia Atom Sling 8L"
-]
-}
-],
-"variants": [
-{
-"options": [
-"KNACK Expandable Sling"
-],
-"price": 499.0
-},
-{
-"options": [
-"Patagonia Atom Sling 8L"
-],
-"price": 499.0
-}
-]
-},
-{
-"handle": "hoodie-kit",
-"title": "Hoodie Kit",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 Lane Seven hoodies \u00b7 front print included \u00b7 add a back print",
-"options": [
-{
-"name": "How many hoodies",
-"values": [
-"12",
-"24",
-"50"
-]
-},
-{
-"name": "Print",
-"values": [
-"Front only",
-"Front + back"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12",
-"Front only"
-],
-"price": 240.0
-},
-{
-"options": [
-"12",
-"Front + back"
-],
-"price": 324.0
-},
-{
-"options": [
-"24",
-"Front only"
-],
-"price": 444.0
-},
-{
-"options": [
-"24",
-"Front + back"
-],
-"price": 612.0
-},
-{
-"options": [
-"50",
-"Front only"
-],
-"price": 775.0
-},
-{
-"options": [
-"50",
-"Front + back"
-],
-"price": 1125.0
-}
-]
-},
-{
-"handle": "booth-kit-24",
-"title": "Booth Kit 24",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 pieces \u00b7 12 polos 6 quarter-zips 6 hats \u00b7 all embroidered",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 549.0
-}
-]
-},
-{
-"handle": "cap-america-i7038-perforated-polyester-cap",
-"title": "Cap America Perforated Polyester Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 25.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 20.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 19.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 18.0
-}
-]
-},
-{
-"handle": "10-10-hats-615-5-panel-cap",
-"title": "10/10 Hats 5 Panel Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 27.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 22.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 21.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 20.0
-}
-]
-},
-{
-"handle": "new-era-ne400-9fifty-flat-bill-snapback-cap",
-"title": "New Era 9FIFTY Flat Bill Snapback Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 26.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 22.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 20.0
-}
-]
-},
-{
-"handle": "new-era-ne209-performance-dash-adjustable-cap",
-"title": "New Era Performance Dash Adjustable Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 26.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 22.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 20.0
-}
-]
-},
-{
-"handle": "new-era-ne205-snapback-trucker-cap",
-"title": "New Era Snapback Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 25.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 20.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 19.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 18.0
-}
-]
-},
-{
-"handle": "cap-america-i8505-original-poly-cotton-snapback-cap",
-"title": "Cap America Original Poly/Cotton Snapback Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 20.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 15.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 14.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 13.0
-}
-]
-},
-{
-"handle": "cap-america-i3038-classic-6-panel-trucker-cap",
-"title": "Cap America Classic 6 Panel Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 20.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 15.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 14.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 13.0
-}
-]
-},
-{
-"handle": "cap-america-i3021-heritage-corduroy-trucker-cap",
-"title": "Cap America Heritage Corduroy Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 22.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 17.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 16.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 15.0
-}
-]
-},
-{
-"handle": "cap-america-i1002-classic-dad-cap",
-"title": "Cap America Classic Dad Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 20.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 15.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 14.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 13.0
-}
-]
-},
-{
-"handle": "cap-america-i8522-premium-athletic-cap",
-"title": "Cap America Premium Athletic Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 23.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 17.0
-}
-]
-},
-{
-"handle": "classic-tee-kit",
-"title": "Classic Tee Kit",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "50 Lane Seven tees \u00b7 up to 4 colors \u00b7 left chest and big back",
-"options": [
-{
-"name": "How many shirts",
-"values": [
-"50"
-]
-}
-],
-"variants": [
-{
-"options": [
-"50"
-],
-"price": 599.0
-}
-]
-},
-{
-"handle": "hat-kit-24",
-"title": "Hat Kit 24",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 hats \u00b7 7 styles \u00b7 front logo included + add back or sides",
-"options": [
-{
-"name": "Hat style",
-"values": [
-"YP Classics Retro Trucker",
-"Richardson 112",
-"Richardson 112FP",
-"Flexfit 110 Mesh",
-"Cap America i8522",
-"10/10 5 Panel",
-"Legacy MPS"
-]
-},
-{
-"name": "Logo spots",
-"values": [
-"Front only",
-"Front + 1 more",
-"Front + 2 more",
-"Front + 3 more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"YP Classics Retro Trucker",
-"Front only"
-],
-"price": 449.0
-},
-{
-"options": [
-"YP Classics Retro Trucker",
-"Front + 1 more"
-],
-"price": 549.0
-},
-{
-"options": [
-"YP Classics Retro Trucker",
-"Front + 2 more"
-],
-"price": 649.0
-},
-{
-"options": [
-"YP Classics Retro Trucker",
-"Front + 3 more"
-],
-"price": 749.0
-},
-{
-"options": [
-"Richardson 112",
-"Front only"
-],
-"price": 499.0
-},
-{
-"options": [
-"Richardson 112",
-"Front + 1 more"
-],
-"price": 599.0
-},
-{
-"options": [
-"Richardson 112",
-"Front + 2 more"
-],
-"price": 699.0
-},
-{
-"options": [
-"Richardson 112",
-"Front + 3 more"
-],
-"price": 799.0
-},
-{
-"options": [
-"Richardson 112FP",
-"Front only"
-],
-"price": 499.0
-},
-{
-"options": [
-"Richardson 112FP",
-"Front + 1 more"
-],
-"price": 599.0
-},
-{
-"options": [
-"Richardson 112FP",
-"Front + 2 more"
-],
-"price": 699.0
-},
-{
-"options": [
-"Richardson 112FP",
-"Front + 3 more"
-],
-"price": 799.0
-},
-{
-"options": [
-"Flexfit 110 Mesh",
-"Front only"
-],
-"price": 499.0
-},
-{
-"options": [
-"Flexfit 110 Mesh",
-"Front + 1 more"
-],
-"price": 599.0
-},
-{
-"options": [
-"Flexfit 110 Mesh",
-"Front + 2 more"
-],
-"price": 699.0
-},
-{
-"options": [
-"Flexfit 110 Mesh",
-"Front + 3 more"
-],
-"price": 799.0
-},
-{
-"options": [
-"Cap America i8522",
-"Front only"
-],
-"price": 499.0
-},
-{
-"options": [
-"Cap America i8522",
-"Front + 1 more"
-],
-"price": 599.0
-},
-{
-"options": [
-"Cap America i8522",
-"Front + 2 more"
-],
-"price": 699.0
-},
-{
-"options": [
-"Cap America i8522",
-"Front + 3 more"
-],
-"price": 799.0
-},
-{
-"options": [
-"10/10 5 Panel",
-"Front only"
-],
-"price": 549.0
-},
-{
-"options": [
-"10/10 5 Panel",
-"Front + 1 more"
-],
-"price": 649.0
-},
-{
-"options": [
-"10/10 5 Panel",
-"Front + 2 more"
-],
-"price": 749.0
-},
-{
-"options": [
-"10/10 5 Panel",
-"Front + 3 more"
-],
-"price": 849.0
-},
-{
-"options": [
-"Legacy MPS",
-"Front only"
-],
-"price": 549.0
-},
-{
-"options": [
-"Legacy MPS",
-"Front + 1 more"
-],
-"price": 649.0
-},
-{
-"options": [
-"Legacy MPS",
-"Front + 2 more"
-],
-"price": 749.0
-},
-{
-"options": [
-"Legacy MPS",
-"Front + 3 more"
-],
-"price": 849.0
-}
-]
-},
-{
-"handle": "performance-tee-kit",
-"title": "Performance Tee Kit",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "Pick short or long or hooded \u00b7 50 to 200 A4 shirts \u00b7 up to 4 colors front and back",
-"options": [
-{
-"name": "How many shirts",
-"values": [
-"50",
-"75",
-"100",
-"150",
-"200"
-]
-},
-{
-"name": "Style",
-"values": [
-"Short sleeve",
-"Long sleeve",
-"Hooded long sleeve"
-]
-}
-],
-"variants": [
-{
-"options": [
-"50",
-"Short sleeve"
-],
-"price": 699.0
-},
-{
-"options": [
-"50",
-"Long sleeve"
-],
-"price": 849.0
-},
-{
-"options": [
-"50",
-"Hooded long sleeve"
-],
-"price": 1049.0
-},
-{
-"options": [
-"75",
-"Short sleeve"
-],
-"price": 1026.0
-},
-{
-"options": [
-"75",
-"Long sleeve"
-],
-"price": 1251.0
-},
-{
-"options": [
-"75",
-"Hooded long sleeve"
-],
-"price": 1551.0
-},
-{
-"options": [
-"100",
-"Short sleeve"
-],
-"price": 1338.0
-},
-{
-"options": [
-"100",
-"Long sleeve"
-],
-"price": 1638.0
-},
-{
-"options": [
-"100",
-"Hooded long sleeve"
-],
-"price": 2038.0
-},
-{
-"options": [
-"150",
-"Short sleeve"
-],
-"price": 1962.0
-},
-{
-"options": [
-"150",
-"Long sleeve"
-],
-"price": 2412.0
-},
-{
-"options": [
-"150",
-"Hooded long sleeve"
-],
-"price": 3012.0
-},
-{
-"options": [
-"200",
-"Short sleeve"
-],
-"price": 2556.0
-},
-{
-"options": [
-"200",
-"Long sleeve"
-],
-"price": 3156.0
-},
-{
-"options": [
-"200",
-"Hooded long sleeve"
-],
-"price": 3956.0
-}
-]
-},
-{
-"handle": "premium-tee-kit",
-"title": "Premium Tee Kit",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "50 Comfort Colors tees \u00b7 up to 4 colors \u00b7 left chest and big back",
-"options": [
-{
-"name": "How many shirts",
-"values": [
-"50",
-"75",
-"100",
-"150",
-"200"
-]
-}
-],
-"variants": [
-{
-"options": [
-"50"
-],
-"price": 699.0
-},
-{
-"options": [
-"75"
-],
-"price": 1026.0
-},
-{
-"options": [
-"100"
-],
-"price": 1338.0
-},
-{
-"options": [
-"150"
-],
-"price": 1962.0
-},
-{
-"options": [
-"200"
-],
-"price": 2556.0
-}
-]
-},
-{
-"handle": "women-s-starter-kit-8",
-"title": "Women\u2019s Starter Kit 8",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "8 pieces \u00b7 embroidered \u00b7 4 New Era half-zips + 4 Brooks Brothers fleece vests",
-"options": [
-{
-"name": "Kit",
-"values": [
-"8 pieces"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 pieces"
-],
-"price": 549.0
-}
-]
-},
-{
-"handle": "nike-women-s-bomber-jacket",
-"title": "Nike Women\u2019s Bomber Jacket",
-"category": "single",
-"type": "Outerwear",
-"brand": "Nike",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered left chest",
-"options": [
-{
-"name": "Quantity",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 105.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 99.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 96.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 92.0
-}
-]
-},
-{
-"handle": "the-north-face-women-s-textured-pine-grove-1-2-zip",
-"title": "The North Face Women\u2019s Textured Pine Grove 1/2-Zip",
-"category": "single",
-"type": "Outerwear",
-"brand": "The North Face",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered left chest",
-"options": [
-{
-"name": "Quantity",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 95.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 90.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 88.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 85.0
-}
-]
-},
-{
-"handle": "travismathew-women-s-momentum-shift-1-2-zip",
-"title": "TravisMathew Women\u2019s Momentum Shift 1/2-Zip",
-"category": "single",
-"type": "Premium Layers",
-"brand": "TravisMathew",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered left chest",
-"options": [
-{
-"name": "Quantity",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 119.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 114.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 110.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 105.0
-}
-]
-},
-{
-"handle": "nike-women-s-dri-fit-stride-1-2-zip",
-"title": "Nike Women\u2019s Dri-FIT Stride 1/2-Zip",
-"category": "single",
-"type": "Performance Layers",
-"brand": "Nike",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered left chest",
-"options": [
-{
-"name": "Quantity",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 99.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 94.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 92.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 89.0
-}
-]
-},
-{
-"handle": "brooks-brothers-women-s-fleece-jacket",
-"title": "Brooks Brothers Women\u2019s Fleece Jacket",
-"category": "single",
-"type": "Outerwear",
-"brand": "Brooks Brothers",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered left chest",
-"options": [
-{
-"name": "Quantity",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 99.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 94.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 92.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 90.0
-}
-]
-},
-{
-"handle": "womens-everyday-kit-18",
-"title": "Women's Everyday Kit 18",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "18 pieces \u00b7 embroidered \u00b7 6 New Era half-zips + 6 New Era hoodies + 6 Brooks Brothers vests",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 1199.0
-}
-]
-},
-{
-"handle": "womens-office-layers-kit-12",
-"title": "Women's Office Layers Kit 12",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "12 pieces \u00b7 embroidered \u00b7 6 New Era half-zips + 6 Brooks Brothers fleece vests",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 849.0
-}
-]
-},
-{
-"handle": "womens-comfort-kit-12",
-"title": "Women's Comfort Kit 12",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "12 pieces \u00b7 embroidered \u00b7 6 New Era half-zips + 6 New Era hoodies",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 749.0
-}
-]
-},
-{
-"handle": "brooks-brothers-womens-fleece-vest",
-"title": "Brooks Brothers Women's Fleece Vest",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 85.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 80.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 79.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 78.0
-}
-]
-},
-{
-"handle": "new-era-womens-double-back-full-zip-hoodie",
-"title": "New Era Women's Double Back Full-Zip Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 69.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 66.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 65.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 64.0
-}
-]
-},
-{
-"handle": "new-era-womens-heritage-fleece-half-zip",
-"title": "New Era Women's Heritage Fleece Half-Zip",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 65.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 62.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 61.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 60.0
-}
-]
-},
-{
-"handle": "new-era-double-back-quarter-zip",
-"title": "New Era Double Back Quarter-Zip",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 69.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 66.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 65.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 64.0
-}
-]
-},
-{
-"handle": "the-north-face-textured-pine-grove-half-zip",
-"title": "The North Face Textured Pine Grove Half-Zip",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 89.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 84.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 83.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 82.0
-}
-]
-},
-{
-"handle": "ogio-driveline-hybrid-vest",
-"title": "OGIO Driveline Hybrid Vest",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 71.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 66.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 65.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 64.0
-}
-]
-},
-{
-"handle": "carhartt-force-half-zip-grid-fleece",
-"title": "Carhartt Force Half-Zip Grid Fleece",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 79.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 74.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 73.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 72.0
-}
-]
-},
-{
-"handle": "nike-dri-fit-stride-half-zip",
-"title": "Nike Dri-FIT Stride Half-Zip",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 94.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 89.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 88.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 87.0
-}
-]
-},
-{
-"handle": "richardson-112pfp-camo-trucker-cap",
-"title": "Richardson Printed Camo Trucker Cap",
-"category": "single",
-"type": "Camo",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 26.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 21.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 20.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 19.0
-}
-]
-},
-{
-"handle": "port-authority-j325-core-soft-shell-vest",
-"title": "Port Authority Core Soft Shell Vest",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 47.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 42.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 41.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 40.0
-}
-]
-},
-{
-"handle": "port-authority-j317-core-soft-shell-jacket",
-"title": "Port Authority Core Soft Shell Jacket",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 49.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 44.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 43.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 42.0
-}
-]
-},
-{
-"handle": "port-authority-f219-value-fleece-vest",
-"title": "Port Authority Value Fleece Vest",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 37.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 32.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 31.0
-}
-]
-},
-{
-"handle": "port-authority-f217-value-fleece-jacket",
-"title": "Port Authority Value Fleece Jacket",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 41.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 36.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 35.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 34.0
-}
-]
-},
-{
-"handle": "port-authority-j407-essential-rain-jacket",
-"title": "Port Authority Essential Rain Jacket",
-"category": "single",
-"type": "Outerwear",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 62.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 57.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 56.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 55.0
-}
-]
-},
-{
-"handle": "independent-ind4000-heavyweight-camo-hood",
-"title": "Independent Heavyweight Camo Hood",
-"category": "single",
-"type": "Camo",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 42.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 37.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 36.0
-}
-]
-},
-{
-"handle": "independent-ind330blv-boulevard-camo-hood",
-"title": "Independent Boulevard Camo Hood",
-"category": "single",
-"type": "Camo",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 40.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 36.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 35.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 34.0
-}
-]
-},
-{
-"handle": "independent-prm180lst-camo-long-sleeve",
-"title": "Independent Camo Long Sleeve",
-"category": "single",
-"type": "Camo",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 21.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 17.0
-}
-]
-},
-{
-"handle": "independent-prm180pt-camo-tee",
-"title": "Independent Camo Tee",
-"category": "single",
-"type": "Camo",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 18.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 15.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 14.0
-}
-]
-},
-{
-"handle": "shaka-wear-shmhss-max-heavyweight-tee",
-"title": "Shaka Wear Max Heavyweight Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 18.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 15.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 14.0
-}
-]
-},
-{
-"handle": "as-colour-5416-rugby-stripe",
-"title": "AS Colour Rugby Stripe",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 52.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 47.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 46.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 45.0
-}
-]
-},
-{
-"handle": "as-colour-5161-relax-hood",
-"title": "AS Colour Relax Hood",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 48.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 43.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 42.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 41.0
-}
-]
-},
-{
-"handle": "as-colour-5160-relax-crew",
-"title": "AS Colour Relax Crew",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 43.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 38.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 37.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 36.0
-}
-]
-},
-{
-"handle": "as-colour-5125-stencil-half-zip-crew",
-"title": "AS Colour Stencil Half Zip Crew",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 49.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 44.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 43.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 42.0
-}
-]
-},
-{
-"handle": "as-colour-5085-stone-wash-heavy-tee",
-"title": "AS Colour Stone Wash Heavy Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 20.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.5
-},
-{
-"options": [
-"48 or more"
-],
-"price": 17.5
-}
-]
-},
-{
-"handle": "as-colour-5027-classic-pocket-tee",
-"title": "AS Colour Classic Pocket Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 23.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 20.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 19.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 18.0
-}
-]
-},
-{
-"handle": "as-colour-5026-classic-tee",
-"title": "AS Colour Classic Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 16.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 14.5
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 13.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 13.25
-}
-]
-},
-{
-"handle": "richardson-326-garment-washed-cap",
-"title": "Richardson 326 Garment Washed Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 22.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 16.0
-}
-]
-},
-{
-"handle": "richardson-115-low-pro-trucker",
-"title": "Richardson 115 Low Pro Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 23.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 17.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 16.0
-}
-]
-},
-{
-"handle": "yp-classics-6245cm-classic-dad-hat",
-"title": "YP Classics Classic Dad Hat",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 22.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 16.0
-}
-]
-},
-{
-"handle": "yp-classics-6601-elite-cap",
-"title": "YP Classics Elite Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 21.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 16.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 15.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 14.0
-}
-]
-},
-{
-"handle": "legacy-mps-mid-pro-snapback-trucker",
-"title": "Legacy Mid-Pro Snapback Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 27.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 21.0
-}
-]
-},
-{
-"handle": "legacy-rempa-reclaim-mid-pro-cap",
-"title": "Legacy Reclaim Mid-Pro Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 32.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 27.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 26.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 25.0
-}
-]
-},
-{
-"handle": "legacy-cut-the-cut-above-cap",
-"title": "Legacy Cut Above Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 33.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 29.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 28.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 27.0
-}
-]
-},
-{
-"handle": "legacy-cfb-cool-fit-booney",
-"title": "Legacy Cool Fit Booney",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 43.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 38.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 37.0
-}
-]
-},
-{
-"handle": "cornerstone-class-2-safety-long-sleeve",
-"title": "CornerStone Class 2 Safety Long Sleeve",
-"category": "single",
-"type": "Hi-Vis",
-"brand": "",
-"deco": "Printed",
-"spec": "12 minimum \u00b7 Class 2 \u00b7 printed left chest",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 34.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 32.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 30.0
-}
-]
-},
-{
-"handle": "carhartt-workwear-pocket-tee",
-"title": "Carhartt Workwear Pocket Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 27.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 25.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 23.0
-}
-]
-},
-{
-"handle": "port-authority-womens-dry-zone-polo",
-"title": "Port Authority Women's Dry Zone Polo",
-"category": "single",
-"type": "Polos",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 27.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 21.0
-}
-]
-},
-{
-"handle": "gildan-heavy-blend-hoodie",
-"title": "Gildan Heavy Blend Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 24.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 20.75
-},
-{
-"options": [
-"48 or more"
-],
-"price": 20.0
-}
-]
-},
-{
-"handle": "gildan-heavy-blend-crewneck",
-"title": "Gildan Heavy Blend Crewneck",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 19.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 16.25
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 15.5
-},
-{
-"options": [
-"100 or more"
-],
-"price": 15.0
-}
-]
-},
-{
-"handle": "gildan-heavy-cotton-tee",
-"title": "Gildan Heavy Cotton Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 9.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 7.5
-},
-{
-"options": [
-"48 or more"
-],
-"price": 6.75
-}
-]
-},
-{
-"handle": "cornerstone-class-2-safety-vest",
-"title": "CornerStone Class 2 Safety Vest",
-"category": "single",
-"type": "Hi-Vis",
-"brand": "",
-"deco": "Printed",
-"spec": "12 minimum \u00b7 Class 2 \u00b7 printed left chest",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 28.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 26.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 25.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 24.0
-}
-]
-},
-{
-"handle": "cornerstone-class-2-safety-tee",
-"title": "CornerStone Class 2 Safety Tee",
-"category": "single",
-"type": "Hi-Vis",
-"brand": "",
-"deco": "Printed",
-"spec": "12 minimum \u00b7 Class 2 \u00b7 printed left chest",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 27.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 25.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 24.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 23.0
-}
-]
-},
-{
-"handle": "port-authority-knit-beanie",
-"title": "Port Authority Knit Beanie",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered cuff",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 16.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 12.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 10.0
-}
-]
-},
-{
-"handle": "comfort-colors-heavyweight-tee",
-"title": "Comfort Colors Heavyweight Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 17.75
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 16.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 15.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 14.5
-}
-]
-},
-{
-"handle": "comfort-colors-heavyweight-long-sleeve",
-"title": "Comfort Colors Heavyweight Long Sleeve",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 25.25
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.75
-},
-{
-"options": [
-"48 or more"
-],
-"price": 23.25
-}
-]
-},
-{
-"handle": "independent-midweight-hoodie",
-"title": "Independent Trading Co. Midweight Hoodie",
-"category": "single",
-"type": "Hoodies & Crews",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 41.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 36.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 35.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 34.0
-}
-]
-},
-{
-"handle": "yupoong-6089m-flat-bill-snapback",
-"title": "Yupoong 6089M Flat Bill Snapback",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 22.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 17.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 16.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 15.0
-}
-]
-},
-{
-"handle": "flexfit-6277-fitted-cap",
-"title": "Flexfit 6277 Fitted Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 26.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 21.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 20.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 19.0
-}
-]
-},
-{
-"handle": "ogio-regain-polo",
-"title": "OGIO Regain Polo",
-"category": "single",
-"type": "Polos",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 44.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 39.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 38.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 37.0
-}
-]
-},
-{
-"handle": "richardson-112-trucker-cap",
-"title": "Richardson 112 Trucker Cap",
-"category": "single",
-"type": "Hats",
-"brand": "",
-"deco": "Embroidered",
-"spec": "8 minimum \u00b7 embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 23.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 18.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 17.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 16.0
-}
-]
-},
-{
-"handle": "port-authority-dry-zone-polo",
-"title": "Port Authority Dry Zone Polo",
-"category": "single",
-"type": "Polos",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "8 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"8 to 23",
-"24 to 47",
-"48 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"8 to 23"
-],
-"price": 27.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.0
-},
-{
-"options": [
-"48 or more"
-],
-"price": 21.0
-}
-]
-},
-{
-"handle": "port-company-performance-hooded-tee",
-"title": "Port & Company Performance Hooded Tee",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 25.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 23.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 22.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 21.0
-}
-]
-},
-{
-"handle": "a4-cooling-performance-long-sleeve",
-"title": "A4 Cooling Performance Long Sleeve",
-"category": "single",
-"type": "Long Sleeves",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 24.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 22.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 21.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 20.0
-}
-]
-},
-{
-"handle": "a4-cooling-performance-tee",
-"title": "A4 Cooling Performance Tee",
-"category": "single",
-"type": "T-Shirts",
-"brand": "",
-"deco": "Printed or embroidered",
-"spec": "12 minimum \u00b7 printed or embroidered",
-"options": [
-{
-"name": "Order size",
-"values": [
-"12 to 23",
-"24 to 47",
-"48 to 99",
-"100 or more"
-]
-}
-],
-"variants": [
-{
-"options": [
-"12 to 23"
-],
-"price": 22.0
-},
-{
-"options": [
-"24 to 47"
-],
-"price": 19.0
-},
-{
-"options": [
-"48 to 99"
-],
-"price": 18.0
-},
-{
-"options": [
-"100 or more"
-],
-"price": 17.0
-}
-]
-},
-{
-"handle": "hi-vis-crew-pack-24",
-"title": "Hi-Vis Crew Pack 24",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 pieces \u00b7 6 people \u00b7 Class 2 tees and vests",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 589.0
-}
-]
-},
-{
-"handle": "hi-vis-crew-pack-18",
-"title": "Hi-Vis Crew Pack 18",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "18 pieces \u00b7 6 people \u00b7 Class 2 tees and vests",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 459.0
-}
-]
-},
-{
-"handle": "comfy-kit-48",
-"title": "Comfy Kit 48",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "48 pieces \u00b7 12 people \u00b7 hoodies + long sleeves + tees + beanies",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 1099.0
-}
-]
-},
-{
-"handle": "comfy-kit-16",
-"title": "Comfy Kit 16",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "16 pieces \u00b7 4 people \u00b7 hoodies + long sleeves + tees + beanies",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 389.0
-}
-]
-},
-{
-"handle": "comfy-kit-32",
-"title": "Comfy Kit 32",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "32 pieces \u00b7 8 people \u00b7 hoodies + long sleeves + tees + beanies",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 749.0
-}
-]
-},
-{
-"handle": "executive-package",
-"title": "Executive Package",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 pieces \u00b7 12 polos and 12 caps \u00b7 all embroidered",
-"options": [],
-"variants": [
-{
-"options": [],
-"price": 699.0
-}
-]
-},
-{
-"handle": "crew-kit-200",
-"title": "Crew Kit 200",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "200 pieces \u00b7 screen-printed tees \u00b7 embroidered polos and caps",
-"options": [
-{
-"name": "T-shirt",
-"values": [
-"Performance",
-"Heavyweight cotton"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Performance"
-],
-"price": 2299.0
-},
-{
-"options": [
-"Heavyweight cotton"
-],
-"price": 2740.0
-}
-]
-},
-{
-"handle": "crew-kit-100",
-"title": "Crew Kit 100",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "100 pieces \u00b7 screen-printed tees \u00b7 embroidered polos and caps",
-"options": [
-{
-"name": "T-shirt",
-"values": [
-"Performance",
-"Heavyweight cotton"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Performance"
-],
-"price": 1299.0
-},
-{
-"options": [
-"Heavyweight cotton"
-],
-"price": 1519.0
-}
-]
-},
-{
-"handle": "crew-kit-48",
-"title": "Crew Kit 48",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "48 pieces \u00b7 up to 8 people \u00b7 two caps each",
-"options": [
-{
-"name": "T-shirt",
-"values": [
-"Performance",
-"Heavyweight cotton"
-]
-},
-{
-"name": "Long sleeves",
-"values": [
-"Performance",
-"Heavyweight cotton"
-]
-},
-{
-"name": "Hoodie",
-"values": [
-"Performance",
-"Cotton fleece"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Performance",
-"Performance",
-"Performance"
-],
-"price": 799.0
-},
-{
-"options": [
-"Performance",
-"Performance",
-"Cotton fleece"
-],
-"price": 902.0
-},
-{
-"options": [
-"Performance",
-"Heavyweight cotton",
-"Performance"
-],
-"price": 873.0
-},
-{
-"options": [
-"Performance",
-"Heavyweight cotton",
-"Cotton fleece"
-],
-"price": 976.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Performance",
-"Performance"
-],
-"price": 833.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Performance",
-"Cotton fleece"
-],
-"price": 936.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Heavyweight cotton",
-"Performance"
-],
-"price": 907.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Heavyweight cotton",
-"Cotton fleece"
-],
-"price": 1010.0
-}
-]
-},
-{
-"handle": "starter-kit-24",
-"title": "Starter Kit 24",
-"category": "kits",
-"type": "",
-"brand": "",
-"deco": "",
-"spec": "24 pieces \u00b7 3 to 6 people \u00b7 shirts polos and caps",
-"options": [
-{
-"name": "T-shirt",
-"values": [
-"Performance",
-"Heavyweight cotton"
-]
-},
-{
-"name": "Long sleeves",
-"values": [
-"Performance",
-"Heavyweight cotton"
-]
-},
-{
-"name": "Hoodie",
-"values": [
-"Performance",
-"Cotton fleece"
-]
-}
-],
-"variants": [
-{
-"options": [
-"Performance",
-"Performance",
-"Performance"
-],
-"price": 499.0
-},
-{
-"options": [
-"Performance",
-"Performance",
-"Cotton fleece"
-],
-"price": 536.0
-},
-{
-"options": [
-"Performance",
-"Heavyweight cotton",
-"Performance"
-],
-"price": 527.0
-},
-{
-"options": [
-"Performance",
-"Heavyweight cotton",
-"Cotton fleece"
-],
-"price": 564.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Performance",
-"Performance"
-],
-"price": 524.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Performance",
-"Cotton fleece"
-],
-"price": 561.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Heavyweight cotton",
-"Performance"
-],
-"price": 552.0
-},
-{
-"options": [
-"Heavyweight cotton",
-"Heavyweight cotton",
-"Cotton fleece"
-],
-"price": 589.0
-}
-]
-}
+ {
+  "handle": "holiday-client-gift",
+  "title": "Holiday Client Gift",
+  "category": "gifts",
+  "type": "",
+  "brand": "",
+  "deco": "",
+  "spec": "48 YETI tumblers · your logo laser engraved",
+  "family": "Holiday Gifts",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451555233866",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/ff-yeti-tumbler_327f1458-a092-40de-811c-ad912e3ec6a1.jpg?v=1793646653",
+    "w": 730,
+    "h": 1000
+   }
+  ],
+  "options": [
+   {
+    "name": "Tumbler",
+    "values": [
+     "YETI Rambler 20 oz"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67887143944266",
+    "options": [
+     "YETI Rambler 20 oz"
+    ],
+    "price": 2298.85
+   }
+  ]
+ },
+ {
+  "handle": "beanie-kit",
+  "title": "Beanie Kit",
+  "category": "kits",
+  "type": "",
+  "brand": "",
+  "deco": "",
+  "spec": "24 Port Authority knit beanies · logo embroidered on the cuff",
+  "family": "Hats",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451551203402",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-black.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-millennium-blue-model.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-navy.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-athletic-red.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-athletic-oxford.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-charcoal-heather.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-olive-drab-green.jpg?v=1793646564",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "How many beanies",
+    "values": [
+     "12",
+     "24",
+     "50"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67887136669770",
+    "options": [
+     "12"
+    ],
+    "price": 138,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-black.jpg?v=1793646564"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136702538",
+    "options": [
+     "24"
+    ],
+    "price": 230,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-black.jpg?v=1793646564"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136735306",
+    "options": [
+     "50"
+    ],
+    "price": 431.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/beanie-kit-black.jpg?v=1793646564"
+   }
+  ]
+ },
+ {
+  "handle": "crewneck-kit",
+  "title": "Crewneck Kit",
+  "category": "kits",
+  "type": "",
+  "brand": "",
+  "deco": "",
+  "spec": "24 Lane Seven crewnecks · front print included · add a back print",
+  "family": "Screen Printed",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451551137866",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-black-front.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-black-back.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-black-front-model.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-black-back-model.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-heather-grey-front.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-oatmeal-heather-front.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/crewneck-kit-charcoal-heather-front.jpg?v=1793646562",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "How many crewnecks",
+    "values": [
+     "12",
+     "24",
+     "50"
+    ]
+   },
+   {
+    "name": "Print",
+    "values": [
+     "Front only",
+     "Front + back"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67887136440394",
+    "options": [
+     "12",
+     "Front only"
+    ],
+    "price": 248.4
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136473162",
+    "options": [
+     "12",
+     "Front + back"
+    ],
+    "price": 345
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136505930",
+    "options": [
+     "24",
+     "Front only"
+    ],
+    "price": 469.2
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136538698",
+    "options": [
+     "24",
+     "Front + back"
+    ],
+    "price": 662.4
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136571466",
+    "options": [
+     "50",
+     "Front only"
+    ],
+    "price": 805
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136604234",
+    "options": [
+     "50",
+     "Front + back"
+    ],
+    "price": 1207.5
+   }
+  ]
+ },
+ {
+  "handle": "classic-tee-kit",
+  "title": "Classic Tee Kit",
+  "category": "kits",
+  "type": "",
+  "brand": "",
+  "deco": "",
+  "spec": "50 Lane Seven tees · up to 4 colors · left chest and big back",
+  "family": "Screen Printed",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451551006794",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/classic-tee-kit-front-back.jpg?v=1793646560",
+    "w": 2048,
+    "h": 2048
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/classic-tee-kit-black-back-v2.jpg?v=1793646560",
+    "w": 2048,
+    "h": 2048
+   }
+  ],
+  "options": [
+   {
+    "name": "How many shirts",
+    "values": [
+     "50"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67887136309322",
+    "options": [
+     "50"
+    ],
+    "price": 688.85
+   }
+  ]
+ },
+ {
+  "handle": "hoodie-kit",
+  "title": "Hoodie Kit",
+  "category": "kits",
+  "type": "",
+  "brand": "",
+  "deco": "",
+  "spec": "24 Lane Seven hoodies · front print included · add a back print",
+  "family": "Screen Printed",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451550941258",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/hoodie-kit-black-front.jpg?v=1793646558",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/hoodie-kit-black-back.jpg?v=1793646558",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/hoodie-kit-black-front-model.jpg?v=1793646558",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/hoodie-kit-black-back-model.jpg?v=1793646558",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/hoodie-kit-charcoal-heather-front.jpg?v=1793646558",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/hoodie-kit-heather-grey-front.jpg?v=1793646558",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "How many hoodies",
+    "values": [
+     "12",
+     "24",
+     "50"
+    ]
+   },
+   {
+    "name": "Print",
+    "values": [
+     "Front only",
+     "Front + back"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67887136112714",
+    "options": [
+     "12",
+     "Front only"
+    ],
+    "price": 276
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136145482",
+    "options": [
+     "12",
+     "Front + back"
+    ],
+    "price": 372.6
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136178250",
+    "options": [
+     "24",
+     "Front only"
+    ],
+    "price": 510.6
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136211018",
+    "options": [
+     "24",
+     "Front + back"
+    ],
+    "price": 703.8
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136243786",
+    "options": [
+     "50",
+     "Front only"
+    ],
+    "price": 891.25
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67887136276554",
+    "options": [
+     "50",
+     "Front + back"
+    ],
+    "price": 1293.75
+   }
+  ]
+ },
+ {
+  "handle": "premium-tee-kit",
+  "title": "Premium Tee Kit",
+  "category": "kits",
+  "type": "",
+  "brand": "",
+  "deco": "",
+  "spec": "50 Comfort Colors tees · up to 4 colors · left chest and big back",
+  "family": "Screen Printed",
+  "featured": true,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451409776714",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/premium-tee-kit-front-back.jpg?v=1793643364",
+    "w": 2048,
+    "h": 2048
+   }
+  ],
+  "options": [
+   {
+    "name": "How many shirts",
+    "values": [
+     "50",
+     "75",
+     "100",
+     "150",
+     "200"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886853095498",
+    "options": [
+     "50"
+    ],
+    "price": 803.85
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886853128266",
+    "options": [
+     "75"
+    ],
+    "price": 1179.9
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886853161034",
+    "options": [
+     "100"
+    ],
+    "price": 1538.7
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886853193802",
+    "options": [
+     "150"
+    ],
+    "price": 2256.3
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886853226570",
+    "options": [
+     "200"
+    ],
+    "price": 2939.4
+   }
+  ]
+ },
+ {
+  "handle": "yupoong-6089m-flat-bill-snapback",
+  "title": "Yupoong 6089M Flat Bill Snapback",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391852618",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yupoong-6089m-flat-bill-snapback-model-01.jpg?v=1793642926",
+    "w": 2000,
+    "h": 2000
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yupoong-6089m-flat-bill-snapback-model-02.jpg?v=1793642926",
+    "w": 1221,
+    "h": 1221
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886823735370",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yupoong-6089m-flat-bill-snapback-model-01.jpg?v=1793642926"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823768138",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 19.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yupoong-6089m-flat-bill-snapback-model-01.jpg?v=1793642926"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823800906",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yupoong-6089m-flat-bill-snapback-model-01.jpg?v=1793642926"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823833674",
+    "options": [
+     "100 or more"
+    ],
+    "price": 17.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yupoong-6089m-flat-bill-snapback-model-01.jpg?v=1793642926"
+   }
+  ]
+ },
+ {
+  "handle": "yp-classics-6606-retro-trucker-cap",
+  "title": "YP Classics Retro Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "YP Classics",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391754314",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/yp-classics-6606-retro-trucker-cap-model-01.jpg?v=1793642925",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/yp-classics-6606-retro-trucker-cap-model-02.jpg?v=1793642925",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886823604298",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 17.54,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/yp-classics-6606-retro-trucker-cap-model-01.jpg?v=1793642925"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823637066",
+    "options": [
+     "24 or more"
+    ],
+    "price": 16.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/yp-classics-6606-retro-trucker-cap-model-01.jpg?v=1793642925"
+   }
+  ]
+ },
+ {
+  "handle": "yp-classics-6601-elite-cap",
+  "title": "YP Classics Elite Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391688778",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6601-elite-cap-model-01.jpg?v=1793642924",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886823440458",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6601-elite-cap-model-01.jpg?v=1793642924"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823473226",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6601-elite-cap-model-01.jpg?v=1793642924"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823505994",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 17.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6601-elite-cap-model-01.jpg?v=1793642924"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823538762",
+    "options": [
+     "100 or more"
+    ],
+    "price": 16.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6601-elite-cap-model-01.jpg?v=1793642924"
+   }
+  ]
+ },
+ {
+  "handle": "yp-classics-6245cm-classic-dad-hat",
+  "title": "YP Classics Classic Dad Hat",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391590474",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6245cm-classic-dad-hat-model-01.jpg?v=1793642923",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6245cm-classic-dad-hat-model-02.jpg?v=1793642923",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886823276618",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6245cm-classic-dad-hat-model-01.jpg?v=1793642923"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823309386",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 20.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6245cm-classic-dad-hat-model-01.jpg?v=1793642923"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823342154",
+    "options": [
+     "48 or more"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-yp-classics-6245cm-classic-dad-hat-model-01.jpg?v=1793642923"
+   }
+  ]
+ },
+ {
+  "handle": "travismathew-women-s-momentum-shift-1-2-zip",
+  "title": "TravisMathew Women’s Momentum Shift 1/2-Zip",
+  "category": "single",
+  "type": "Premium Layers",
+  "brand": "TravisMathew",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered left chest",
+  "family": "",
+  "featured": false,
+  "women": true,
+  "shopifyId": "gid://shopify/Product/15451391557706",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841037226.jpg?v=1793642922",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Quantity",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886823145546",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 136.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841037226.jpg?v=1793642922"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823178314",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 131.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841037226.jpg?v=1793642922"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823211082",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 126.5,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841037226.jpg?v=1793642922"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886823243850",
+    "options": [
+     "100 or more"
+    ],
+    "price": 120.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841037226.jpg?v=1793642922"
+   }
+  ]
+ },
+ {
+  "handle": "the-north-face-women-s-textured-pine-grove-1-2-zip",
+  "title": "The North Face Women’s Textured Pine Grove 1/2-Zip",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "The North Face",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered left chest",
+  "family": "",
+  "featured": false,
+  "women": true,
+  "shopifyId": "gid://shopify/Product/15451391426634",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841052193.jpg?v=1793642921",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Quantity",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886821179466",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 109.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841052193.jpg?v=1793642921"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886821212234",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 103.5,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841052193.jpg?v=1793642921"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886821245002",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 101.2,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841052193.jpg?v=1793642921"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886821277770",
+    "options": [
+     "100 or more"
+    ],
+    "price": 97.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841052193.jpg?v=1793642921"
+   }
+  ]
+ },
+ {
+  "handle": "the-north-face-textured-pine-grove-half-zip",
+  "title": "The North Face Textured Pine Grove Half-Zip",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391328330",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nf0a8jf6-front.jpg?v=1793642920",
+    "w": 1200,
+    "h": 1800
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nf0a8jf6-back.jpg?v=1793642920",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820982858",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 102.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nf0a8jf6-front.jpg?v=1793642920"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886821015626",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 96.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nf0a8jf6-front.jpg?v=1793642920"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886821048394",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 95.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nf0a8jf6-front.jpg?v=1793642920"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886821081162",
+    "options": [
+     "100 or more"
+    ],
+    "price": 94.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nf0a8jf6-front.jpg?v=1793642920"
+   }
+  ]
+ },
+ {
+  "handle": "shaka-wear-shmhss-max-heavyweight-tee",
+  "title": "Shaka Wear Max Heavyweight Tee",
+  "category": "single",
+  "type": "T-Shirts",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "12 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391230026",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-shaka-wear-shmhss-max-heavyweight-tee-model-01.jpg?v=1793642918",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-shaka-wear-shmhss-max-heavyweight-tee-model-02.jpg?v=1793642918",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "12 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820851786",
+    "options": [
+     "12 to 23"
+    ],
+    "price": 20.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-shaka-wear-shmhss-max-heavyweight-tee-model-01.jpg?v=1793642918"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820884554",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 17.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-shaka-wear-shmhss-max-heavyweight-tee-model-01.jpg?v=1793642918"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820917322",
+    "options": [
+     "48 or more"
+    ],
+    "price": 16.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-shaka-wear-shmhss-max-heavyweight-tee-model-01.jpg?v=1793642918"
+   }
+  ]
+ },
+ {
+  "handle": "richardson-112pfp-camo-trucker-cap",
+  "title": "Richardson Printed Camo Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391131722",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112pfp-camo-trucker-cap-model-01.jpg?v=1793642917",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112pfp-camo-trucker-cap-model-02.jpg?v=1793642918",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820622410",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 29.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112pfp-camo-trucker-cap-model-01.jpg?v=1793642917"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820655178",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112pfp-camo-trucker-cap-model-01.jpg?v=1793642917"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820687946",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112pfp-camo-trucker-cap-model-01.jpg?v=1793642917"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820720714",
+    "options": [
+     "100 or more"
+    ],
+    "price": 21.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112pfp-camo-trucker-cap-model-01.jpg?v=1793642917"
+   }
+  ]
+ },
+ {
+  "handle": "richardson-323fpc-full-fabric-five-panel-cap",
+  "title": "Richardson Full Fabric Five-Panel Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "Richardson",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391098954",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-323fpc-full-fabric-five-panel-cap-model-01.jpg?v=1793642916",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-323fpc-full-fabric-five-panel-cap-model-02.jpg?v=1793642916",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820491338",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 19.84,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-323fpc-full-fabric-five-panel-cap-model-01.jpg?v=1793642916"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820524106",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 15.81,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-323fpc-full-fabric-five-panel-cap-model-01.jpg?v=1793642916"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820556874",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 14.95,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-323fpc-full-fabric-five-panel-cap-model-01.jpg?v=1793642916"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820589642",
+    "options": [
+     "100 or more"
+    ],
+    "price": 14.38,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-323fpc-full-fabric-five-panel-cap-model-01.jpg?v=1793642916"
+   }
+  ]
+ },
+ {
+  "handle": "richardson-112fp-five-panel-trucker-cap",
+  "title": "Richardson Five-Panel Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "Richardson",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451391033418",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-112fp-five-panel-trucker-cap-model-01.jpg?v=1793642916",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-112fp-five-panel-trucker-cap-model-02.jpg?v=1793642915",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820393034",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 19.26,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-112fp-five-panel-trucker-cap-model-01.jpg?v=1793642916"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820425802",
+    "options": [
+     "24 or more"
+    ],
+    "price": 16.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/richardson-112fp-five-panel-trucker-cap-model-01.jpg?v=1793642916"
+   }
+  ]
+ },
+ {
+  "handle": "richardson-326-garment-washed-cap",
+  "title": "Richardson 326 Garment Washed Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390967882",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-326-garment-washed-cap-model-01.jpg?v=1793642914",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-326-garment-washed-cap-model-02.jpg?v=1793642915",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820261962",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-326-garment-washed-cap-model-01.jpg?v=1793642914"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820294730",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 20.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-326-garment-washed-cap-model-01.jpg?v=1793642914"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820327498",
+    "options": [
+     "48 or more"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-326-garment-washed-cap-model-01.jpg?v=1793642914"
+   }
+  ]
+ },
+ {
+  "handle": "richardson-115-low-pro-trucker",
+  "title": "Richardson 115 Low Pro Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390869578",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-115-low-pro-trucker-model-01.jpg?v=1793642913",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-115-low-pro-trucker-model-02.jpg?v=1793642914",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886820065354",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-115-low-pro-trucker-model-01.jpg?v=1793642913"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820098122",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 20.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-115-low-pro-trucker-model-01.jpg?v=1793642913"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820130890",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 19.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-115-low-pro-trucker-model-01.jpg?v=1793642913"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886820163658",
+    "options": [
+     "100 or more"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-115-low-pro-trucker-model-01.jpg?v=1793642913"
+   }
+  ]
+ },
+ {
+  "handle": "richardson-112-trucker-cap",
+  "title": "Richardson 112 Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390804042",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112-trucker-cap-model-01.jpg?v=1793642912",
+    "w": 1096,
+    "h": 1096
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112-trucker-cap-model-02.jpg?v=1793642912",
+    "w": 1068,
+    "h": 1068
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886819901514",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112-trucker-cap-model-01.jpg?v=1793642912"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819934282",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 20.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112-trucker-cap-model-01.jpg?v=1793642912"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819967050",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 19.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112-trucker-cap-model-01.jpg?v=1793642912"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819999818",
+    "options": [
+     "100 or more"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-richardson-112-trucker-cap-model-01.jpg?v=1793642912"
+   }
+  ]
+ },
+ {
+  "handle": "q-tees-q600-jumbo-tote",
+  "title": "Q-Tees Jumbo Tote",
+  "category": "single",
+  "type": "Bags",
+  "brand": "Q-Tees",
+  "deco": "Printed",
+  "spec": "12 minimum · printed front",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390705738",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/q-tees-q600-jumbo-tote-model-01.jpg?v=1793642912",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/q-tees-q600-jumbo-tote-model-02.jpg?v=1793642912",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "12 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886819639370",
+    "options": [
+     "12 to 23"
+    ],
+    "price": 11.79,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/q-tees-q600-jumbo-tote-model-01.jpg?v=1793642912"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819672138",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 10.93,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/q-tees-q600-jumbo-tote-model-01.jpg?v=1793642912"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819704906",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 10.64,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/q-tees-q600-jumbo-tote-model-01.jpg?v=1793642912"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819737674",
+    "options": [
+     "100 or more"
+    ],
+    "price": 10.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/q-tees-q600-jumbo-tote-model-01.jpg?v=1793642912"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-womens-dry-zone-polo",
+  "title": "Port Authority Women's Dry Zone Polo",
+  "category": "single",
+  "type": "Polos",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390640202",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-womens-dry-zone-polo-model-01.jpg?v=1793642911",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-womens-dry-zone-polo-model-02.jpg?v=1793642910",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886819508298",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-womens-dry-zone-polo-model-01.jpg?v=1793642911"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819541066",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-womens-dry-zone-polo-model-01.jpg?v=1793642911"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886819573834",
+    "options": [
+     "48 or more"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-womens-dry-zone-polo-model-01.jpg?v=1793642911"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-f219-value-fleece-vest",
+  "title": "Port Authority Value Fleece Vest",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390476362",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f219-value-fleece-vest-model-01.jpg?v=1793642909",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f219-value-fleece-vest-model-02.jpg?v=1793642909",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886817149002",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 42.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f219-value-fleece-vest-model-01.jpg?v=1793642909"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886817181770",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 36.8,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f219-value-fleece-vest-model-01.jpg?v=1793642909"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886817214538",
+    "options": [
+     "48 or more"
+    ],
+    "price": 35.65,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f219-value-fleece-vest-model-01.jpg?v=1793642909"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-f217-value-fleece-jacket",
+  "title": "Port Authority Value Fleece Jacket",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390378058",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f217-value-fleece-jacket-model-01.jpg?v=1793642908",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f217-value-fleece-jacket-model-02.jpg?v=1793642908",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886816952394",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 47.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f217-value-fleece-jacket-model-01.jpg?v=1793642908"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816985162",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 41.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f217-value-fleece-jacket-model-01.jpg?v=1793642908"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886817017930",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 40.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f217-value-fleece-jacket-model-01.jpg?v=1793642908"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886817050698",
+    "options": [
+     "100 or more"
+    ],
+    "price": 39.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-f217-value-fleece-jacket-model-01.jpg?v=1793642908"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-knit-beanie",
+  "title": "Port Authority Knit Beanie",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered cuff",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390312522",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-knit-beanie-model-01.jpg?v=1793642907",
+    "w": 1220,
+    "h": 1220
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886816821322",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 18.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-knit-beanie-model-01.jpg?v=1793642907"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816854090",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 13.8,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-knit-beanie-model-01.jpg?v=1793642907"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816886858",
+    "options": [
+     "48 or more"
+    ],
+    "price": 11.5,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-knit-beanie-model-01.jpg?v=1793642907"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-j407-essential-rain-jacket",
+  "title": "Port Authority Essential Rain Jacket",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390214218",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j407-essential-rain-jacket-model-01.jpg?v=1793642906",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j407-essential-rain-jacket-model-02.jpg?v=1793642906",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886816624714",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 71.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j407-essential-rain-jacket-model-01.jpg?v=1793642906"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816657482",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 65.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j407-essential-rain-jacket-model-01.jpg?v=1793642906"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816690250",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 64.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j407-essential-rain-jacket-model-01.jpg?v=1793642906"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816723018",
+    "options": [
+     "100 or more"
+    ],
+    "price": 63.25,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j407-essential-rain-jacket-model-01.jpg?v=1793642906"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-dry-zone-polo",
+  "title": "Port Authority Dry Zone Polo",
+  "category": "single",
+  "type": "Polos",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390115914",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-dry-zone-polo-model-01.jpg?v=1793642905",
+    "w": 1855,
+    "h": 1855
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-dry-zone-polo-model-02.jpg?v=1793642905",
+    "w": 1856,
+    "h": 1856
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886816460874",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-dry-zone-polo-model-01.jpg?v=1793642905"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816493642",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-dry-zone-polo-model-01.jpg?v=1793642905"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816526410",
+    "options": [
+     "48 or more"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-dry-zone-polo-model-01.jpg?v=1793642905"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-j325-core-soft-shell-vest",
+  "title": "Port Authority Core Soft Shell Vest",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451390050378",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j325-core-soft-shell-vest-model-01.jpg?v=1793642904",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j325-core-soft-shell-vest-model-02.jpg?v=1793642904",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886816297034",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 54.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j325-core-soft-shell-vest-model-01.jpg?v=1793642904"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816329802",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 48.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j325-core-soft-shell-vest-model-01.jpg?v=1793642904"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816362570",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 47.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j325-core-soft-shell-vest-model-01.jpg?v=1793642904"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816395338",
+    "options": [
+     "100 or more"
+    ],
+    "price": 46,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j325-core-soft-shell-vest-model-01.jpg?v=1793642904"
+   }
+  ]
+ },
+ {
+  "handle": "port-authority-j317-core-soft-shell-jacket",
+  "title": "Port Authority Core Soft Shell Jacket",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389952074",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j317-core-soft-shell-jacket-model-01.jpg?v=1793642903",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j317-core-soft-shell-jacket-model-02.jpg?v=1793642903",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886816100426",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 56.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j317-core-soft-shell-jacket-model-01.jpg?v=1793642903"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816133194",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 50.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j317-core-soft-shell-jacket-model-01.jpg?v=1793642903"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816165962",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 49.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j317-core-soft-shell-jacket-model-01.jpg?v=1793642903"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886816198730",
+    "options": [
+     "100 or more"
+    ],
+    "price": 48.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-authority-j317-core-soft-shell-jacket-model-01.jpg?v=1793642903"
+   }
+  ]
+ },
+ {
+  "handle": "port-company-performance-hooded-tee",
+  "title": "Port & Company Performance Hooded Tee",
+  "category": "single",
+  "type": "Long Sleeves",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "12 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389886538",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-company-performance-hooded-tee-model-01.jpg?v=1793642902",
+    "w": 1862,
+    "h": 1862
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-company-performance-hooded-tee-model-02.jpg?v=1793642902",
+    "w": 1866,
+    "h": 1866
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "12 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886815772746",
+    "options": [
+     "12 to 23"
+    ],
+    "price": 28.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-company-performance-hooded-tee-model-01.jpg?v=1793642902"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815805514",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-company-performance-hooded-tee-model-01.jpg?v=1793642902"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815838282",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-company-performance-hooded-tee-model-01.jpg?v=1793642902"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815871050",
+    "options": [
+     "100 or more"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-port-company-performance-hooded-tee-model-01.jpg?v=1793642902"
+   }
+  ]
+ },
+ {
+  "handle": "ogio-regain-polo",
+  "title": "OGIO Regain Polo",
+  "category": "single",
+  "type": "Polos",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389853770",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-ogio-regain-polo-model-01.jpg?v=1793642901",
+    "w": 2000,
+    "h": 2000
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-ogio-regain-polo-model-02.jpg?v=1793642902",
+    "w": 2000,
+    "h": 2000
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886815608906",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 50.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-ogio-regain-polo-model-01.jpg?v=1793642901"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815641674",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 44.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-ogio-regain-polo-model-01.jpg?v=1793642901"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815674442",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 43.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-ogio-regain-polo-model-01.jpg?v=1793642901"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815707210",
+    "options": [
+     "100 or more"
+    ],
+    "price": 42.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-ogio-regain-polo-model-01.jpg?v=1793642901"
+   }
+  ]
+ },
+ {
+  "handle": "ogio-driveline-hybrid-vest",
+  "title": "OGIO Driveline Hybrid Vest",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389755466",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/og761-front.jpg?v=1793642900",
+    "w": 1200,
+    "h": 1800
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/og761-back.jpg?v=1793642900",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886815445066",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 81.65,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/og761-front.jpg?v=1793642900"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815477834",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 75.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/og761-front.jpg?v=1793642900"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815510602",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 74.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/og761-front.jpg?v=1793642900"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815543370",
+    "options": [
+     "100 or more"
+    ],
+    "price": 73.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/og761-front.jpg?v=1793642900"
+   }
+  ]
+ },
+ {
+  "handle": "nike-women-s-dri-fit-stride-1-2-zip",
+  "title": "Nike Women’s Dri-FIT Stride 1/2-Zip",
+  "category": "single",
+  "type": "Performance Layers",
+  "brand": "Nike",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered left chest",
+  "family": "",
+  "featured": false,
+  "women": true,
+  "shopifyId": "gid://shopify/Product/15451389689930",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841029648.jpg?v=1793642900",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Quantity",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886815248458",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 113.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841029648.jpg?v=1793642900"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815281226",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 108.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841029648.jpg?v=1793642900"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815313994",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 105.8,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841029648.jpg?v=1793642900"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815346762",
+    "options": [
+     "100 or more"
+    ],
+    "price": 102.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841029648.jpg?v=1793642900"
+   }
+  ]
+ },
+ {
+  "handle": "nike-women-s-bomber-jacket",
+  "title": "Nike Women’s Bomber Jacket",
+  "category": "single",
+  "type": "Outerwear",
+  "brand": "Nike",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered left chest",
+  "family": "",
+  "featured": false,
+  "women": true,
+  "shopifyId": "gid://shopify/Product/15451389526090",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841044764.jpg?v=1793642898",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Quantity",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886815019082",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 120.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841044764.jpg?v=1793642898"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815051850",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 113.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841044764.jpg?v=1793642898"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815084618",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 110.4,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841044764.jpg?v=1793642898"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886815117386",
+    "options": [
+     "100 or more"
+    ],
+    "price": 105.8,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/upload-1789841044764.jpg?v=1793642898"
+   }
+  ]
+ },
+ {
+  "handle": "nike-dri-fit-stride-half-zip",
+  "title": "Nike Dri-FIT Stride Half-Zip",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389460554",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nkio8137-front.jpg?v=1793642897",
+    "w": 1200,
+    "h": 1800
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nkio8137-back.jpg?v=1793642897",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886814855242",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 108.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nkio8137-front.jpg?v=1793642897"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814888010",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 102.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nkio8137-front.jpg?v=1793642897"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814920778",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 101.2,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nkio8137-front.jpg?v=1793642897"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814953546",
+    "options": [
+     "100 or more"
+    ],
+    "price": 100.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nkio8137-front.jpg?v=1793642897"
+   }
+  ]
+ },
+ {
+  "handle": "nike-nkbq5231-dri-fit-cotton-poly-tee",
+  "title": "Nike Dri-FIT Cotton/Poly Tee",
+  "category": "single",
+  "type": "T-Shirts",
+  "brand": "Nike",
+  "deco": "Printed or embroidered",
+  "spec": "12 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389395018",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkbq5231-dri-fit-cotton-poly-tee-model-01.jpg?v=1793642896",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkbq5231-dri-fit-cotton-poly-tee-model-02.jpg?v=1793642896",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "12 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886814691402",
+    "options": [
+     "12 to 23"
+    ],
+    "price": 29.61,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkbq5231-dri-fit-cotton-poly-tee-model-01.jpg?v=1793642896"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814724170",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 27.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkbq5231-dri-fit-cotton-poly-tee-model-01.jpg?v=1793642896"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814756938",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 26.74,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkbq5231-dri-fit-cotton-poly-tee-model-01.jpg?v=1793642896"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814789706",
+    "options": [
+     "100 or more"
+    ],
+    "price": 26.16,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkbq5231-dri-fit-cotton-poly-tee-model-01.jpg?v=1793642896"
+   }
+  ]
+ },
+ {
+  "handle": "nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie",
+  "title": "Nike Club Fleece Sleeve Swoosh Hoodie",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Nike",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389296714",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie-model-01.jpg?v=1793642895",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie-model-02.jpg?v=1793642895",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886814494794",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 59.23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie-model-01.jpg?v=1793642895"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814527562",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 55.78,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie-model-01.jpg?v=1793642895"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814560330",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 54.34,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie-model-01.jpg?v=1793642895"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814593098",
+    "options": [
+     "100 or more"
+    ],
+    "price": 52.61,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nike-nkdr1499-club-fleece-sleeve-swoosh-hoodie-model-01.jpg?v=1793642895"
+   }
+  ]
+ },
+ {
+  "handle": "next-level-6010-tri-blend-tee",
+  "title": "Next Level Tri-Blend Tee",
+  "category": "single",
+  "type": "T-Shirts",
+  "brand": "Next Level",
+  "deco": "Printed or embroidered",
+  "spec": "12 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389263946",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/next-level-6010-tri-blend-tee-model-01.jpg?v=1793642894",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/next-level-6010-tri-blend-tee-model-02.jpg?v=1793642894",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "12 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886814363722",
+    "options": [
+     "12 to 23"
+    ],
+    "price": 14.66,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/next-level-6010-tri-blend-tee-model-01.jpg?v=1793642894"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814396490",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 12.65,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/next-level-6010-tri-blend-tee-model-01.jpg?v=1793642894"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814429258",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 11.79,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/next-level-6010-tri-blend-tee-model-01.jpg?v=1793642894"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814462026",
+    "options": [
+     "100 or more"
+    ],
+    "price": 11.21,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/next-level-6010-tri-blend-tee-model-01.jpg?v=1793642894"
+   }
+  ]
+ },
+ {
+  "handle": "new-era-womens-heritage-fleece-half-zip",
+  "title": "New Era Women's Heritage Fleece Half-Zip",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": true,
+  "shopifyId": "gid://shopify/Product/15451389231178",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea528-front.jpg?v=1793642893",
+    "w": 1200,
+    "h": 1800
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea528-back.jpg?v=1793642893",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886814232650",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 74.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea528-front.jpg?v=1793642893"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814265418",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 71.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea528-front.jpg?v=1793642893"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814298186",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 70.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea528-front.jpg?v=1793642893"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814330954",
+    "options": [
+     "100 or more"
+    ],
+    "price": 69,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea528-front.jpg?v=1793642893"
+   }
+  ]
+ },
+ {
+  "handle": "new-era-womens-double-back-full-zip-hoodie",
+  "title": "New Era Women's Double Back Full-Zip Hoodie",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": true,
+  "shopifyId": "gid://shopify/Product/15451389198410",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea566-front.jpg?v=1793642892",
+    "w": 1200,
+    "h": 1800
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea566-back.jpg?v=1793642892",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886814101578",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 79.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea566-front.jpg?v=1793642892"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814134346",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 75.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea566-front.jpg?v=1793642892"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814167114",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 74.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea566-front.jpg?v=1793642892"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814199882",
+    "options": [
+     "100 or more"
+    ],
+    "price": 73.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lnea566-front.jpg?v=1793642892"
+   }
+  ]
+ },
+ {
+  "handle": "new-era-ne205-snapback-trucker-cap",
+  "title": "New Era Snapback Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389132874",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne205-snapback-trucker-cap-model-01.jpg?v=1793642891",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne205-snapback-trucker-cap-model-02.jpg?v=1793642891",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813937738",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 28.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne205-snapback-trucker-cap-model-01.jpg?v=1793642891"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813970506",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne205-snapback-trucker-cap-model-01.jpg?v=1793642891"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814003274",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 21.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne205-snapback-trucker-cap-model-01.jpg?v=1793642891"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886814036042",
+    "options": [
+     "100 or more"
+    ],
+    "price": 20.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne205-snapback-trucker-cap-model-01.jpg?v=1793642891"
+   }
+  ]
+ },
+ {
+  "handle": "new-era-ne209-performance-dash-adjustable-cap",
+  "title": "New Era Performance Dash Adjustable Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389100106",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne209-performance-dash-adjustable-cap-model-01.jpg?v=1793642890",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne209-performance-dash-adjustable-cap-model-02.jpg?v=1793642890",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813839434",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 29.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne209-performance-dash-adjustable-cap-model-01.jpg?v=1793642890"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813872202",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne209-performance-dash-adjustable-cap-model-01.jpg?v=1793642890"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813904970",
+    "options": [
+     "48 or more"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne209-performance-dash-adjustable-cap-model-01.jpg?v=1793642890"
+   }
+  ]
+ },
+ {
+  "handle": "new-era-double-back-quarter-zip",
+  "title": "New Era Double Back Quarter-Zip",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389067338",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nea567-front.jpg?v=1793642889",
+    "w": 1200,
+    "h": 1800
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nea567-back.jpg?v=1793642889",
+    "w": 1200,
+    "h": 1800
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813708362",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 79.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nea567-front.jpg?v=1793642889"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813741130",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 75.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nea567-front.jpg?v=1793642889"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813773898",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 74.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nea567-front.jpg?v=1793642889"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813806666",
+    "options": [
+     "100 or more"
+    ],
+    "price": 73.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/nea567-front.jpg?v=1793642889"
+   }
+  ]
+ },
+ {
+  "handle": "new-era-ne400-9fifty-flat-bill-snapback-cap",
+  "title": "New Era 9FIFTY Flat Bill Snapback Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389034570",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne400-9fifty-flat-bill-snapback-cap-model-01.jpg?v=1793642888",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne400-9fifty-flat-bill-snapback-cap-model-02.jpg?v=1793642888",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813610058",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 29.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne400-9fifty-flat-bill-snapback-cap-model-01.jpg?v=1793642888"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813642826",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne400-9fifty-flat-bill-snapback-cap-model-01.jpg?v=1793642888"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813675594",
+    "options": [
+     "48 or more"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-new-era-ne400-9fifty-flat-bill-snapback-cap-model-01.jpg?v=1793642888"
+   }
+  ]
+ },
+ {
+  "handle": "legacy-rempa-reclaim-mid-pro-cap",
+  "title": "Legacy Reclaim Mid-Pro Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451389001802",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-rempa-reclaim-mid-pro-cap-model-01.jpg?v=1793642887",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-rempa-reclaim-mid-pro-cap-model-02.jpg?v=1793642887",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813478986",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 36.8,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-rempa-reclaim-mid-pro-cap-model-01.jpg?v=1793642887"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813511754",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-rempa-reclaim-mid-pro-cap-model-01.jpg?v=1793642887"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813544522",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 29.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-rempa-reclaim-mid-pro-cap-model-01.jpg?v=1793642887"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813577290",
+    "options": [
+     "100 or more"
+    ],
+    "price": 28.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-rempa-reclaim-mid-pro-cap-model-01.jpg?v=1793642887"
+   }
+  ]
+ },
+ {
+  "handle": "legacy-mps-mid-pro-snapback-trucker",
+  "title": "Legacy Mid-Pro Snapback Trucker Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388936266",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-mps-mid-pro-snapback-trucker-model-01.jpg?v=1793642886",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-mps-mid-pro-snapback-trucker-model-02.jpg?v=1793642886",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813249610",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-mps-mid-pro-snapback-trucker-model-01.jpg?v=1793642886"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813282378",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-mps-mid-pro-snapback-trucker-model-01.jpg?v=1793642886"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813315146",
+    "options": [
+     "48 or more"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-mps-mid-pro-snapback-trucker-model-01.jpg?v=1793642886"
+   }
+  ]
+ },
+ {
+  "handle": "legacy-cut-the-cut-above-cap",
+  "title": "Legacy Cut Above Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388903498",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cut-the-cut-above-cap-model-01.jpg?v=1793642885",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cut-the-cut-above-cap-model-02.jpg?v=1793642885",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886813118538",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 37.95,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cut-the-cut-above-cap-model-01.jpg?v=1793642885"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813151306",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 33.35,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cut-the-cut-above-cap-model-01.jpg?v=1793642885"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813184074",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 32.2,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cut-the-cut-above-cap-model-01.jpg?v=1793642885"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813216842",
+    "options": [
+     "100 or more"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cut-the-cut-above-cap-model-01.jpg?v=1793642885"
+   }
+  ]
+ },
+ {
+  "handle": "legacy-cfb-cool-fit-booney",
+  "title": "Legacy Cool Fit Booney",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388837962",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cfb-cool-fit-booney-model-01.jpg?v=1793642884",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cfb-cool-fit-booney-model-02.jpg?v=1793642884",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886812987466",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 49.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cfb-cool-fit-booney-model-01.jpg?v=1793642884"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813020234",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 43.7,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cfb-cool-fit-booney-model-01.jpg?v=1793642884"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886813053002",
+    "options": [
+     "48 or more"
+    ],
+    "price": 42.55,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-legacy-cfb-cool-fit-booney-model-01.jpg?v=1793642884"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls16001-urban-hoodie",
+  "title": "Lane Seven Urban Hoodie",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388805194",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls16001-urban-hoodie-model-01.jpg?v=1793642883",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls16001-urban-hoodie-model-02.jpg?v=1793642883",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886812856394",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 37.95,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls16001-urban-hoodie-model-01.jpg?v=1793642883"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812889162",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 32.2,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls16001-urban-hoodie-model-01.jpg?v=1793642883"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812921930",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls16001-urban-hoodie-model-01.jpg?v=1793642883"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812954698",
+    "options": [
+     "100 or more"
+    ],
+    "price": 29.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls16001-urban-hoodie-model-01.jpg?v=1793642883"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls14001yh-premium-youth-pullover-hoodie",
+  "title": "Lane Seven Premium Youth Pullover Hoodie",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388706890",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001yh-premium-youth-pullover-hoodie-model-01.jpg?v=1793642882",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001yh-premium-youth-pullover-hoodie-model-02.jpg?v=1793642882",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886812692554",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 29.9,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001yh-premium-youth-pullover-hoodie-model-01.jpg?v=1793642882"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812725322",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001yh-premium-youth-pullover-hoodie-model-01.jpg?v=1793642882"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812758090",
+    "options": [
+     "48 or more"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001yh-premium-youth-pullover-hoodie-model-01.jpg?v=1793642882"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls14014-premium-quarter-zip",
+  "title": "Lane Seven Premium Quarter Zip",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388608586",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14014-premium-quarter-zip-model-01.jpg?v=1793642881",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14014-premium-quarter-zip-model-02.jpg?v=1793642881",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886812201034",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 32.2,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14014-premium-quarter-zip-model-01.jpg?v=1793642881"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812233802",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 26.45,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14014-premium-quarter-zip-model-01.jpg?v=1793642881"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812266570",
+    "options": [
+     "48 or more"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14014-premium-quarter-zip-model-01.jpg?v=1793642881"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls14001-premium-pullover-hoodie",
+  "title": "Lane Seven Premium Pullover Hoodie",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388510282",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001-premium-pullover-hoodie-model-01.jpg?v=1793642880",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001-premium-pullover-hoodie-model-02.jpg?v=1793642880",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886812069962",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 32.2,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001-premium-pullover-hoodie-model-01.jpg?v=1793642880"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812102730",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 27.6,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001-premium-pullover-hoodie-model-01.jpg?v=1793642880"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886812135498",
+    "options": [
+     "48 or more"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14001-premium-pullover-hoodie-model-01.jpg?v=1793642880"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls14003-premium-full-zip-hoodie",
+  "title": "Lane Seven Premium Full Zip Hoodie",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388411978",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14003-premium-full-zip-hoodie-model-01.jpg?v=1793642879",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14003-premium-full-zip-hoodie-model-02.jpg?v=1793642879",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886811906122",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 35.65,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14003-premium-full-zip-hoodie-model-01.jpg?v=1793642879"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811938890",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14003-premium-full-zip-hoodie-model-01.jpg?v=1793642879"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811971658",
+    "options": [
+     "48 or more"
+    ],
+    "price": 28.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14003-premium-full-zip-hoodie-model-01.jpg?v=1793642879"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls14004-premium-crewneck-sweatshirt",
+  "title": "Lane Seven Premium Crewneck Sweatshirt",
+  "category": "single",
+  "type": "Hoodies & Crews",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "8 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388346442",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14004-premium-crewneck-sweatshirt-model-01.jpg?v=1793642878",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14004-premium-crewneck-sweatshirt-model-02.jpg?v=1793642878",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886811742282",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 28.75,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14004-premium-crewneck-sweatshirt-model-01.jpg?v=1793642878"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811775050",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14004-premium-crewneck-sweatshirt-model-01.jpg?v=1793642878"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811807818",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14004-premium-crewneck-sweatshirt-model-01.jpg?v=1793642878"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811840586",
+    "options": [
+     "100 or more"
+    ],
+    "price": 21.85,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls14004-premium-crewneck-sweatshirt-model-01.jpg?v=1793642878"
+   }
+  ]
+ },
+ {
+  "handle": "lane-seven-ls15001-heavyweight-tee",
+  "title": "Lane Seven Heavyweight Tee",
+  "category": "single",
+  "type": "T-Shirts",
+  "brand": "Lane Seven",
+  "deco": "Printed or embroidered",
+  "spec": "12 minimum · printed or embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451388280906",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls15001-heavyweight-tee-model-01.jpg?v=1793642877",
+    "w": 1600,
+    "h": 1600
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls15001-heavyweight-tee-model-02.jpg?v=1793642877",
+    "w": 1600,
+    "h": 1600
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "12 to 23",
+     "24 to 47",
+     "48 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886811611210",
+    "options": [
+     "12 to 23"
+    ],
+    "price": 16.1,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls15001-heavyweight-tee-model-01.jpg?v=1793642877"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811643978",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 13.8,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls15001-heavyweight-tee-model-01.jpg?v=1793642877"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886811676746",
+    "options": [
+     "48 or more"
+    ],
+    "price": 11.5,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/lane-seven-ls15001-heavyweight-tee-model-01.jpg?v=1793642877"
+   }
+  ]
+ },
+ {
+  "handle": "10-10-hats-615-5-panel-cap",
+  "title": "10/10 Hats 5 Panel Cap",
+  "category": "single",
+  "type": "Hats",
+  "brand": "",
+  "deco": "Embroidered",
+  "spec": "8 minimum · embroidered",
+  "family": "",
+  "featured": false,
+  "women": false,
+  "shopifyId": "gid://shopify/Product/15451384938570",
+  "images": [
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-01.jpg?v=1793642820",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-02.jpg?v=1793642820",
+    "w": 1254,
+    "h": 1254
+   },
+   {
+    "url": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-03.jpg?v=1793642820",
+    "w": 1254,
+    "h": 1254
+   }
+  ],
+  "options": [
+   {
+    "name": "Order size",
+    "values": [
+     "8 to 23",
+     "24 to 47",
+     "48 to 99",
+     "100 or more"
+    ]
+   }
+  ],
+  "variants": [
+   {
+    "id": "gid://shopify/ProductVariant/67886798962762",
+    "options": [
+     "8 to 23"
+    ],
+    "price": 31.05,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-01.jpg?v=1793642820"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886798995530",
+    "options": [
+     "24 to 47"
+    ],
+    "price": 25.3,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-01.jpg?v=1793642820"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886799028298",
+    "options": [
+     "48 to 99"
+    ],
+    "price": 24.15,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-01.jpg?v=1793642820"
+   },
+   {
+    "id": "gid://shopify/ProductVariant/67886799061066",
+    "options": [
+     "100 or more"
+    ],
+    "price": 23,
+    "image": "https://cdn.shopify.com/s/files/1/0786/2963/4122/files/single-10-10-hats-615-5-panel-cap-model-01.jpg?v=1793642820"
+   }
+  ]
+ }
 ]

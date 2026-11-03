@@ -6,11 +6,11 @@ import {
   CustomQuote, Display, Eyebrow, Faq, Guarantee, KitCard, ProductCard, Steps, btnGhost, btnLight, wrap,
 } from './ui'
 import {
-  CORE_KITS, MORE_KITS, SHOP, SPOTLIGHT_KITS, byCategory, findVariant, getProduct, kitDetails, money, priceRange, tiers,
-  type Garment, type Product,
+  SHOP, SPOTLIGHT_KITS, allKits, byCategory, cover, findVariant, getProduct, money, priceRange, tiers,
+  type Garment,
 } from '@/lib/shop/catalog'
 
-const kitsFrom = Math.min(...byCategory('kits', 'winter').map((p) => priceRange(p).min))
+const kitsFrom = Math.min(...byCategory('kits').map((p) => priceRange(p).min))
 const singlesFrom = Math.min(...byCategory('single').map((p) => tiers(p)[0]?.price ?? Infinity))
 
 function spotlight(handle: string) {
@@ -34,8 +34,7 @@ const SPOT_COPY: Record<string, { label: string; garment: Garment; noun: string;
 
 export default function TeamGearPage() {
   const gifts = byCategory('gifts').sort((a, b) => priceRange(a).min - priceRange(b).min)
-  const core = CORE_KITS.map(getProduct).filter(Boolean) as Product[]
-  const more = MORE_KITS.map(getProduct).filter(Boolean) as Product[]
+  const kits = allKits()
 
   return (
     <div className="bg-[#0a0908] text-cream">
@@ -136,8 +135,12 @@ export default function TeamGearPage() {
                 </a>
               </div>
               <div className={`relative aspect-square max-w-[520px] w-full mx-auto ${dark ? 'bg-[#0a0908]' : 'bg-[#141312]'}`}>
-                <GarmentIcon garment={c.garment} color={dark ? '#f4f4f2' : '#2a2928'} className="absolute inset-[12%] w-[76%] h-[76%]" />
-                <span className={`absolute bottom-4 right-4 font-display font-black text-5xl ${dark ? 'text-cream' : 'text-cream'}`}>{money(s.perPiece, true)}<span className="font-sans text-xs font-normal opacity-60"> /pc</span></span>
+                {cover(s.p) ? (
+                  <img src={`${cover(s.p)}&width=1000`} alt={s.p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                ) : (
+                  <GarmentIcon garment={c.garment} color={dark ? '#f4f4f2' : '#2a2928'} className="absolute inset-[12%] w-[76%] h-[76%]" />
+                )}
+                <span className="absolute bottom-4 right-4 bg-[#0a0908]/85 px-3 py-1 font-display font-black text-4xl text-cream">{money(s.perPiece, true)}<span className="font-sans text-xs font-normal opacity-60"> /pc</span></span>
               </div>
             </div>
           </section>
@@ -150,42 +153,14 @@ export default function TeamGearPage() {
           <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
             <div>
               <Eyebrow>Crew Kits</Eyebrow>
-              <Display size="lg">Pick Your Headcount.<br /><span className="text-outline">We Pick The Rest.</span></Display>
+              <Display size="lg">Pick Your Kit.<br /><span className="text-outline">Add Your Logo.</span></Display>
             </div>
             <p className="font-sans text-cream/60 max-w-md leading-relaxed">
-              Every piece carries your logo in the colors you choose. The bigger the kit, the less each piece costs. Want one garment instead? That&apos;s what single items are for.
+              One garment, one price, your logo on every piece. The bigger the run, the less each piece costs. Want something else? That&apos;s what single items are for.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pt-3">
-            {core.map((p) => <KitCard key={p.handle} p={p} featured={p.handle === 'crew-kit-48'} />)}
-          </div>
-        </div>
-      </section>
-
-      {/* More kits */}
-      <section className="py-20 md:py-28 border-b border-white/10">
-        <div className={wrap}>
-          <Display size="md" className="mb-12">Three More <span className="text-outline">Kits.</span></Display>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/10 border border-white/10">
-            {more.map((p) => {
-              const d = kitDetails[p.handle]
-              const { min } = priceRange(p)
-              const blurb: Record<string, string> = {
-                'hi-vis-crew-pack-24': 'CornerStone Class 2 safety tees and mesh zip vests in Safety Yellow or Safety Orange. Logo on the left chest — never on the reflective tape. 18 tees + 6 vests.',
-                'comfy-kit-16': 'Each person gets a Comfort Colors tee and long sleeve, an Independent hoodie and a knit beanie. Built for the cold months. 4, 8 or 12 people.',
-                'executive-package': '12 OGIO Regain polos and 12 caps in the colors and cap style you choose, logo embroidered on every piece. For owners, the office and sales.',
-              }
-              const title = { 'hi-vis-crew-pack-24': 'The Hi-Vis Crew Pack', 'comfy-kit-16': 'The Comfy Kit', 'executive-package': 'The Executive Package' }[p.handle] ?? p.title
-              return (
-                <a key={p.handle} href={`/apparel/products/${p.handle}`} className="group bg-[#0a0908] p-8 md:p-10 flex flex-col gap-4 hover:bg-cream hover:text-[#0a0908] transition-colors duration-300">
-                  <p className="font-display font-black text-4xl">{p.handle === 'comfy-kit-16' ? 'from ' : ''}{money(min)}</p>
-                  <h3 className="font-display font-black uppercase text-2xl leading-none tracking-tight">{title}</h3>
-                  <p className="font-sans text-sm opacity-70 leading-relaxed">{blurb[p.handle]}</p>
-                  {d && <p className="font-sans text-[11px] uppercase tracking-[0.16em] opacity-50">{d.forWho}</p>}
-                  <span className="mt-auto pt-4 font-sans text-[11px] font-semibold uppercase tracking-[0.16em]">Build it →</span>
-                </a>
-              )
-            })}
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-3">
+            {kits.map((p) => <KitCard key={p.handle} p={p} featured={p.featured} />)}
           </div>
         </div>
       </section>
@@ -249,7 +224,7 @@ export default function TeamGearPage() {
           <div className="lg:col-span-6 space-y-6 font-sans text-lg text-cream/65 leading-relaxed">
             <p>The truck gets you to the job. The person who walks up to the door is who the customer actually judges.</p>
             <p>A crew in matching gear reads as an established company before anyone says a word. A crew in whatever they own reads as a side gig — same people, same work, different price you can charge.</p>
-            <p className="text-cream">A kit is a one-time buy starting at {money(Math.min(...more.map((p) => priceRange(p).min)))}. You own it, and it shows up at every job.</p>
+            <p className="text-cream">A kit is a one-time buy starting at {money(kitsFrom)}. You own it, and it shows up at every job.</p>
             <a href="/apparel/kits" className={btnLight}>Pick Your Kit →</a>
           </div>
         </div>

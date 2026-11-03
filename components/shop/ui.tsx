@@ -7,8 +7,10 @@ import GarmentIcon from './GarmentIcon'
 import {
   type Product,
   SHOP,
+  cover,
   garmentFor,
   kitDetails,
+  pieceCount,
   money,
   priceRange,
   tiers,
@@ -86,9 +88,13 @@ export function ProductCard({ p }: { p: Product }) {
   return (
     <a href={`/apparel/products/${p.handle}`} className="group flex flex-col border border-white/10 hover:border-cream/60 transition-colors duration-300">
       <div className="relative aspect-square bg-[#141312] overflow-hidden">
-        <GarmentIcon garment={garment} color="#2a2928" className="absolute inset-[14%] w-[72%] h-[72%] group-hover:scale-105 transition-transform duration-500" />
+        {cover(p) ? (
+          <img src={`${cover(p)}&width=600`} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        ) : (
+          <GarmentIcon garment={garment} color="#2a2928" className="absolute inset-[14%] w-[72%] h-[72%] group-hover:scale-105 transition-transform duration-500" />
+        )}
         {p.brand && (
-          <span className="absolute top-3 left-3 font-sans text-[9px] uppercase tracking-[0.2em] text-cream/50">{p.brand}</span>
+          <span className="absolute top-3 left-3 bg-[#0a0908]/80 px-2 py-1 font-sans text-[9px] uppercase tracking-[0.2em] text-cream/80">{p.brand}</span>
         )}
       </div>
       <div className="p-4 md:p-5 flex flex-col gap-2 flex-1">
@@ -114,52 +120,59 @@ export function ProductCard({ p }: { p: Product }) {
 export function KitCard({ p, featured = false }: { p: Product; featured?: boolean }) {
   const d = kitDetails[p.handle]
   const { min } = priceRange(p)
-  const pieces = d?.contents.reduce((s, c) => s + c.qty, 0) ?? 0
+  const cheapest = p.variants.reduce((a, b) => (b.price < a.price ? b : a), p.variants[0])
+  const pieces = pieceCount(p, cheapest.options)
+  // "How many hoodies: 12 / 24 / 50" reads as the kit sizes on offer.
+  const counts = p.options.find((o) => /^how many/i.test(o.name))
+  // The spec tag names one default count ("24 Lane Seven hoodies"); drop it when the kit offers several.
+  const lines = (p.spec ? p.spec.split(' · ') : []).map((l, i) => (i === 0 && counts && counts.values.length > 1 ? l.replace(/^\d+\s+/, '') : l))
+  const img = cover(p)
+  const muted = featured ? 'text-[#0a0908]/55' : 'text-cream/50'
   return (
-    <div className={`relative flex flex-col p-6 md:p-8 border transition-colors duration-300 ${featured ? 'bg-cream text-[#0a0908] border-cream' : 'border-white/15 text-cream hover:border-cream/60'}`}>
+    <a
+      href={`/apparel/products/${p.handle}`}
+      className={`group relative flex flex-col border transition-colors duration-300 ${featured ? 'bg-cream text-[#0a0908] border-cream' : 'border-white/15 text-cream hover:border-cream/60'}`}
+    >
       {d?.badge && (
-        <span className={`absolute -top-3 left-6 px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] ${featured ? 'bg-[#0a0908] text-cream' : 'bg-cream text-[#0a0908]'}`}>
+        <span className={`absolute -top-3 left-6 z-10 px-3 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.18em] ${featured ? 'bg-[#0a0908] text-cream' : 'bg-cream text-[#0a0908]'}`}>
           {d.badge}
         </span>
       )}
-      <h3 className="font-display font-black uppercase text-3xl md:text-4xl leading-none tracking-tight">{p.title}</h3>
-      {d && <p className={`font-sans text-sm mt-2 ${featured ? 'text-[#0a0908]/60' : 'text-cream/50'}`}>{d.forWho}</p>}
-
-      <div className="mt-6 flex items-end gap-3">
-        <span className={`font-sans text-[10px] uppercase tracking-[0.2em] pb-2 ${featured ? 'text-[#0a0908]/50' : 'text-cream/40'}`}>From</span>
-        <span className="font-display font-black text-5xl md:text-6xl leading-none tracking-tighter">{money(min)}</span>
-      </div>
-      {pieces > 0 && (
-        <p className={`font-sans text-xs mt-2 ${featured ? 'text-[#0a0908]/60' : 'text-cream/50'}`}>{money(min / pieces, true)} a piece</p>
+      {img && (
+        <div className="relative aspect-square overflow-hidden bg-[#141312]">
+          <img src={`${img}&width=800`} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+        </div>
       )}
+      <div className="flex flex-col flex-1 p-6 md:p-7">
+        <h3 className="font-display font-black uppercase text-3xl leading-none tracking-tight">{p.title}</h3>
+        {d && <p className={`font-sans text-sm mt-2 ${muted}`}>{d.forWho}</p>}
 
-      {d && (
-        <ul className={`mt-6 pt-6 border-t flex flex-col gap-3 ${featured ? 'border-[#0a0908]/15' : 'border-white/10'}`}>
-          {d.contents.map((c) => (
-            <li key={c.item} className="flex gap-3 items-baseline">
-              <span className="font-display font-black text-xl w-12 flex-shrink-0">{c.qty}×</span>
-              <span className="font-sans text-sm leading-snug">
-                {c.item}
-                {c.deco && <span className={`block font-sans text-[9px] uppercase tracking-[0.18em] mt-0.5 ${featured ? 'text-[#0a0908]/50' : 'text-cream/40'}`}>{c.deco}</span>}
-              </span>
-            </li>
-          ))}
+        <div className="mt-5 flex items-end gap-3">
+          <span className={`font-sans text-[10px] uppercase tracking-[0.2em] pb-2 ${muted}`}>From</span>
+          <span className="font-display font-black text-5xl leading-none tracking-tighter">{money(min)}</span>
+        </div>
+        {pieces > 0 && <p className={`font-sans text-xs mt-2 ${muted}`}>{pieces} pieces · {money(min / pieces, true)} a piece</p>}
+
+        {(lines.length > 0 || counts) && (
+          <ul className={`mt-5 pt-5 border-t flex flex-col gap-1.5 font-sans text-sm ${featured ? 'border-[#0a0908]/15' : 'border-white/10'}`}>
+            {lines.map((l) => <li key={l}>— {l.charAt(0).toUpperCase() + l.slice(1)}</li>)}
+            {counts && counts.values.length > 1 && <li>— Pick {counts.values.join(', ').replace(/, ([^,]*)$/, ' or $1')}</li>}
+            {(d?.perks ?? []).map((x) => <li key={x}>— {x}</li>)}
+          </ul>
+        )}
+
+        <ul className={`mt-4 flex flex-col gap-1 font-sans text-xs ${muted}`}>
+          {['Mockup in 1 business day', 'Full refund until you approve'].map((x) => <li key={x}>✓ {x}</li>)}
         </ul>
-      )}
 
-      <ul className={`mt-6 flex flex-col gap-1.5 font-sans text-xs ${featured ? 'text-[#0a0908]/70' : 'text-cream/60'}`}>
-        {[...(d?.perks ?? []), 'Ships anywhere in the US', 'Mockup in 1 business day', 'Full refund until you approve', 'Any stock color'].map((x) => (
-          <li key={x}>— {x}</li>
-        ))}
-      </ul>
-
-      <a href={`/apparel/products/${p.handle}`} className={`mt-8 ${featured ? btnDark : btnLight}`}>
-        Build This Kit →
-      </a>
-      <p className={`mt-4 font-sans text-[11px] ${featured ? 'text-[#0a0908]/50' : 'text-cream/40'}`}>
-        No setup fees — logo digitizing ({money(SHOP.digitizingValue)} value) and your mockup are included.
-      </p>
-    </div>
+        <span className={`mt-auto pt-6`}>
+          <span className={featured ? btnDark : btnLight}>Build This Kit →</span>
+        </span>
+        <p className={`mt-4 font-sans text-[11px] ${muted}`}>
+          No setup fees — logo digitizing ({money(SHOP.digitizingValue)} value) and your mockup are included.
+        </p>
+      </div>
+    </a>
   )
 }
 

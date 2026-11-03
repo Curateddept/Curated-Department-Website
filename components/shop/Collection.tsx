@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { CustomQuote, Display, Eyebrow, KitCard, ProductCard, wrap } from './ui'
-import { BRANDS, CORE_KITS, brandMatches, byCategory, getProduct, priceRange, tiers, type Product } from '@/lib/shop/catalog'
+import { BRANDS, allKits, brandMatches, byCategory, priceRange, tiers, type Product } from '@/lib/shop/catalog'
 
 function Hero({ eyebrow, title, outline, intro }: { eyebrow: string; title: string; outline: string; intro: string }) {
   return (
@@ -41,19 +41,22 @@ function Group({ title, note, children }: { title: string; note?: string; childr
 }
 
 export function KitsCollection() {
-  const core = CORE_KITS.map(getProduct).filter(Boolean) as Product[]
-  const other = byCategory('kits').filter((p) => !CORE_KITS.includes(p.handle)).sort((a, b) => priceRange(a).min - priceRange(b).min)
+  const kits = allKits()
+  const winter = byCategory('winter')
+  const packs = byCategory('packs')
   return (
     <div className="bg-[#0a0908] text-cream">
-      <Hero eyebrow="All Kits" title="Crew" outline="Kits." intro="Every kit is a full set at one price — your logo on every piece, a mockup in one business day, and a full refund until you approve." />
-      <Group title="Crew Kits" note="Named for their piece count. The bigger the kit, the less each piece costs.">
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 pt-3">
-          {core.map((p) => <KitCard key={p.handle} p={p} featured={p.handle === 'crew-kit-48'} />)}
+      <Hero eyebrow="All Kits" title="Crew" outline="Kits." intro="Every kit is a full run at one price — your logo on every piece, a mockup in one business day, and a full refund until you approve." />
+      <Group title="Crew Kits" note="Pick how many. The bigger the run, the less each piece costs.">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-3">
+          {kits.map((p) => <KitCard key={p.handle} p={p} featured={p.featured} />)}
         </div>
       </Group>
-      <Group title="Specialty Kits" note="Single-garment runs, hats, hi-vis, women's fits and office layers."><Grid items={other} /></Group>
-      <Group title="Winter Kits" note="Flannels, vests, jackets and hi-vis outerwear for the cold months."><Grid items={byCategory('winter')} /></Group>
-      <Group title="24-Piece Packs" note="One garment, 24 pieces, logo included."><Grid items={byCategory('packs')} /></Group>
+      {winter.length > 0 && <Group title="Winter Kits" note="Flannels, vests, jackets and hi-vis outerwear for the cold months."><Grid items={winter} /></Group>}
+      {packs.length > 0 && <Group title="24-Piece Packs" note="One garment, 24 pieces, logo included."><Grid items={packs} /></Group>}
+      <Group title="Want One Garment Instead?" note="Single items start at 8 pieces embroidered or 12 printed.">
+        <a href="/apparel/single-items" className="inline-flex items-center gap-3 bg-cream text-[#0a0908] font-sans font-semibold text-[11px] tracking-[0.16em] uppercase px-7 py-4">Shop Single Items →</a>
+      </Group>
       <CustomQuote />
     </div>
   )

@@ -58,8 +58,8 @@ const POLICIES = [
   {
     title: 'Ordering & Payment',
     body: [
-      'Placing an order sends us your kit, colors, sizes and logo. Nothing is charged until you approve your mockup; we invoice at approval.',
-      'Prices include logo setup, digitizing, a design pass and your mockup. Shipping and sales tax are added to your invoice.',
+      'You pay at checkout through Shopify, and your order, colors, sizes and logo come straight to our design team. Changed your mind before you approve the mockup? You get a full refund.',
+      'Prices include logo setup, digitizing, a design pass and your mockup. Shipping and sales tax are added at checkout. 2XL and up add $3 a piece, billed when you approve your mockup.',
     ],
   },
   {

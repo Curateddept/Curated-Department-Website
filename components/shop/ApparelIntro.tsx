@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import GarmentIcon from './GarmentIcon'
 import { wrap } from './ui'
 import {
-  BRANDS, brandHref, byCategory, categories, getProduct, money, priceRange,
+  BRANDS, brandHref, byCategory, categories, cover, getProduct, money, priceRange,
   type Garment, type Product,
 } from '@/lib/shop/catalog'
 import { APPAREL_WORK } from '@/lib/shop/gallery'
 
-const kitsFrom = Math.min(...byCategory('kits', 'winter').map((p) => priceRange(p).min))
+const kitsFrom = Math.min(...byCategory('kits').map((p) => priceRange(p).min))
 
 // Pill buttons, monochrome take on the partner site's rounded CTAs
 const pillDark = 'inline-flex items-center gap-3 rounded-full bg-[#0a0908] text-cream pl-6 pr-2 py-2 font-sans text-[11px] font-semibold uppercase tracking-[0.14em] hover:bg-[#2a2928] transition-colors'
@@ -38,10 +38,10 @@ const SERVICES = [
 ]
 
 const ONLINE_KITS: { handle: string; garment: Garment; label: string; blurb: string }[] = [
-  { handle: 'starter-kit-24', garment: 'kit', label: '24-Piece Starter Kit', blurb: 'Tees, hoodies, polos and caps for 3 to 6 people.' },
-  { handle: 'classic-tee-kit', garment: 'tee', label: '50 Classic Tees', blurb: '50 tees with your logo on the front and back.' },
-  { handle: 'hat-kit-24', garment: 'cap', label: '24 Embroidered Hats', blurb: '24 caps, 7 styles to pick from. Logo on the front.' },
-  { handle: 'hoodie-kit', garment: 'hoodie', label: 'Premium Hoodies', blurb: '12, 24 or 50 Lane Seven hoodies. Back print +$7 each.' },
+  { handle: 'classic-tee-kit', garment: 'tee', label: '50 Classic Tees', blurb: '50 Lane Seven tees, left chest and a big back print.' },
+  { handle: 'premium-tee-kit', garment: 'tee', label: 'Premium Tees', blurb: '50 to 200 Comfort Colors heavyweights, up to 4 colors.' },
+  { handle: 'hoodie-kit', garment: 'hoodie', label: 'Premium Hoodies', blurb: '12, 24 or 50 Lane Seven hoodies. Add a back print.' },
+  { handle: 'beanie-kit', garment: 'beanie', label: 'Embroidered Beanies', blurb: '12, 24 or 50 knit beanies, logo stitched on the cuff.' },
 ]
 
 const GROW = [
@@ -158,7 +158,11 @@ export default function ApparelIntro() {
               return (
                 <a key={p.handle} href={`/apparel/products/${p.handle}`} className="group flex flex-col rounded-2xl bg-white border border-[#0a0908]/10 overflow-hidden hover:shadow-[0_20px_50px_-20px_rgba(0,0,0,0.35)] transition-shadow">
                   <div className="relative aspect-square bg-[#0a0908] p-8">
-                    <GarmentIcon garment={garment} color="#f4f4f2" logo="/logo-icon.png" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                    {cover(p) ? (
+                      <img src={`${cover(p)}&width=700`} alt={p.title} loading="lazy" className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    ) : (
+                      <GarmentIcon garment={garment} color="#f4f4f2" logo="/logo-icon.png" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />
+                    )}
                     <span className="absolute top-4 right-4 rounded-full bg-cream text-[#0a0908] px-3 py-1 font-display font-black text-lg">{min === max ? money(min) : money(min)}</span>
                   </div>
                   <div className="p-5 flex flex-col gap-2 flex-1">
@@ -288,11 +292,11 @@ export default function ApparelIntro() {
             {[
               ...categories().map((c) => ({ key: c.type, title: c.type, sub: `${c.count} styles · from ${money(c.from, true)}/pc`, href: `/apparel/single-items?type=${encodeURIComponent(c.type)}`, garment: c.garment })),
               { key: 'kits', title: 'Crew Kits', sub: `Full sets · from ${money(kitsFrom)}`, href: '/apparel/kits', garment: 'kit' as Garment },
-              { key: 'winter', title: 'Winter Kits', sub: `${byCategory('winter').length} kits`, href: '/apparel/kits', garment: 'jacket' as Garment },
-              { key: 'packs', title: '24-Piece Packs', sub: `${byCategory('packs').length} packs`, href: '/apparel/kits', garment: 'tee' as Garment },
-              { key: 'gifts', title: 'Holiday Gifts', sub: `${byCategory('gifts').length} gift sets`, href: '/apparel/gifts', garment: 'bag' as Garment },
+              { key: 'winter', title: 'Winter Kits', sub: `${byCategory('winter').length} kits`, href: '/apparel/kits', garment: 'jacket' as Garment, n: byCategory('winter').length },
+              { key: 'packs', title: '24-Piece Packs', sub: `${byCategory('packs').length} packs`, href: '/apparel/kits', garment: 'tee' as Garment, n: byCategory('packs').length },
+              { key: 'gifts', title: 'Holiday Gifts', sub: `${byCategory('gifts').length} gift set${byCategory('gifts').length === 1 ? '' : 's'}`, href: '/apparel/gifts', garment: 'bag' as Garment, n: byCategory('gifts').length },
               { key: 'all', title: 'All Single Items', sub: `${byCategory('single').length} styles`, href: '/apparel/single-items', garment: 'hoodie' as Garment },
-            ].map((c) => (
+            ].filter((c) => !('n' in c) || c.n).map((c) => (
               <a key={c.key} href={c.href} className="group rounded-2xl bg-white border border-[#0a0908]/10 hover:bg-[#0a0908] hover:text-cream transition-colors duration-300 p-5 flex flex-col">
                 <div className="aspect-[4/3] mb-3">
                   <GarmentIcon garment={c.garment} color="#1c1c1c" className="w-full h-full group-hover:scale-105 transition-transform duration-500" />

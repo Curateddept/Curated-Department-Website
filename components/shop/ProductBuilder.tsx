@@ -56,9 +56,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
   const tiered = isTiered(p)
   const kit = kitDetails[p.handle]
 
-  const pieces: { label: string; garment: Garment }[] = kit
-    ? kit.contents.map((c) => ({ label: c.item.split(' — ')[0], garment: garmentFor({ title: c.item, type: '', category: 'kits' }) }))
-    : [{ label: p.title, garment: garmentFor(p) }]
+  const pieces: { label: string; garment: Garment }[] = [{ label: p.title, garment: garmentFor(p) }]
 
   const [selected, setSelected] = useState<string[]>(p.options.map((o) => o.values[0]))
   const [qty, setQty] = useState(minQty(p))
@@ -68,11 +66,14 @@ export default function ProductBuilder({ p }: { p: Product }) {
   const [kitColor, setKitColor] = useState(COLORS[0].name)
   const [pieceColors, setPieceColors] = useState<string[]>(pieces.map(() => COLORS[0].name))
   const [active, setActive] = useState(0)
+  // Gallery slot: a Shopify photo index, or 'logo' for the live logo preview.
+  const [view, setView] = useState<number | 'logo'>(p.images.length ? 0 : 'logo')
   const [sizeMode, setSizeMode] = useState<'later' | 'now'>('later')
   const [sizes, setSizes] = useState<Record<string, number>>({})
   const [added, setAdded] = useState(false)
 
   const logoUrl = logos.find((f) => f.preview && f.status !== 'error')?.preview ?? null
+  useEffect(() => { if (logoUrl) setView('logo') }, [logoUrl])
   const uploading = logos.some((f) => f.status === 'uploading')
 
   const variant = findVariant(p, selected)
@@ -80,7 +81,9 @@ export default function ProductBuilder({ p }: { p: Product }) {
   const tier = tiered ? tierFor(p, qty) : null
   const base = tiered ? tier!.price * qty : variant.price
   const bigCount = sizeMode === 'now' ? SIZES.filter((s) => BIG.has(s)).reduce((n, s) => n + (sizes[s] || 0), 0) : 0
-  const total = base + bigCount * SHOP.bigSizeUpcharge
+  // Checkout charges the Shopify price; the 2XL+ upcharge is billed with the mockup approval.
+  const bigUpcharge = bigCount * SHOP.bigSizeUpcharge
+  const total = base
   const count = tiered ? qty : pieceCount(p, selected)
   const sizedCount = Object.values(sizes).reduce((a, b) => a + b, 0)
   const qtyValid = !tiered || qty >= minQty(p)
@@ -124,14 +127,13 @@ export default function ProductBuilder({ p }: { p: Product }) {
   const details = [
     {
       q: kit ? 'What’s in the kit' : 'What you get',
-      a: kit
-        ? `${kit.contents.map((c) => `${c.qty}× ${c.item}${c.deco ? ` (${c.deco.toLowerCase()})` : ''}`).join(' · ')}. ${kit.forWho}.`
-        : `${p.spec || p.title}${p.brand ? ` — ${p.brand}` : ''}. ${p.deco ? `Decoration: ${p.deco.toLowerCase()}.` : ''}`,
+      a: `${p.spec ? p.spec.charAt(0).toUpperCase() + p.spec.slice(1) : p.title}${p.brand && !p.spec.includes(p.brand) ? ` — ${p.brand}` : ''}.${kit ? ` ${kit.forWho}.` : ''}${p.deco ? ` Decoration: ${p.deco.toLowerCase()}.` : ''}`,
     },
     { q: 'Your logo on everything', a: 'Logo setup, digitizing and a design pass are included. Send any file — we redraw rough logos clean as part of your mockup.' },
     { q: 'How it works', a: STEPS.map((s) => `${s.n} ${s.title}: ${s.body}`).join(' ') },
-    { q: 'Colors and sizes', a: `Pick one color for everything or mix by piece. S–XL included; 2XL and up add ${money(SHOP.bigSizeUpcharge)} a piece. Caps are one size.` },
+    { q: 'Colors and sizes', a: `Pick a color, or tell us the exact stock color in the notes. S–XL included; 2XL and up add ${money(SHOP.bigSizeUpcharge)} a piece, billed when you approve your mockup. Caps are one size.` },
     { q: 'Shipping and turnaround', a: `Mockup within one business day, ready ${SHOP.turnaround} after approval, ships anywhere in the US. Shipping and tax are calculated at checkout.` },
+    { q: 'Refunds', a: 'You pay at checkout. If you don’t love the mockup, ask for your money back any time before you approve it and you get all of it.' },
   ]
 
   return (
@@ -144,26 +146,39 @@ export default function ProductBuilder({ p }: { p: Product }) {
         {/* Mockup */}
         <div className="lg:col-span-6">
           <div className="lg:sticky lg:top-36">
-            <div className="relative aspect-square bg-[#141312] border border-white/10">
-              <GarmentIcon garment={pieces[active].garment} color={colorHex(shownColor)} logo={logoUrl} className="absolute inset-[10%] w-[80%] h-[80%]" />
-              <span className="absolute top-4 left-4 font-sans text-[10px] uppercase tracking-[0.2em] text-cream/50">Live mockup preview</span>
-              <span className="absolute bottom-4 left-4 font-display font-black uppercase text-cream text-sm">{pieces[active].label} · {shownColor}</span>
+            <div className="relative aspect-square bg-[#141312] border border-white/10 overflow-hidden">
+              {view === 'logo' ? (
+                <>
+                  <GarmentIcon garment={pieces[active].garment} color={colorHex(shownColor)} logo={logoUrl} className="absolute inset-[10%] w-[80%] h-[80%]" />
+                  <span className="absolute top-4 left-4 font-sans text-[10px] uppercase tracking-[0.2em] text-cream/50">Your logo preview</span>
+                  <span className="absolute bottom-4 left-4 font-display font-black uppercase text-cream text-sm">{pieces[active].label} · {shownColor}</span>
+                </>
+              ) : (
+                <img src={`${p.images[view].url}&width=1200`} alt={p.title} className="absolute inset-0 h-full w-full object-cover" />
+              )}
             </div>
-            {pieces.length > 1 && (
-              <div className="grid grid-cols-5 gap-2 mt-2">
-                {pieces.map((pc, i) => (
-                  <button
-                    key={pc.label + i}
-                    type="button"
-                    onClick={() => setActive(i)}
-                    className={`aspect-square bg-[#141312] border p-2 ${active === i ? 'border-cream' : 'border-white/10 hover:border-white/40'}`}
-                    aria-label={`Preview ${pc.label}`}
-                  >
-                    <GarmentIcon garment={pc.garment} color={colorHex(mix ? pieceColors[i] : kitColor)} logo={logoUrl} className="w-full h-full" />
-                  </button>
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-5 gap-2 mt-2">
+              {p.images.map((img, i) => (
+                <button
+                  key={img.url}
+                  type="button"
+                  onClick={() => setView(i)}
+                  className={`relative aspect-square bg-[#141312] border overflow-hidden ${view === i ? 'border-cream' : 'border-white/10 hover:border-white/40'}`}
+                  aria-label={`Photo ${i + 1}`}
+                >
+                  <img src={`${img.url}&width=200`} alt="" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setView('logo')}
+                className={`aspect-square bg-[#141312] border p-2 flex flex-col items-center justify-center ${view === 'logo' ? 'border-cream' : 'border-white/10 hover:border-white/40'}`}
+                aria-label="Your logo preview"
+              >
+                <GarmentIcon garment={pieces[0].garment} color={colorHex(shownColor)} logo={logoUrl} className="w-full h-[70%]" />
+                <span className="font-sans text-[8px] uppercase tracking-[0.14em] text-cream/60 mt-1">Your logo</span>
+              </button>
+            </div>
             {!logoUrl && <p className="font-sans text-xs text-cream/40 mt-3">Upload a PNG or JPG logo to see it on the preview. Your real mockup comes from our design team in one business day.</p>}
           </div>
         </div>
@@ -178,9 +193,10 @@ export default function ProductBuilder({ p }: { p: Product }) {
               {count > 0 && <span className="font-sans text-sm text-cream/50">{count} pieces · {money(total / count, true)} a piece</span>}
             </div>
             <p className="font-sans text-sm text-cream/60 mt-3">Shipping calculated at checkout · Mockup in 1 business day</p>
-            {(kit || p.spec) && (
+            {kit && <p className="font-sans text-sm text-cream/50 mt-1">{kit.forWho}</p>}
+            {p.spec && (
               <p className="font-sans text-cream/70 mt-5 leading-relaxed">
-                {kit ? `${kit.forWho}. ` : ''}{p.spec}. Ready {SHOP.turnaround} after you approve.
+                {p.spec.charAt(0).toUpperCase() + p.spec.slice(1)}. Ready {SHOP.turnaround} after you approve.
               </p>
             )}
           </div>
@@ -336,7 +352,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
             <p className="font-display font-black uppercase text-lg mb-4">Order Summary</p>
             <dl className="flex flex-col gap-2 font-sans text-sm">
               <div className="flex justify-between"><dt className="text-cream/60">{p.title}{tiered ? ` × ${qty}` : ''}</dt><dd>{money(base, true)}</dd></div>
-              {bigCount > 0 && <div className="flex justify-between"><dt className="text-cream/60">2XL and up × {bigCount}</dt><dd>{money(bigCount * SHOP.bigSizeUpcharge)}</dd></div>}
+              {bigCount > 0 && <div className="flex justify-between"><dt className="text-cream/60">2XL and up × {bigCount}</dt><dd className="text-cream/60">+{money(bigUpcharge)} at approval</dd></div>}
               <div className="flex justify-between"><dt className="text-cream/60">Design help with your logo</dt><dd>Free</dd></div>
               <div className="flex justify-between"><dt className="text-cream/60">Logo digitizing</dt><dd>Free</dd></div>
               <div className="flex justify-between"><dt className="text-cream/60">Mockup before we make it</dt><dd>Free</dd></div>
@@ -358,7 +374,7 @@ export default function ProductBuilder({ p }: { p: Product }) {
             <p className="font-sans text-sm text-cream mt-5">At your door about {fmtShort(dates.from)} – {fmtShort(dates.to)}</p>
             <p className="font-sans text-xs text-cream/50 mt-1">Free mockup by {fmt(dates.mockup)}. Approve it that day to hold this window.</p>
             <ul className="mt-4 flex flex-col gap-1 font-sans text-xs text-cream/60">
-              <li>— Full refund until you approve your mockup</li>
+              <li>— Secure checkout · full refund until you approve your mockup</li>
               <li>— Designed, produced and packed by Curated</li>
             </ul>
           </div>

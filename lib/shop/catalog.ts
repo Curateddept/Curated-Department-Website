@@ -3,8 +3,11 @@ import raw from './catalog.json'
 export type Category = 'kits' | 'winter' | 'gifts' | 'single' | 'packs'
 
 export type Option = { name: string; values: string[] }
-export type Variant = { options: string[]; price: number }
+/** `id` is the Shopify ProductVariant GID used at checkout. */
+export type Variant = { id: string; options: string[]; price: number; image?: string }
+export type Image = { url: string; w: number; h: number }
 
+// catalog.json is generated from Shopify by scripts/sync-shopify.mjs — edit products in Shopify, not here.
 export type Product = {
   handle: string
   title: string
@@ -13,6 +16,11 @@ export type Product = {
   brand: string
   deco: string
   spec: string
+  family: string
+  featured: boolean
+  women: boolean
+  shopifyId: string
+  images: Image[]
   options: Option[]
   variants: Variant[]
 }
@@ -20,11 +28,9 @@ export type Product = {
 export type KitDetail = {
   badge?: string
   forWho: string
-  contents: { qty: number; item: string; deco?: 'Embroidered' | 'Screen-printed' | 'Printed' }[]
   perks?: string[]
 }
 
-export const products = raw as Product[]
 
 export const SHOP = {
   email: 'albert@curateddepartment.com',
@@ -36,95 +42,24 @@ export const SHOP = {
   digitizingValue: 45,
 }
 
-// Contents for the core kits. Piece counts mirror the published kit lineup.
+/** Small-print notes for kits, keyed by Shopify handle. Everything else comes from the Shopify tags. */
 export const kitDetails: Record<string, KitDetail> = {
-  'starter-kit-24': {
-    forWho: 'New shops and owner-operators, 3 to 6 people',
-    contents: [
-      { qty: 6, item: 'T-shirts — performance or cotton' },
-      { qty: 3, item: 'Long sleeves — performance or cotton' },
-      { qty: 3, item: 'Hoodies — performance or cotton fleece' },
-      { qty: 6, item: 'Port Authority polos', deco: 'Embroidered' },
-      { qty: 6, item: 'Richardson 112 caps', deco: 'Embroidered' },
-    ],
-  },
-  'crew-kit-48': {
-    badge: 'Most Picked',
-    forWho: 'Crews up to 8, two caps per person',
-    contents: [
-      { qty: 8, item: 'T-shirts — performance or cotton' },
-      { qty: 8, item: 'Long sleeves — performance or cotton' },
-      { qty: 8, item: 'Hoodies — performance or cotton fleece' },
-      { qty: 8, item: 'Port Authority polos', deco: 'Embroidered' },
-      { qty: 16, item: 'Richardson 112 caps', deco: 'Embroidered' },
-    ],
-  },
-  'crew-kit-100': {
-    forWho: 'Crews of 20 or more',
-    contents: [
-      { qty: 52, item: 'T-shirts — performance or cotton', deco: 'Screen-printed' },
-      { qty: 24, item: 'Port Authority polos', deco: 'Embroidered' },
-      { qty: 24, item: 'Richardson 112 caps', deco: 'Embroidered' },
-    ],
-    perks: ['Logo on the chest and back of every tee'],
-  },
-  'crew-kit-200': {
-    badge: 'Best Value',
-    forWho: 'Crews of 40 or more',
-    contents: [
-      { qty: 104, item: 'T-shirts — performance or cotton', deco: 'Screen-printed' },
-      { qty: 48, item: 'Port Authority polos', deco: 'Embroidered' },
-      { qty: 48, item: 'Richardson 112 caps', deco: 'Embroidered' },
-    ],
-    perks: ['$236 less than the same pieces bought one by one'],
-  },
-  'hi-vis-crew-pack-24': {
-    forWho: 'Road, site and utility crews, 6 people',
-    contents: [
-      { qty: 18, item: 'CornerStone Class 2 safety tees', deco: 'Printed' },
-      { qty: 6, item: 'CornerStone mesh zip safety vests', deco: 'Printed' },
-    ],
-    perks: ['Safety Yellow or Safety Orange', 'Logo on the left chest — never on the reflective tape'],
-  },
-  'comfy-kit-16': {
-    forWho: '4 people — cold-month layers',
-    contents: [
-      { qty: 4, item: 'Comfort Colors heavyweight tees' },
-      { qty: 4, item: 'Comfort Colors long sleeves' },
-      { qty: 4, item: 'Independent midweight hoodies' },
-      { qty: 4, item: 'Knit beanies', deco: 'Embroidered' },
-    ],
-  },
-  'comfy-kit-32': {
-    forWho: '8 people — cold-month layers',
-    contents: [
-      { qty: 8, item: 'Comfort Colors heavyweight tees' },
-      { qty: 8, item: 'Comfort Colors long sleeves' },
-      { qty: 8, item: 'Independent midweight hoodies' },
-      { qty: 8, item: 'Knit beanies', deco: 'Embroidered' },
-    ],
-  },
-  'comfy-kit-48': {
-    forWho: '12 people — cold-month layers',
-    contents: [
-      { qty: 12, item: 'Comfort Colors heavyweight tees' },
-      { qty: 12, item: 'Comfort Colors long sleeves' },
-      { qty: 12, item: 'Independent midweight hoodies' },
-      { qty: 12, item: 'Knit beanies', deco: 'Embroidered' },
-    ],
-  },
-  'executive-package': {
-    forWho: 'Owners, office and sales team',
-    contents: [
-      { qty: 12, item: 'OGIO Regain polos', deco: 'Embroidered' },
-      { qty: 12, item: 'Caps, your style', deco: 'Embroidered' },
-    ],
-  },
+  'premium-tee-kit': { badge: 'Featured', forWho: 'Heavyweight tees for crews, shops and events' },
+  'classic-tee-kit': { forWho: 'Event shirts, giveaways and big crews' },
+  'hoodie-kit': { forWho: 'Cold-month layers for the whole crew' },
+  'crewneck-kit': { forWho: 'A cleaner layer for shops, offices and staff' },
+  'beanie-kit': { forWho: 'Cheap, warm and seen everywhere' },
 }
 
-export const CORE_KITS = ['starter-kit-24', 'crew-kit-48', 'crew-kit-100', 'crew-kit-200']
-export const MORE_KITS = ['hi-vis-crew-pack-24', 'comfy-kit-16', 'executive-package']
 export const SPOTLIGHT_KITS = ['hoodie-kit', 'crewneck-kit', 'premium-tee-kit']
+
+/** Kits in price order, featured first. */
+export function allKits() {
+  return byCategory('kits').sort((a, b) => Number(b.featured) - Number(a.featured) || priceRange(a).min - priceRange(b).min)
+}
+
+/** Product photo for cards: the first Shopify image. */
+export const cover = (p: Product) => p.images[0]?.url ?? null
 
 export function getProduct(handle: string) {
   return products.find((p) => p.handle === handle)
@@ -246,6 +181,12 @@ export const BRANDS = [
   'Yupoong', 'Cap America', '10/10', 'Port Authority', 'Port & Company', 'Gildan', 'Next Level', 'CornerStone',
   'A4', 'AllPro', 'Shaka Wear', 'Q-Tees', 'KNACK', 'Save the Duck',
 ]
+
+export const products: Product[] = (raw as Product[]).map((p) => ({
+  ...p,
+  // Most products carry no brand tag; read it off the front of the title instead.
+  brand: p.brand || BRANDS.filter((b) => p.title.startsWith(b)).sort((a, b) => b.length - a.length)[0] || '',
+}))
 
 export function brandMatches(p: Product, brand: string) {
   const b = brand.toLowerCase()
